@@ -7,6 +7,7 @@ import java.util.List;
 
 public class PostService {
 
+    // create service instance
     private PostDao postDao = new PostDao();
 
     public void addPost(Post post) {
