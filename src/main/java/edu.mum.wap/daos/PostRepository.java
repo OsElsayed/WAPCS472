@@ -1,4 +1,6 @@
 package edu.mum.wap.daos;
 
-public interface PostRepository {
+import edu.mum.wap.models.Post;
+
+public interface PostRepository extends GenericRepository<Post>{
 }

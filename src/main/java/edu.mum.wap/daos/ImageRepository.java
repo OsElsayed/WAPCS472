@@ -1,4 +1,6 @@
 package edu.mum.wap.daos;
 
-public interface ImageRepository {
+import edu.mum.wap.models.Images;
+
+public interface ImageRepository extends GenericRepository<Images>{
 }

@@ -1,4 +1,6 @@
 package edu.mum.wap.daos;
 
-public interface AdRepository {
+import edu.mum.wap.models.Advertisement;
+
+public interface AdRepository extends GenericRepository<Advertisement>{
 }

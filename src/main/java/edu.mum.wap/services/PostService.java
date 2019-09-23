@@ -1,14 +1,31 @@
 package edu.mum.wap.services;
 
+import edu.mum.wap.daos.impl.PostDao;
 import edu.mum.wap.models.Post;
 
-import javax.servlet.http.Part;
+import java.util.List;
 
 public class PostService {
-    public Post add(String description, Part photo) {
-        Post post = new Post();
-        post.setDescription(description);
-        post.setPhoto(photo);
-        return post;
+
+    private PostDao postDao = new PostDao();
+
+    public void addPost(Post post) {
+        postDao.save(post);
+    }
+
+    public Post updatePost(Post post) {
+        return postDao.update(post);
+    }
+
+    public void deletePost(Long postId) {
+        postDao.delete(postId);
+    }
+
+    public List<Post> findAll() {
+        return postDao.findAll();
+    }
+
+    public Post findPost(Long postId) {
+        return postDao.findOne(postId);
     }
 }

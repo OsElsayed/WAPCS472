@@ -1,7 +1,33 @@
 package edu.mum.wap.models;
 
-import javax.servlet.http.Part;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
+import java.util.Date;
+
+@Entity
+@NoArgsConstructor
+@Data
 public class Post {
+
+    @javax.persistence.Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long Id;
+
+    @Column
+    private String description;
+
+    @Column
+    private boolean isActive;
+
+    @Temporal(TemporalType.DATE)
+    private Date creationDate;
+
+    @Column
+    private boolean isVisible;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private User userId;
 
 }
