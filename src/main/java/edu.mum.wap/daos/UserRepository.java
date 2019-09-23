@@ -1,4 +1,6 @@
 package edu.mum.wap.daos;
 
-public interface UserRepository {
+import edu.mum.wap.models.User;
+
+public interface UserRepository extends GenericRepository<User>{
 }
