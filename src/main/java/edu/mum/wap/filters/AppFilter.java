@@ -29,7 +29,7 @@ public class AppFilter implements Filter {
         }
 
         if (path.contains("/js/") || path.contains("/css/") || path.contains("/lib/") || path.contains("/fonts/")
-                || path.contains("/images/") || path.contains("/vendor/")) {
+                || path.contains("/images/") || path.contains("/vendor/") || path.contains("/Register")) {
             chain.doFilter(request, response); // Just continue chain.
             return;
         }

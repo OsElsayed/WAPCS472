@@ -12,15 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
-import java.util.Enumeration;
-import java.util.stream.Stream;
 
-@WebServlet("/Register")
+@WebServlet("/pages/Register")
 public class RegisterServlet extends HttpServlet {
 
     UserService userService;
