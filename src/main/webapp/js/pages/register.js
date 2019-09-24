@@ -2,10 +2,13 @@ const reg = (() => {
     const subButton = $('#register');
     const form = subButton.parents('form').first();
     const locks = $('.reg-pass');
+    const imgPlace = $('#imgPlace');
+    const img = $('#img');
     function init() {
         subButton.click(() => {
-            if (!_validate()) {
+            if (_validate()) {
                 const post = form.serializeArray();
+                post[post.length - 1] = {'name' : 'term' , 'value' : form.find('input[type=checkbox]').is(':checked')};
                 $.post({
                     url:'Register',
                     data:post,
@@ -27,6 +30,13 @@ const reg = (() => {
                 e.target.className = 'la la-eye';
             }
         });
+        img.change(() => {
+           const url = img.val();
+           if(url.length > 0){
+               imgPlace.empty();
+               imgPlace.append($('<img>', {src : url, class : 'profile-img'}));
+           }
+        });
     }
 
     function _validate() {
@@ -39,6 +49,9 @@ const reg = (() => {
         });
         if(form.find('[name=password]').val() !== form.find('[name=repeat-password]').val()){
             arr.push('The passwords do not match!');
+        }
+        if(!form.valid()){
+            arr.push('There are missing fields in the form.')
         }
         if (arr.length === 0)
             return true;

@@ -1,6 +1,8 @@
 package edu.mum.wap.servlets;
 
+import com.google.gson.Gson;
 import edu.mum.wap.models.User;
+import edu.mum.wap.services.UserService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +16,12 @@ import java.util.Enumeration;
 @WebServlet("/Register")
 public class RegisterServlet extends HttpServlet {
 
+    UserService userService;
+
+    public RegisterServlet(){
+        userService = new UserService();
+    }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher("/pages/sign-in.html").forward(req, resp);
@@ -23,10 +31,12 @@ public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
         String name = req.getParameter("name");
-        String country = req.getParameter("country");
+        String country = req.getParameter("email");
+        String image = req.getParameter("image");
         String password = req.getParameter("password");
         String rePassword = req.getParameter("repeat-password");
-        boolean term = Boolean.valueOf(req.getParameter("term"));
+        Gson gson = new Gson();
+        boolean term = Boolean.parseBoolean(req.getParameter("term"));
 //        Gson gson = new Gson();
         if (name == null || name.isEmpty() || !term || password == null || password.isEmpty() || rePassword == null ||
                     rePassword.isEmpty() || country == null || country.isEmpty()) {
@@ -39,7 +49,7 @@ public class RegisterServlet extends HttpServlet {
             return;
         }
         User user = new User();
-       /* _userService.Create(user);
-        out.print(gson.toJson(user));*/
+        userService.addUser(user);
+        out.print(gson.toJson(user));
     }
 }

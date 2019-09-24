@@ -6839,3 +6839,14 @@ ul#myTab {
     font-size: 14px;
     color: #666666;
 }
+
+.profile-img{
+	max-width: 150px;
+	max-height: 150px;
+	margin-bottom: 15px;
+}
+
+.error{
+	color:red;
+	display: block;
+}

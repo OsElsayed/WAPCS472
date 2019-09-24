@@ -96,34 +96,28 @@
                                             <div class="col-lg-12 no-pdd">
                                                 <div class="sn-field">
                                                     <input type="text" name="name" id="username" placeholder="Full Name"
-                                                           data-required="true">
+                                                           data-required="true" required>
                                                     <i class="la la-user"></i>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 no-pdd">
                                                 <div class="sn-field">
-                                                    <input type="text" name="country" placeholder="Country"
-                                                           data-required="true">
-                                                    <i class="la la-globe"></i>
+                                                    <input type="email" name="email" placeholder="Email"
+                                                           data-required="true" required>
+                                                    <i class="la la-envelope"></i>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 no-pdd">
                                                 <div class="sn-field">
-                                                    <select>
-                                                        <option>Category</option>
-                                                        <option>Category 1</option>
-                                                        <option>Category 2</option>
-                                                        <option>Category 3</option>
-                                                        <option>Category 4</option>
-                                                    </select>
-                                                    <i class="la la-dropbox"></i>
-                                                    <span><i class="fa fa-ellipsis-h"></i></span>
+                                                    <input type="url" name="image" id="img" placeholder="Url of the image">
+                                                    <i class="la la-image"></i>
                                                 </div>
+                                                <div id="imgPlace"></div>
                                             </div>
                                             <div class="col-lg-12 no-pdd">
                                                 <div class="sn-field">
                                                     <input type="password" name="password" placeholder="Password"
-                                                           data-required="true">
+                                                           data-required="true" required>
                                                     <i class="la la-lock"></i>
                                                     <span>
 														<i class="la la-eye reg-pass float-right"></i>
@@ -133,7 +127,7 @@
                                             <div class="col-lg-12 no-pdd">
                                                 <div class="sn-field">
                                                     <input type="password" name="repeat-password"
-                                                           placeholder="Repeat Password" data-required="true">
+                                                           placeholder="Repeat Password" data-required="true" required>
                                                     <i class="la la-lock"></i>
                                                     <span>
 														<i class="la la-eye reg-pass float-right"></i>
@@ -194,6 +188,7 @@
 <script type="text/javascript" src="js/myToastr.js"></script>
 <script type="text/javascript" src="js/pages/register.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
 <script>
     $(() => {
        reg.init();
