@@ -1,8 +1,6 @@
 package edu.mum.wap.servlets;
 
 import com.google.gson.Gson;
-import edu.mum.wap.models.Post;
-import edu.mum.wap.services.PostService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -22,12 +20,12 @@ public class TimelineServlet extends HttpServlet {
         String comment = req.getParameter("comment");
         Part photo = req.getPart("photo");
 
-        PostService postService = new PostService();
-        Post post = postService.add(comment, photo);
+        //PostService postService = new PostService();
+        //Post post = postService.add(comment, photo);
         Gson gson = new Gson();
-        String postJson = gson.toJson(post);
+        //String postJson = gson.toJson(post);
         resp.setContentType("application/json");
-        resp.getWriter().write(postJson);
+        //resp.getWriter().write(postJson);
     }
 
     @Override
