@@ -27,7 +27,6 @@ public class Post {
     @Column
     private boolean isVisible;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    private User userId;
+    private long userId;
 
 }
