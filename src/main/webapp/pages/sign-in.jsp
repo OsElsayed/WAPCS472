@@ -167,11 +167,11 @@
     </div><!--sign-in-page end-->
 
 
-</div><!--theme-layout end-->
+</div>
 <%@ include file="scripts.jsp"%>
-<script type="text/javascript" src="js/pages/register.js"></script>
+<script type="text/javascript" src="../js/pages/register.js"></script>
 <script>
-    $(() => {
+    $(document).ready(function () {
        reg.init();
     });
 </script>
