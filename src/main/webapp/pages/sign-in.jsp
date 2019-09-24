@@ -23,7 +23,6 @@
 
 <body class="sign-in">
 
-<c:out value="osam"/>
 
 <div class="wrapper">
 
@@ -111,7 +110,7 @@
                                             </div>
                                             <div class="col-lg-12 no-pdd">
                                                 <div class="sn-field">
-                                                    <input type="url" name="image" id="img" placeholder="Url of the image">
+                                                    <input type="url" name="image" id="img" placeholder="Url of the image" multiple>
                                                     <i class="la la-image"></i>
                                                 </div>
                                                 <div id="imgPlace"></div>
@@ -191,6 +190,7 @@
 <script type="text/javascript" src="js/pages/register.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 <script>
     $(() => {
        reg.init();
