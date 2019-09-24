@@ -36,6 +36,6 @@ public class LoginServlet extends HttpServlet {
         }
         System.out.println("login success info username: " + username + " & password: " + password);
         session.setAttribute("user", userFromDb);
-        resp.sendRedirect("home.html");
+        resp.sendRedirect("home.jsp");
     }
 }
