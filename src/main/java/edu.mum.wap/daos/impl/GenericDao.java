@@ -16,10 +16,11 @@ public class GenericDao<T> implements GenericRepository<T> {
         daoClass = type;
     }
 
-    public void save(T entity) {
+    public T save(T entity) {
         entityManager.getTransaction().begin();
-        entityManager.merge(entity);
+        entity = entityManager.merge(entity);
         entityManager.getTransaction().commit();
+        return entity;
     }
 
     private void checkEntityManager() {
