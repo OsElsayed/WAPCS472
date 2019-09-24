@@ -1,4 +1,4 @@
-package filters;
+package edu.mum.wap.filters;
 
 import edu.mum.wap.models.User;
 
