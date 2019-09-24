@@ -1,10 +1,11 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <c:choose>
-        <c:when test="%{title}">
+        <c:when test="${not empty title}">
             <title>Social WAPCS472 - ${title}</title>
         </c:when>
         <c:otherwise>
