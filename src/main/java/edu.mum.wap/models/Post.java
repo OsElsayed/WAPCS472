@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -28,5 +29,10 @@ public class Post {
     private boolean isVisible;
 
     private long userId;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "imageId")
+    private Images images;
+
 
 }
