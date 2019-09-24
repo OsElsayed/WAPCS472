@@ -19,8 +19,15 @@ public class AppFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         HttpSession session = request.getSession();
+        session.setMaxInactiveInterval(300);
         User user = (User) session.getAttribute("user");
         String path = request.getRequestURI();
+
+        if (session.isNew()){
+            response.sendRedirect( ((HttpServletRequest)servletRequest).getContextPath() + "/pages/sign-in.jsp");
+            return;
+        }
+
         if (path.contains("/js/") || path.contains("/css/") || path.contains("/lib/") || path.contains("/fonts/")
                 || path.contains("/images/") || path.contains("/vendor/")) {
             chain.doFilter(request, response); // Just continue chain.

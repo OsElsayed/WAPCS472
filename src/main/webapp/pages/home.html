@@ -222,7 +222,7 @@
 								<li><a href="index.html#" title="">Faqs</a></li>
 								<li><a href="index.html#" title="">Terms & Conditions</a></li>
 							</ul>
-							<h3 class="tc"><a href="sign-in.jsp" title="">Logout</a></h3>
+							<h3 class="tc"><a href="login" title="">Logout</a></h3>
 						</div><!--user-account-settingss end-->
 					</div>
 				</div><!--header-data end-->

@@ -38,7 +38,7 @@
                             <div class="sign_in_sec current" id="tab-1">
 
                                 <h3>Sign in</h3>
-                                <form>
+                                <form method="post" action="login">
                                     <div class="row">
                                         <div class="col-lg-12 no-pdd">
                                             <div class="sn-field">
