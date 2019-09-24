@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -6,19 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
-    <link rel="stylesheet" type="text/css" href="../css/animate.css">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/line-awesome.css">
-    <link rel="stylesheet" type="text/css" href="../css/line-awesome-font-awesome.min.css">
-    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../lib/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="../lib/slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="../css/toastr.min.css">
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+    <%@ include file="styles.jsp"%>
 </head>
 
 
@@ -34,11 +22,11 @@
                     <div class="col-lg-6">
                         <div class="cmp-info">
                             <div class="cm-logo">
-                                <img src="../images/cm-logo.png" alt="">
+                                <img src="images/cm-logo.png" alt="">
                                 <p>Workwise, is a global freelancing platform and social networking where businesses and
                                     independent professionals connect and collaborate remotely</p>
                             </div><!--cm-logo end-->
-                            <img src="../images/cm-main-img.png" alt="">
+                            <img src="images/cm-main-img.png" alt="">
                         </div><!--cmp-info end-->
                     </div>
                     <div class="col-lg-6">
@@ -50,7 +38,7 @@
                             <div class="sign_in_sec current" id="tab-1">
 
                                 <h3>Sign in</h3>
-                                <form method="post" action="login">
+                                <form>
                                     <div class="row">
                                         <div class="col-lg-12 no-pdd">
                                             <div class="sn-field">
@@ -173,29 +161,18 @@
                     <li><a href="sign-in.jsp#" title="">Language</a></li>
                     <li><a href="sign-in.jsp#" title="">Copyright Policy</a></li>
                 </ul>
-                <p><img src="../images/copy-icon.png" alt="">Copyright 2019</p>
+                <p><img src="images/copy-icon.png" alt="">Copyright 2019</p>
             </div>
         </div><!--footy-sec end-->
     </div><!--sign-in-page end-->
 
 
 </div><!--theme-layout end-->
-
-
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript" src="../js/popper.js"></script>
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../lib/slick/slick.min.js"></script>
-<script type="text/javascript" src="../js/toastr.min.js"></script>
-<script type="text/javascript" src="../js/myToastr.js"></script>
-<script type="text/javascript" src="../js/pages/register.js"></script>
-<script type="text/javascript" src="../js/script.js"></script>
-<script type="text/javascript" src="../js/jquery.validate.js"></script>
-<script type="text/javascript" src="../js/additional-methods.min.js"></script>
+<%@ include file="scripts.jsp"%>
+<script type="text/javascript" src="js/pages/register.js"></script>
 <script>
-    $(document).ready(function () {
-        //your code here
-        reg.init();
+    $(() => {
+       reg.init();
     });
 </script>
 
