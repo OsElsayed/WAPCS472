@@ -13,9 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.security.NoSuchAlgorithmException;
-import java.util.Enumeration;
 
-@WebServlet("/Register")
+@WebServlet("/pages/Register")
 public class RegisterServlet extends HttpServlet {
 
     UserService userService;

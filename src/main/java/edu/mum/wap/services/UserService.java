@@ -4,6 +4,7 @@ import edu.mum.wap.daos.impl.ImageDao;
 import edu.mum.wap.daos.impl.UserDao;
 import edu.mum.wap.models.Images;
 import edu.mum.wap.models.User;
+import edu.mum.wap.utils.HashingHelper;
 //import edu.mum.wap.utils.HashingHelper;
 
 import java.security.NoSuchAlgorithmException;
@@ -21,8 +22,7 @@ public class UserService {
         user.setModifiedDate(date);
         user.setAdmin(false);
         String pass = user.getPassword();
-        //String sha256hex = HashingHelper.HashPassword(pass);
-        String sha256hex = "HashingHelper.HashPassword(pass)";
+        String sha256hex = HashingHelper.HashPassword(pass);
         user.setPassword(sha256hex);
         Images img = user.getImage();
         if(img != null && !img.getImageUrl().isEmpty()){
