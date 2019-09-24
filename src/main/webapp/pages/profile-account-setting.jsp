@@ -1,4 +1,25 @@
-<%@ include file="header.jsp"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>WorkWise Html Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/line-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/line-awesome-font-awesome.min.css">
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
 
 <body>
 
@@ -8,7 +29,7 @@
 			<div class="container">
 				<div class="header-data">
 					<div class="logo">
-						<a href="index.jsp" title=""><img src="images/logo.png" alt=""></a>
+						<a href="index.html" title=""><img src="images/logo.png" alt=""></a>
 					</div><!--logo end-->
 					<div class="search-bar">
 						<form>
@@ -19,52 +40,52 @@
 					<nav>
 						<ul>
 							<li>
-								<a href="index.jsp" title="">
+								<a href="index.html" title="">
 									<span><img src="images/icon1.png" alt=""></span>
 									Home
 								</a>
 							</li>
 							<li>
-								<a href="companies.jsp" title="">
+								<a href="companies.html" title="">
 									<span><img src="images/icon2.png" alt=""></span>
 									Companies
 								</a>
 								<ul>
-									<li><a href="companies.jsp" title="">Companies</a></li>
-									<li><a href="company-profile.jsp" title="">Company Profile</a></li>
+									<li><a href="companies.html" title="">Companies</a></li>
+									<li><a href="company-profile.html" title="">Company Profile</a></li>
 								</ul>
 							</li>
 							<li>
-								<a href="projects.jsp" title="">
+								<a href="projects.html" title="">
 									<span><img src="images/icon3.png" alt=""></span>
 									Projects
 								</a>
 							</li>
 							<li>
-								<a href="profiles.jsp" title="">
+								<a href="profiles.html" title="">
 									<span><img src="images/icon4.png" alt=""></span>
 									Profiles
 								</a>
 								<ul>
-									<li><a href="user-profile.jsp" title="">User Profile</a></li>
-									<li><a href="my-profile-feed.jsp" title="">my-profile-feed</a></li>
+									<li><a href="user-profile.html" title="">User Profile</a></li>
+									<li><a href="my-profile-feed.html" title="">my-profile-feed</a></li>
 								</ul>
 							</li>
 							<li>
-								<a href="jobs.jsp" title="">
+								<a href="jobs.html" title="">
 									<span><img src="images/icon5.png" alt=""></span>
 									Jobs
 								</a>
 							</li>
 							<li>
-								<a href="profile-account-setting.jsp#" title="" class="not-box-openm">
+								<a href="profile-account-setting.html#" title="" class="not-box-openm">
 									<span><img src="images/icon6.png" alt=""></span>
 									Messages
 								</a>
 								<div class="notification-box msg" id="message">
 									<div class="nt-title">
 										<h4>Setting</h4>
-										<a href="profile-account-setting.jsp#" title="">Clear all</a>
+										<a href="profile-account-setting.html#" title="">Clear all</a>
 									</div>
 									<div class="nott-list">
 										<div class="notfication-details">
@@ -72,7 +93,7 @@
 							  					<img src="images/resources/ny-img1.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="messages.jsp" title="">Jassica William</a> </h3>
+							  					<h3><a href="messages.html" title="">Jassica William</a> </h3>
 							  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
@@ -82,7 +103,7 @@
 							  					<img src="images/resources/ny-img2.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="messages.jsp" title="">Jassica William</a></h3>
+							  					<h3><a href="messages.html" title="">Jassica William</a></h3>
 							  					<p>Lorem ipsum dolor sit amet.</p>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
@@ -92,26 +113,26 @@
 							  					<img src="images/resources/ny-img3.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="messages.jsp" title="">Jassica William</a></h3>
+							  					<h3><a href="messages.html" title="">Jassica William</a></h3>
 							  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
 						  				<div class="view-all-nots">
-						  					<a href="messages.jsp" title="">View All Messsages</a>
+						  					<a href="messages.html" title="">View All Messsages</a>
 						  				</div>
 									</div><!--nott-list end-->
 								</div><!--notification-box end-->
 							</li>
 							<li>
-								<a href="profile-account-setting.jsp#" title="" class="not-box-open">
+								<a href="profile-account-setting.html#" title="" class="not-box-open">
 									<span><img src="images/icon7.png" alt=""></span>
 									Notification
 								</a>
 								<div class="notification-box noti" id="notification">
 									<div class="nt-title">
 										<h4>Setting</h4>
-										<a href="profile-account-setting.jsp#" title="">Clear all</a>
+										<a href="profile-account-setting.html#" title="">Clear all</a>
 									</div>
 									<div class="nott-list">
 										<div class="notfication-details">
@@ -119,7 +140,7 @@
 							  					<img src="images/resources/ny-img1.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="profile-account-setting.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="profile-account-setting.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
@@ -128,7 +149,7 @@
 							  					<img src="images/resources/ny-img2.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="profile-account-setting.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="profile-account-setting.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
@@ -137,7 +158,7 @@
 							  					<img src="images/resources/ny-img3.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="profile-account-setting.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="profile-account-setting.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
@@ -146,12 +167,12 @@
 							  					<img src="images/resources/ny-img2.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="profile-account-setting.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="profile-account-setting.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
 						  				<div class="view-all-nots">
-						  					<a href="profile-account-setting.jsp#" title="">View All Notification</a>
+						  					<a href="profile-account-setting.html#" title="">View All Notification</a>
 						  				</div>
 									</div><!--nott-list end-->
 								</div><!--notification-box end-->
@@ -159,12 +180,12 @@
 						</ul>
 					</nav><!--nav end-->
 					<div class="menu-btn">
-						<a href="profile-account-setting.jsp#" title=""><i class="fa fa-bars"></i></a>
+						<a href="profile-account-setting.html#" title=""><i class="fa fa-bars"></i></a>
 					</div><!--menu-btn end-->
 					<div class="user-account">
 						<div class="user-info">
 							<img src="images/resources/user.png" alt="">
-							<a href="profile-account-setting.jsp#" title="">John</a>
+							<a href="profile-account-setting.html#" title="">John</a>
 							<i class="la la-sort-down"></i>
 						</div>
 						<div class="user-account-settingss">
@@ -198,10 +219,10 @@
 							</div><!--search_form end-->
 							<h3>Setting</h3>
 							<ul class="us-links">
-								<li><a href="profile-account-setting.jsp" title="">Account Setting</a></li>
-								<li><a href="profile-account-setting.jsp#" title="">Privacy</a></li>
-								<li><a href="profile-account-setting.jsp#" title="">Faqs</a></li>
-								<li><a href="profile-account-setting.jsp#" title="">Terms & Conditions</a></li>
+								<li><a href="profile-account-setting.html" title="">Account Setting</a></li>
+								<li><a href="profile-account-setting.html#" title="">Privacy</a></li>
+								<li><a href="profile-account-setting.html#" title="">Faqs</a></li>
+								<li><a href="profile-account-setting.html#" title="">Terms & Conditions</a></li>
 							</ul>
 							<h3 class="tc"><a href="sign-in.jsp" title="">Logout</a></h3>
 						</div><!--user-account-settingss end-->
@@ -218,15 +239,15 @@
 						<div class="col-lg-3">
 							<div class="acc-leftbar">
 								<div class="nav nav-tabs" id="nav-tab" role="tablist">
-								    <a class="nav-item nav-link active" id="nav-acc-tab" data-toggle="tab" href="profile-account-setting.jsp#nav-acc" role="tab" aria-controls="nav-acc" aria-selected="true"><i class="la la-cogs"></i>Account Setting</a>
-								    <a class="nav-item nav-link" id="nav-status-tab" data-toggle="tab" href="profile-account-setting.jsp#nav-status" role="tab" aria-controls="nav-status" aria-selected="false"><i class="fa fa-line-chart"></i>Status</a>
-								    <a class="nav-item nav-link" id="nav-password-tab" data-toggle="tab" href="profile-account-setting.jsp#nav-password" role="tab" aria-controls="nav-password" aria-selected="false"><i class="fa fa-lock"></i>Change Password</a>
-								    <a class="nav-item nav-link" id="nav-notification-tab" data-toggle="tab" href="profile-account-setting.jsp#nav-notification" role="tab" aria-controls="nav-notification" aria-selected="false"><i class="fa fa-flash"></i>Notifications</a>
-								    <a class="nav-item nav-link" id="nav-privcy-tab" data-toggle="tab" href="profile-account-setting.jsp#privcy" role="tab" aria-controls="privacy" aria-selected="false"><i class="fa fa-group"></i>Requests</a>
-								    <a class="nav-item nav-link" id="security" data-toggle="tab" href="profile-account-setting.jsp#security-login" role="tab" aria-controls="security-login" aria-selected="false"><i class="fa fa-user-secret"></i>Security and Login</a>
-								    <a class="nav-item nav-link" id="nav-privacy-tab" data-toggle="tab" href="profile-account-setting.jsp#privacy" role="tab" aria-controls="privacy" aria-selected="false"><i class="fa fa-paw"></i>Privacy</a>
-								    <a class="nav-item nav-link" id="nav-blockking-tab" data-toggle="tab" href="profile-account-setting.jsp#blockking" role="tab" aria-controls="blockking" aria-selected="false"><i class="fa fa-cc-diners-club"></i>Blocking</a>
-								    <a class="nav-item nav-link" id="nav-deactivate-tab" data-toggle="tab" href="profile-account-setting.jsp#nav-deactivate" role="tab" aria-controls="nav-deactivate" aria-selected="false"><i class="fa fa-random"></i>Deactivate Account</a>
+								    <a class="nav-item nav-link active" id="nav-acc-tab" data-toggle="tab" href="profile-account-setting.html#nav-acc" role="tab" aria-controls="nav-acc" aria-selected="true"><i class="la la-cogs"></i>Account Setting</a>
+								    <a class="nav-item nav-link" id="nav-status-tab" data-toggle="tab" href="profile-account-setting.html#nav-status" role="tab" aria-controls="nav-status" aria-selected="false"><i class="fa fa-line-chart"></i>Status</a>
+								    <a class="nav-item nav-link" id="nav-password-tab" data-toggle="tab" href="profile-account-setting.html#nav-password" role="tab" aria-controls="nav-password" aria-selected="false"><i class="fa fa-lock"></i>Change Password</a>
+								    <a class="nav-item nav-link" id="nav-notification-tab" data-toggle="tab" href="profile-account-setting.html#nav-notification" role="tab" aria-controls="nav-notification" aria-selected="false"><i class="fa fa-flash"></i>Notifications</a>
+								    <a class="nav-item nav-link" id="nav-privcy-tab" data-toggle="tab" href="profile-account-setting.html#privcy" role="tab" aria-controls="privacy" aria-selected="false"><i class="fa fa-group"></i>Requests</a>
+								    <a class="nav-item nav-link" id="security" data-toggle="tab" href="profile-account-setting.html#security-login" role="tab" aria-controls="security-login" aria-selected="false"><i class="fa fa-user-secret"></i>Security and Login</a>
+								    <a class="nav-item nav-link" id="nav-privacy-tab" data-toggle="tab" href="profile-account-setting.html#privacy" role="tab" aria-controls="privacy" aria-selected="false"><i class="fa fa-paw"></i>Privacy</a>
+								    <a class="nav-item nav-link" id="nav-blockking-tab" data-toggle="tab" href="profile-account-setting.html#blockking" role="tab" aria-controls="blockking" aria-selected="false"><i class="fa fa-cc-diners-club"></i>Blocking</a>
+								    <a class="nav-item nav-link" id="nav-deactivate-tab" data-toggle="tab" href="profile-account-setting.html#nav-deactivate" role="tab" aria-controls="nav-deactivate" aria-selected="false"><i class="fa fa-random"></i>Deactivate Account</a>
 								  </div>
 							</div><!--acc-leftbar end-->
 						</div>
@@ -361,7 +382,7 @@
 												</div>
 											</div>
 											<div class="cp-field">
-												<h5><a href="profile-account-setting.jsp#" title="">Forgot Password?</a></h5>
+												<h5><a href="profile-account-setting.html#" title="">Forgot Password?</a></h5>
 											</div>
 											<div class="save-stngs pd2">
 												<ul>
@@ -381,7 +402,7 @@
 								  					<img src="images/resources/ny-img1.png" alt="">
 								  				</div>
 								  				<div class="notification-info">
-								  					<h3><a href="profile-account-setting.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+								  					<h3><a href="profile-account-setting.html#" title="">Jassica William</a> Comment on your project.</h3>
 								  					<span>2 min ago</span>
 								  				</div><!--notification-info -->
 							  				</div><!--notfication-details end-->
@@ -390,7 +411,7 @@
 								  					<img src="images/resources/ny-img2.png" alt="">
 								  				</div>
 								  				<div class="notification-info">
-								  					<h3><a href="profile-account-setting.jsp#" title="">Poonam Verma</a> Bid on your Latest project.</h3>
+								  					<h3><a href="profile-account-setting.html#" title="">Poonam Verma</a> Bid on your Latest project.</h3>
 								  					<span>2 min ago</span>
 								  				</div><!--notification-info -->
 							  				</div><!--notfication-details end-->
@@ -399,7 +420,7 @@
 								  					<img src="images/resources/ny-img3.png" alt="">
 								  				</div>
 								  				<div class="notification-info">
-								  					<h3><a href="profile-account-setting.jsp#" title="">Tonney Dhman</a> Comment on your project.</h3>
+								  					<h3><a href="profile-account-setting.html#" title="">Tonney Dhman</a> Comment on your project.</h3>
 								  					<span>2 min ago</span>
 								  				</div><!--notification-info -->
 							  				</div><!--notfication-details end-->
@@ -408,7 +429,7 @@
 								  					<img src="images/resources/ny-img1.png" alt="">
 								  				</div>
 								  				<div class="notification-info">
-								  					<h3><a href="profile-account-setting.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+								  					<h3><a href="profile-account-setting.html#" title="">Jassica William</a> Comment on your project.</h3>
 								  					<span>2 min ago</span>
 								  				</div><!--notification-info -->
 							  				</div><!--notfication-details end-->
@@ -417,7 +438,7 @@
 								  					<img src="images/resources/ny-img1.png" alt="">
 								  				</div>
 								  				<div class="notification-info">
-								  					<h3><a href="profile-account-setting.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+								  					<h3><a href="profile-account-setting.html#" title="">Jassica William</a> Comment on your project.</h3>
 								  					<span>2 min ago</span>
 								  				</div><!--notification-info -->
 							  				</div><!--notfication-details end-->
@@ -426,7 +447,7 @@
 								  					<img src="images/resources/ny-img2.png" alt="">
 								  				</div>
 								  				<div class="notification-info">
-								  					<h3><a href="profile-account-setting.jsp#" title="">Poonam Verma </a> Bid on your Latest project.</h3>
+								  					<h3><a href="profile-account-setting.html#" title="">Poonam Verma </a> Bid on your Latest project.</h3>
 								  					<span>2 min ago</span>
 								  				</div><!--notification-info -->
 							  				</div><!--notfication-details end-->
@@ -435,7 +456,7 @@
 								  					<img src="images/resources/ny-img3.png" alt="">
 								  				</div>
 								  				<div class="notification-info">
-								  					<h3><a href="profile-account-setting.jsp#" title="">Tonney Dhman</a> Comment on your project</h3>
+								  					<h3><a href="profile-account-setting.html#" title="">Tonney Dhman</a> Comment on your project</h3>
 								  					<span>2 min ago</span>
 								  				</div><!--notification-info -->
 							  				</div><!--notfication-details end-->
@@ -444,7 +465,7 @@
 								  					<img src="images/resources/ny-img1.png" alt="">
 								  				</div>
 								  				<div class="notification-info">
-								  					<h3><a href="profile-account-setting.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+								  					<h3><a href="profile-account-setting.html#" title="">Jassica William</a> Comment on your project.</h3>
 								  					<span>2 min ago</span>
 								  				</div><!--notification-info -->
 							  				</div><!--notfication-details end-->
@@ -603,8 +624,8 @@
 			                     	</div>
 			                     </div>
 			                     <div class="btns">
-			                     	<a href="profile-account-setting.jsp#">Save</a>
-			                     	<a href="profile-account-setting.jsp#">Cancel</a>
+			                     	<a href="profile-account-setting.html#">Save</a>
+			                     	<a href="profile-account-setting.html#">Cancel</a>
 			                     </div>
 								</div> 
 							  	</div>
@@ -737,7 +758,7 @@
 			                     	<div class="row">
 			                     		<div class="col-12">
 			                     	<div class="dropdown privacydropd">
-                                                   <a href="profile-account-setting.jsp#" class="dropdown-toggle" data-toggle="dropdown">Who can see your email address</a>
+                                                   <a href="profile-account-setting.html#" class="dropdown-toggle" data-toggle="dropdown">Who can see your email address</a>
                                                    <div class="dropdown-menu">
                                                        		<p>Choose who can see your email address on your profile</p>
                                                        		 <div class="row">
@@ -769,7 +790,7 @@
 			                                <div class="row">
 			                     		<div class="col-12">
 			                     	<div class="dropdown privacydropd">
-                                                   <a href="profile-account-setting.jsp#" class="dropdown-toggle" data-toggle="dropdown">Who can see your Friends</a>
+                                                   <a href="profile-account-setting.html#" class="dropdown-toggle" data-toggle="dropdown">Who can see your Friends</a>
                                                    <div class="dropdown-menu">
                                                        		<p>Choose who can see your list of connections</p>
                                                        		 <div class="row">
@@ -801,7 +822,7 @@
 			                                <div class="row">
 			                     		<div class="col-12">
 			                     	<div class="dropdown privacydropd">
-                                                   <a href="profile-account-setting.jsp#" class="dropdown-toggle" data-toggle="dropdown">Manage who can discover your profile from your email address</a>
+                                                   <a href="profile-account-setting.html#" class="dropdown-toggle" data-toggle="dropdown">Manage who can discover your profile from your email address</a>
                                                    <div class="dropdown-menu">
                                                        		<p>Choose who can discover your profile if they are not connected to you but have your email address</p>
                                                        		 <div class="row">
@@ -833,7 +854,7 @@
 			                                <div class="row">
 			                     		<div class="col-12">
 			                     	<div class="dropdown privacydropd">
-                                                   <a href="profile-account-setting.jsp#" class="dropdown-toggle" data-toggle="dropdown">Search history</a>
+                                                   <a href="profile-account-setting.html#" class="dropdown-toggle" data-toggle="dropdown">Search history</a>
                                                    <div class="dropdown-menu">
                                                        		<p>Clear all previous searches performed on LinkedIn</p>
                                                        		 <div class="row">
@@ -845,7 +866,7 @@
 																</div>															
                                                             </form>
                                                              <div class="privabtns">
-                                                             <a href="profile-account-setting.jsp#">Clear All History</a>
+                                                             <a href="profile-account-setting.html#">Clear All History</a>
                                                          </div>
                                                        	</div>
                                                        </div>
@@ -857,7 +878,7 @@
 			                                <div class="row">
 			                     		<div class="col-12">
 			                     	<div class="dropdown privacydropd">
-                                                   <a href="profile-account-setting.jsp#" class="dropdown-toggle" data-toggle="dropdown">Sharing your profile when you click apply</a>
+                                                   <a href="profile-account-setting.html#" class="dropdown-toggle" data-toggle="dropdown">Sharing your profile when you click apply</a>
                                                    <div class="dropdown-menu">
                                                        		<p>Chose if you want to share your full profile with the job poster when you're taken off linkedin after clicking apply </p>
                                                        		 <div class="row">
@@ -885,8 +906,8 @@
 			                                <div class="row">
 			                                	<div class="col-12">
 			                                		<div class="privabtns">
-			                                			<a href="profile-account-setting.jsp#">Save</a>
-			                                			<a href="profile-account-setting.jsp#">Cancel</a>
+			                                			<a href="profile-account-setting.html#">Save</a>
+			                                			<a href="profile-account-setting.html#">Cancel</a>
 			                                		</div>
 			                                	</div>
 			                                </div>
@@ -943,15 +964,15 @@
 			<div class="footy-sec mn no-margin">
 				<div class="container">
 					<ul>
-						<li><a href="help-center.jsp" title="">Help Center</a></li>
-						<li><a href="about.jsp" title="">About</a></li>
-						<li><a href="profile-account-setting.jsp#" title="">Privacy Policy</a></li>
-						<li><a href="profile-account-setting.jsp#" title="">Community Guidelines</a></li>
-						<li><a href="profile-account-setting.jsp#" title="">Cookies Policy</a></li>
-						<li><a href="profile-account-setting.jsp#" title="">Career</a></li>
-						<li><a href="forum.jsp" title="">Forum</a></li>
-						<li><a href="profile-account-setting.jsp#" title="">Language</a></li>
-						<li><a href="profile-account-setting.jsp#" title="">Copyright Policy</a></li>
+						<li><a href="help-center.html" title="">Help Center</a></li>
+						<li><a href="about.html" title="">About</a></li>
+						<li><a href="profile-account-setting.html#" title="">Privacy Policy</a></li>
+						<li><a href="profile-account-setting.html#" title="">Community Guidelines</a></li>
+						<li><a href="profile-account-setting.html#" title="">Cookies Policy</a></li>
+						<li><a href="profile-account-setting.html#" title="">Career</a></li>
+						<li><a href="forum.html" title="">Forum</a></li>
+						<li><a href="profile-account-setting.html#" title="">Language</a></li>
+						<li><a href="profile-account-setting.html#" title="">Copyright Policy</a></li>
 					</ul>
 					<p><img src="images/copy-icon2.png" alt="">Copyright 2019</p>
 					<img class="fl-rgt" src="images/logo2.png" alt="">
@@ -960,6 +981,16 @@
 		</footer>
 
 	</div><!--theme-layout end-->
-<%@ include file="scripts.jsp"%>
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="lib/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+
 </body>
 </html>

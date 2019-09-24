@@ -1,4 +1,25 @@
-<%@ include file="header.jsp"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>WorkWise Html Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/flatpickr.min.css">
+	<link rel="stylesheet" type="text/css" href="css/line-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/line-awesome-font-awesome.min.css">
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+
 <body>
 	
 
@@ -7,7 +28,7 @@
 			<div class="container">
 				<div class="header-data">
 					<div class="logo">
-						<a href="index.jsp" title=""><img src="images/logo.png" alt=""></a>
+						<a href="index.html" title=""><img src="images/logo.png" alt=""></a>
 					</div><!--logo end-->
 					<div class="search-bar">
 						<form>
@@ -18,52 +39,52 @@
 					<nav>
 						<ul>
 							<li>
-								<a href="index.jsp" title="">
+								<a href="index.html" title="">
 									<span><img src="images/icon1.png" alt=""></span>
 									Home
 								</a>
 							</li>
 							<li>
-								<a href="companies.jsp" title="">
+								<a href="companies.html" title="">
 									<span><img src="images/icon2.png" alt=""></span>
 									Companies
 								</a>
 								<ul>
-									<li><a href="companies.jsp" title="">Companies</a></li>
-									<li><a href="company-profile.jsp" title="">Company Profile</a></li>
+									<li><a href="companies.html" title="">Companies</a></li>
+									<li><a href="company-profile.html" title="">Company Profile</a></li>
 								</ul>
 							</li>
 							<li>
-								<a href="projects.jsp" title="">
+								<a href="projects.html" title="">
 									<span><img src="images/icon3.png" alt=""></span>
 									Projects
 								</a>
 							</li>
 							<li>
-								<a href="profiles.jsp" title="">
+								<a href="profiles.html" title="">
 									<span><img src="images/icon4.png" alt=""></span>
 									Profiles
 								</a>
 								<ul>
-									<li><a href="user-profile.jsp" title="">User Profile</a></li>
-									<li><a href="my-profile-feed.jsp" title="">my-profile-feed</a></li>
+									<li><a href="user-profile.html" title="">User Profile</a></li>
+									<li><a href="my-profile-feed.html" title="">my-profile-feed</a></li>
 								</ul>
 							</li>
 							<li>
-								<a href="jobs.jsp" title="">
+								<a href="jobs.html" title="">
 									<span><img src="images/icon5.png" alt=""></span>
 									Jobs
 								</a>
 							</li>
 							<li>
-								<a href="my-profile-feed.jsp#" title="" class="not-box-openm">
+								<a href="my-profile-feed.html#" title="" class="not-box-openm">
 									<span><img src="images/icon6.png" alt=""></span>
 									Messages
 								</a>
 								<div class="notification-box msg" id="message">
 									<div class="nt-title">
 										<h4>Setting</h4>
-										<a href="my-profile-feed.jsp#" title="">Clear all</a>
+										<a href="my-profile-feed.html#" title="">Clear all</a>
 									</div>
 									<div class="nott-list">
 										<div class="notfication-details">
@@ -71,7 +92,7 @@
 							  					<img src="images/resources/ny-img1.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="messages.jsp" title="">Jassica William</a> </h3>
+							  					<h3><a href="messages.html" title="">Jassica William</a> </h3>
 							  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
@@ -81,7 +102,7 @@
 							  					<img src="images/resources/ny-img2.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="messages.jsp" title="">Jassica William</a></h3>
+							  					<h3><a href="messages.html" title="">Jassica William</a></h3>
 							  					<p>Lorem ipsum dolor sit amet.</p>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
@@ -91,26 +112,26 @@
 							  					<img src="images/resources/ny-img3.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="messages.jsp" title="">Jassica William</a></h3>
+							  					<h3><a href="messages.html" title="">Jassica William</a></h3>
 							  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
 						  				<div class="view-all-nots">
-						  					<a href="messages.jsp" title="">View All Messsages</a>
+						  					<a href="messages.html" title="">View All Messsages</a>
 						  				</div>
 									</div><!--nott-list end-->
 								</div><!--notification-box end-->
 							</li>
 							<li>
-								<a href="my-profile-feed.jsp#" title="" class="not-box-open">
+								<a href="my-profile-feed.html#" title="" class="not-box-open">
 									<span><img src="images/icon7.png" alt=""></span>
 									Notification
 								</a>
 								<div class="notification-box noti" id="notification">
 									<div class="nt-title">
 										<h4>Setting</h4>
-										<a href="my-profile-feed.jsp#" title="">Clear all</a>
+										<a href="my-profile-feed.html#" title="">Clear all</a>
 									</div>
 									<div class="nott-list">
 										<div class="notfication-details">
@@ -118,7 +139,7 @@
 							  					<img src="images/resources/ny-img1.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="my-profile-feed.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="my-profile-feed.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
@@ -127,7 +148,7 @@
 							  					<img src="images/resources/ny-img2.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="my-profile-feed.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="my-profile-feed.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
@@ -136,7 +157,7 @@
 							  					<img src="images/resources/ny-img3.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="my-profile-feed.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="my-profile-feed.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
@@ -145,12 +166,12 @@
 							  					<img src="images/resources/ny-img2.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="my-profile-feed.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="my-profile-feed.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
 						  				<div class="view-all-nots">
-						  					<a href="my-profile-feed.jsp#" title="">View All Notification</a>
+						  					<a href="my-profile-feed.html#" title="">View All Notification</a>
 						  				</div>
 									</div><!--nott-list end-->
 								</div><!--notification-box end-->
@@ -158,12 +179,12 @@
 						</ul>
 					</nav><!--nav end-->
 					<div class="menu-btn">
-						<a href="my-profile-feed.jsp#" title=""><i class="fa fa-bars"></i></a>
+						<a href="my-profile-feed.html#" title=""><i class="fa fa-bars"></i></a>
 					</div><!--menu-btn end-->
 					<div class="user-account">
 						<div class="user-info">
 							<img src="images/resources/user.png" alt="">
-							<a href="my-profile-feed.jsp#" title="">John</a>
+							<a href="my-profile-feed.html#" title="">John</a>
 							<i class="la la-sort-down"></i>
 						</div>
 						<div class="user-account-settingss">
@@ -197,10 +218,10 @@
 							</div><!--search_form end-->
 							<h3>Setting</h3>
 							<ul class="us-links">
-								<li><a href="profile-account-setting.jsp" title="">Account Setting</a></li>
-								<li><a href="my-profile-feed.jsp#" title="">Privacy</a></li>
-								<li><a href="my-profile-feed.jsp#" title="">Faqs</a></li>
-								<li><a href="my-profile-feed.jsp#" title="">Terms & Conditions</a></li>
+								<li><a href="profile-account-setting.html" title="">Account Setting</a></li>
+								<li><a href="my-profile-feed.html#" title="">Privacy</a></li>
+								<li><a href="my-profile-feed.html#" title="">Faqs</a></li>
+								<li><a href="my-profile-feed.html#" title="">Terms & Conditions</a></li>
 							</ul>
 							<h3 class="tc"><a href="sign-in.jsp" title="">Logout</a></h3>
 						</div><!--user-account-settingss end-->
@@ -253,14 +274,14 @@
 											</ul>
 										</div><!--user_pro_status end-->
 										<ul class="social_links">
-											<li><a href="my-profile-feed.jsp#" title=""><i class="la la-globe"></i> www.example.com</a></li>
-											<li><a href="my-profile-feed.jsp#" title=""><i class="fa fa-facebook-square"></i> Http://www.facebook.com/john...</a></li>
-											<li><a href="my-profile-feed.jsp#" title=""><i class="fa fa-twitter"></i> Http://www.Twitter.com/john...</a></li>
-											<li><a href="my-profile-feed.jsp#" title=""><i class="fa fa-google-plus-square"></i> Http://www.googleplus.com/john...</a></li>
-											<li><a href="my-profile-feed.jsp#" title=""><i class="fa fa-behance-square"></i> Http://www.behance.com/john...</a></li>
-											<li><a href="my-profile-feed.jsp#" title=""><i class="fa fa-pinterest"></i> Http://www.pinterest.com/john...</a></li>
-											<li><a href="my-profile-feed.jsp#" title=""><i class="fa fa-instagram"></i> Http://www.instagram.com/john...</a></li>
-											<li><a href="my-profile-feed.jsp#" title=""><i class="fa fa-youtube"></i> Http://www.youtube.com/john...</a></li>
+											<li><a href="my-profile-feed.html#" title=""><i class="la la-globe"></i> www.example.com</a></li>
+											<li><a href="my-profile-feed.html#" title=""><i class="fa fa-facebook-square"></i> Http://www.facebook.com/john...</a></li>
+											<li><a href="my-profile-feed.html#" title=""><i class="fa fa-twitter"></i> Http://www.Twitter.com/john...</a></li>
+											<li><a href="my-profile-feed.html#" title=""><i class="fa fa-google-plus-square"></i> Http://www.googleplus.com/john...</a></li>
+											<li><a href="my-profile-feed.html#" title=""><i class="fa fa-behance-square"></i> Http://www.behance.com/john...</a></li>
+											<li><a href="my-profile-feed.html#" title=""><i class="fa fa-pinterest"></i> Http://www.pinterest.com/john...</a></li>
+											<li><a href="my-profile-feed.html#" title=""><i class="fa fa-instagram"></i> Http://www.instagram.com/john...</a></li>
+											<li><a href="my-profile-feed.html#" title=""><i class="fa fa-youtube"></i> Http://www.youtube.com/john...</a></li>
 										</ul>
 									</div><!--user_profile end-->
 									<div class="suggestions full-width">
@@ -318,7 +339,7 @@
 												<span><i class="la la-plus"></i></span>
 											</div>
 											<div class="view-more">
-												<a href="my-profile-feed.jsp#" title="">View More</a>
+												<a href="my-profile-feed.html#" title="">View More</a>
 											</div>
 										</div><!--suggestions-list end-->
 									</div><!--suggestions end-->
@@ -337,48 +358,48 @@
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star-half-o"></i></li>
 											</ul>
-											<a href="my-profile-feed.jsp#" title="">Status</a>
+											<a href="my-profile-feed.html#" title="">Status</a>
 										</div><!--star-descp end-->
                                             <div class="tab-feed st2 settingjb">
 											<ul>
 												<li data-tab="feed-dd" class="active">
-													<a href="my-profile-feed.jsp#" title="">
+													<a href="my-profile-feed.html#" title="">
 														<img src="images/ic1.png" alt="">
 														<span>Feed</span>
 													</a>
 												</li>
 												<li data-tab="info-dd">
-													<a href="my-profile-feed.jsp#" title="">
+													<a href="my-profile-feed.html#" title="">
 														<img src="images/ic2.png" alt="">
 														<span>Info</span>
 													</a>
 												</li>
 												<li data-tab="saved-jobs">
-													<a href="my-profile-feed.jsp#" title="">
+													<a href="my-profile-feed.html#" title="">
 														<img src="images/ic4.png" alt="">
 														<span>Jobs</span>
 													</a>
 												</li>
 												<li data-tab="my-bids">
-													<a href="my-profile-feed.jsp#" title="">
+													<a href="my-profile-feed.html#" title="">
 														<img src="images/ic5.png" alt="">
 														<span>Bids</span>
 													</a>
 												</li>
 												<li data-tab="portfolio-dd">
-													<a href="my-profile-feed.jsp#" title="">
+													<a href="my-profile-feed.html#" title="">
 														<img src="images/ic3.png" alt="">
 														<span>Portfolio</span>
 													</a>
 												</li>
 												<li data-tab="rewivewdata">
-													<a href="my-profile-feed.jsp#" title="">
+													<a href="my-profile-feed.html#" title="">
 														<img src="images/review.png" alt="">
 														<span>Reviews</span>
 													</a>
 												</li>
 												<li data-tab="payment-dd">
-													<a href="my-profile-feed.jsp#" title="">
+													<a href="my-profile-feed.html#" title="">
 														<img src="images/ic6.png" alt="">
 														<span>Payment</span>
 													</a>
@@ -390,16 +411,16 @@
 									<div class="product-feed-tab" id="saved-jobs">
 										<ul class="nav nav-tabs" id="myTab" role="tablist">
                                            <li class="nav-item">
-                                             <a class="nav-link active" id="mange-tab" data-toggle="tab" href="my-profile-feed.jsp#mange" role="tab" aria-controls="home" aria-selected="true">Manage Jobs</a>
+                                             <a class="nav-link active" id="mange-tab" data-toggle="tab" href="my-profile-feed.html#mange" role="tab" aria-controls="home" aria-selected="true">Manage Jobs</a>
                                            </li>
                                            <li class="nav-item">
-                                             <a class="nav-link" id="saved-tab" data-toggle="tab" href="my-profile-feed.jsp#saved" role="tab" aria-controls="profile" aria-selected="false">Saved Jobs</a>
+                                             <a class="nav-link" id="saved-tab" data-toggle="tab" href="my-profile-feed.html#saved" role="tab" aria-controls="profile" aria-selected="false">Saved Jobs</a>
                                            </li>
                                            <li class="nav-item">
-                                             <a class="nav-link" id="contact-tab" data-toggle="tab" href="my-profile-feed.jsp#applied" role="tab" aria-controls="applied" aria-selected="false">Applied Jobs</a>
+                                             <a class="nav-link" id="contact-tab" data-toggle="tab" href="my-profile-feed.html#applied" role="tab" aria-controls="applied" aria-selected="false">Applied Jobs</a>
                                            </li>
                                            <li class="nav-item">
-                                             <a class="nav-link" id="cadidates-tab" data-toggle="tab" href="my-profile-feed.jsp#cadidates" role="tab" aria-controls="contact" aria-selected="false">Applied cadidates</a>
+                                             <a class="nav-link" id="cadidates-tab" data-toggle="tab" href="my-profile-feed.html#cadidates" role="tab" aria-controls="contact" aria-selected="false">Applied cadidates</a>
                                            </li>
                                          </ul>
                                          <div class="tab-content" id="myTabContent">
@@ -418,18 +439,18 @@
                                                                     <button type="button" class="btn btn-primary">
                                                                         <span class="badge badge-light">3</span>Candidates
                                                                     </button>
-                                                                    <a href="my-profile-feed.jsp#">
+                                                                    <a href="my-profile-feed.html#">
 																		<i class="far fa-edit"></i>
                                                                     </a>
-                                                                    <a href="my-profile-feed.jsp#">
+                                                                    <a href="my-profile-feed.html#">
                                                                         <i class="far fa-trash-alt"></i>
                                                                     </a>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 col-sm-12">
                                                                 <ul class="bk-links bklink">
-                                                                    <li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-                                                                    <li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
+                                                                    <li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+                                                                    <li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -449,18 +470,18 @@
                                                                     <button type="button" class="btn btn-primary">
                                                                         <span class="badge badge-light">3</span>Candidates
                                                                     </button>
-																	<a href="my-profile-feed.jsp#">
+																	<a href="my-profile-feed.html#">
 																		<i class="far fa-edit"></i>
                                                                     </a>
-                                                                    <a href="my-profile-feed.jsp#">
+                                                                    <a href="my-profile-feed.html#">
                                                                         <i class="far fa-trash-alt"></i>
                                                                     </a>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 col-sm-12">
                                                                 <ul class="bk-links bklink">
-                                                                    <li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-                                                                    <li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
+                                                                    <li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+                                                                    <li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -487,15 +508,15 @@
                                                                     <button type="button" class="btn btn-primary">
                                                                         <span class="badge badge-light">3</span>Candidates
                                                                     </button>																	
-                                                                    <a href="my-profile-feed.jsp#">
+                                                                    <a href="my-profile-feed.html#">
                                                                         <i class="far fa-trash-alt"></i>
                                                                     </a>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 col-sm-12">
                                                                 <ul class="bk-links bklink">
-                                                                    <li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-                                                                    <li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
+                                                                    <li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+                                                                    <li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -513,13 +534,13 @@
                                                             </div>
                                                         </div>
                                                         <div class="ed-opts">
-                                                            <a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                                            <a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
                                                             <ul class="ed-options">
-                                                                <li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Close</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Hide</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -541,8 +562,8 @@
                                                             <p>Open</p>
                                                         </li>
                                                         <div class="devepbtn saved-btn">
-                                                            <a class="clrbtn" href="my-profile-feed.jsp#">Unsaved</a>
-                                                            <a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
+                                                            <a class="clrbtn" href="my-profile-feed.html#">Unsaved</a>
+                                                            <a class="clrbtn" href="my-profile-feed.html#">Message</a>
                                                         </div>
                                                     </ul>
                                                 </div>
@@ -556,13 +577,13 @@
                                                             </div>
                                                         </div>
                                                         <div class="ed-opts">
-                                                            <a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                                            <a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
                                                             <ul class="ed-options">
-                                                                <li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Close</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Hide</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -584,8 +605,8 @@
                                                             <p>Open</p>
                                                         </li>
                                                         <div class="devepbtn saved-btn">
-                                                            <a class="clrbtn" href="my-profile-feed.jsp#">Unsaved</a>
-                                                            <a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
+                                                            <a class="clrbtn" href="my-profile-feed.html#">Unsaved</a>
+                                                            <a class="clrbtn" href="my-profile-feed.html#">Message</a>
                                                         </div>
                                                     </ul>
                                                 </div>
@@ -599,13 +620,13 @@
                                                             </div>
                                                         </div>
                                                         <div class="ed-opts">
-                                                            <a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                                            <a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
                                                             <ul class="ed-options">
-                                                                <li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Close</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Hide</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -627,8 +648,8 @@
                                                             <p>Open</p>
                                                         </li>
                                                         <div class="devepbtn saved-btn">
-                                                            <a class="clrbtn" href="my-profile-feed.jsp#">Unsaved</a>
-                                                            <a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
+                                                            <a class="clrbtn" href="my-profile-feed.html#">Unsaved</a>
+                                                            <a class="clrbtn" href="my-profile-feed.html#">Message</a>
                                                         </div>
                                                     </ul>
                                                 </div>
@@ -644,13 +665,13 @@
                                                             </div>
                                                         </div>
                                                         <div class="ed-opts">
-                                                            <a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                                            <a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
                                                             <ul class="ed-options">
-                                                                <li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Close</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Hide</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -672,9 +693,9 @@
                                                             <p>Open</p>
                                                         </li>
                                                         <div class="devepbtn saved-btn">
-                                                            <a class="clrbtn" href="my-profile-feed.jsp#">Applied</a>
-                                                            <a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
-                                                            <a href="my-profile-feed.jsp#">
+                                                            <a class="clrbtn" href="my-profile-feed.html#">Applied</a>
+                                                            <a class="clrbtn" href="my-profile-feed.html#">Message</a>
+                                                            <a href="my-profile-feed.html#">
                                                                 <i class="far fa-trash-alt"></i>
                                                             </a>
                                                         </div>
@@ -690,13 +711,13 @@
                                                             </div>
                                                         </div>
                                                         <div class="ed-opts">
-                                                            <a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                                            <a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
                                                             <ul class="ed-options">
-                                                                <li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Close</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Hide</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -718,9 +739,9 @@
                                                             <p>Open</p>
                                                         </li>
                                                         <div class="devepbtn saved-btn">
-                                                            <a class="clrbtn" href="my-profile-feed.jsp#">Applied</a>
-                                                            <a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
-                                                            <a href="my-profile-feed.jsp#">
+                                                            <a class="clrbtn" href="my-profile-feed.html#">Applied</a>
+                                                            <a class="clrbtn" href="my-profile-feed.html#">Message</a>
+                                                            <a href="my-profile-feed.html#">
                                                                 <i class="far fa-trash-alt"></i>
                                                             </a>
                                                         </div>
@@ -736,13 +757,13 @@
                                                             </div>
                                                         </div>
                                                         <div class="ed-opts">
-                                                            <a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                                            <a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
                                                             <ul class="ed-options">
-                                                                <li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Close</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Hide</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -764,9 +785,9 @@
                                                             <p>Open</p>
                                                         </li>
                                                         <div class="devepbtn saved-btn">
-                                                            <a class="clrbtn" href="my-profile-feed.jsp#">Applied</a>
-                                                            <a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
-                                                            <a href="my-profile-feed.jsp#">
+                                                            <a class="clrbtn" href="my-profile-feed.html#">Applied</a>
+                                                            <a class="clrbtn" href="my-profile-feed.html#">Message</a>
+                                                            <a href="my-profile-feed.html#">
                                                                 <i class="far fa-trash-alt"></i>
                                                             </a>
                                                         </div>
@@ -789,13 +810,13 @@
                                                             </div>
                                                         </div>
                                                         <div class="ed-opts">
-                                                            <a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                                            <a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
                                                             <ul class="ed-options">
-                                                                <li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Accept</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Accept</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Close</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Hide</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="job_descp noborder">
@@ -806,14 +827,14 @@
                                                                     <li><i class="fa fa-star"></i></li>
                                                                     <li><i class="fa fa-star"></i></li>
                                                                     <li><i class="fa fa-star-half-o"></i></li>
-                                                                    <a href="my-profile-feed.jsp#" title="">5.0 of 5 Reviews</a>
+                                                                    <a href="my-profile-feed.html#" title="">5.0 of 5 Reviews</a>
                                                                 </ul>
                                                             </div>
                                                             <div class="devepbtn appliedinfo noreply">
-                                                                <a class="clrbtn" href="my-profile-feed.jsp#">Accept</a>
-                                                                <a class="clrbtn" href="my-profile-feed.jsp#">View Profile</a>
-                                                                <a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
-                                                                <a href="my-profile-feed.jsp#">
+                                                                <a class="clrbtn" href="my-profile-feed.html#">Accept</a>
+                                                                <a class="clrbtn" href="my-profile-feed.html#">View Profile</a>
+                                                                <a class="clrbtn" href="my-profile-feed.html#">Message</a>
+                                                                <a href="my-profile-feed.html#">
                                                                     <i class="far fa-trash-alt"></i>
                                                                 </a>
                                                             </div>
@@ -835,13 +856,13 @@
                                                             </div>
                                                         </div>
                                                         <div class="ed-opts">
-                                                            <a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                                            <a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
                                                             <ul class="ed-options">
-                                                                <li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Accept</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Accept</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Close</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Hide</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="job_descp noborder">
@@ -852,14 +873,14 @@
                                                                     <li><i class="fa fa-star"></i></li>
                                                                     <li><i class="fa fa-star"></i></li>
                                                                     <li><i class="fa fa-star-half-o"></i></li>
-                                                                    <a href="my-profile-feed.jsp#" title="">5.0 of 5 Reviews</a>
+                                                                    <a href="my-profile-feed.html#" title="">5.0 of 5 Reviews</a>
                                                                 </ul>
                                                             </div>
                                                             <div class="devepbtn appliedinfo noreply">
-                                                                <a class="clrbtn" href="my-profile-feed.jsp#">Accept</a>
-                                                                <a class="clrbtn" href="my-profile-feed.jsp#">View Profile</a>
-                                                                <a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
-                                                                <a href="my-profile-feed.jsp#">
+                                                                <a class="clrbtn" href="my-profile-feed.html#">Accept</a>
+                                                                <a class="clrbtn" href="my-profile-feed.html#">View Profile</a>
+                                                                <a class="clrbtn" href="my-profile-feed.html#">Message</a>
+                                                                <a href="my-profile-feed.html#">
                                                                     <i class="far fa-trash-alt"></i>
                                                                 </a>
                                                             </div>
@@ -881,13 +902,13 @@
                                                             </div>
                                                         </div>
                                                         <div class="ed-opts">
-                                                            <a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                                            <a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
                                                             <ul class="ed-options">
-                                                                <li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Accept</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-                                                                <li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Accept</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Close</a></li>
+                                                                <li><a href="my-profile-feed.html#" title="">Hide</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="job_descp noborder">
@@ -898,14 +919,14 @@
                                                                     <li><i class="fa fa-star"></i></li>
                                                                     <li><i class="fa fa-star"></i></li>
                                                                     <li><i class="fa fa-star-half-o"></i></li>
-                                                                    <a href="my-profile-feed.jsp#" title="">5.0 of 5 Reviews</a>
+                                                                    <a href="my-profile-feed.html#" title="">5.0 of 5 Reviews</a>
                                                                 </ul>
                                                             </div>
                                                             <div class="devepbtn appliedinfo noreply">
-                                                                <a class="clrbtn" href="my-profile-feed.jsp#">Accept</a>
-                                                                <a class="clrbtn" href="my-profile-feed.jsp#">View Profile</a>
-                                                                <a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
-                                                                <a href="my-profile-feed.jsp#">
+                                                                <a class="clrbtn" href="my-profile-feed.html#">Accept</a>
+                                                                <a class="clrbtn" href="my-profile-feed.html#">View Profile</a>
+                                                                <a class="clrbtn" href="my-profile-feed.html#">Message</a>
+                                                                <a href="my-profile-feed.html#">
                                                                    <i class="far fa-trash-alt"></i>
                                                                 </a>
                                                             </div>
@@ -927,13 +948,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -943,35 +964,35 @@
 														<li><img src="images/icon9.png" alt=""><span>India</span></li>
 													</ul>
 													<ul class="bk-links">
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
 													</ul>
 												</div>
 												<div class="job_descp">
 													<h3>Senior Wordpress Developer</h3>
 													<ul class="job-dt">
-														<li><a href="my-profile-feed.jsp#" title="">Full Time</a></li>
+														<li><a href="my-profile-feed.html#" title="">Full Time</a></li>
 														<li><span>$30 / hr</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.jsp#" title="">view more</a></p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.html#" title="">view more</a></p>
 													<ul class="skill-tags">
-														<li><a href="my-profile-feed.jsp#" title="">HTML</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">PHP</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">CSS</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Javascript</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Wordpress</a></li>
+														<li><a href="my-profile-feed.html#" title="">HTML</a></li>
+														<li><a href="my-profile-feed.html#" title="">PHP</a></li>
+														<li><a href="my-profile-feed.html#" title="">CSS</a></li>
+														<li><a href="my-profile-feed.html#" title="">Javascript</a></li>
+														<li><a href="my-profile-feed.html#" title="">Wordpress</a></li> 	
 													</ul>
 												</div>
 												<div class="job-status-bar">
 													<ul class="like-com">
 														<li>
-															<a href="my-profile-feed.jsp#"><i class="fas fa-heart"></i> Like</a>
+															<a href="my-profile-feed.html#"><i class="fas fa-heart"></i> Like</a>
 															<img src="images/liked-img.png" alt="">
 															<span>25</span>
 														</li> 
-														<li><a href="my-profile-feed.jsp#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
+														<li><a href="my-profile-feed.html#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
 													</ul>
-													<a href="my-profile-feed.jsp#"><i class="fas fa-eye"></i>Views 50</a>
+													<a href="my-profile-feed.html#"><i class="fas fa-eye"></i>Views 50</a>
 												</div>
 											</div><!--post-bar end-->
 											<div class="post-bar">
@@ -984,13 +1005,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -1000,9 +1021,9 @@
 														<li><img src="images/icon9.png" alt=""><span>India</span></li>
 													</ul>
 													<ul class="bk-links">
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title="" class="bid_now">Bid Now</a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
+														<li><a href="my-profile-feed.html#" title="" class="bid_now">Bid Now</a></li>
 													</ul>
 												</div>
 												<div class="job_descp">
@@ -1010,25 +1031,25 @@
 													<ul class="job-dt">
 														<li><span>$300 - $350</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.jsp#" title="">view more</a></p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.html#" title="">view more</a></p>
 													<ul class="skill-tags">
-														<li><a href="my-profile-feed.jsp#" title="">HTML</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">PHP</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">CSS</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Javascript</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Wordpress</a></li>
+														<li><a href="my-profile-feed.html#" title="">HTML</a></li>
+														<li><a href="my-profile-feed.html#" title="">PHP</a></li>
+														<li><a href="my-profile-feed.html#" title="">CSS</a></li>
+														<li><a href="my-profile-feed.html#" title="">Javascript</a></li>
+														<li><a href="my-profile-feed.html#" title="">Wordpress</a></li> 	
 													</ul>
 												</div>
 												<div class="job-status-bar">
 													<ul class="like-com">
 														<li>
-															<a href="my-profile-feed.jsp#"><i class="fas fa-heart"></i> Like</a>
+															<a href="my-profile-feed.html#"><i class="fas fa-heart"></i> Like</a>
 															<img src="images/liked-img.png" alt="">
 															<span>25</span>
 														</li> 
-														<li><a href="my-profile-feed.jsp#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
+														<li><a href="my-profile-feed.html#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
 													</ul>
-													<a href="my-profile-feed.jsp#"><i class="fas fa-eye"></i>Views 50</a>
+													<a href="my-profile-feed.html#"><i class="fas fa-eye"></i>Views 50</a>
 												</div>
 											</div><!--post-bar end-->
 											<div class="post-bar">
@@ -1041,13 +1062,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -1057,35 +1078,35 @@
 														<li><img src="images/icon9.png" alt=""><span>India</span></li>
 													</ul>
 													<ul class="bk-links">
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
 													</ul>
 												</div>
 												<div class="job_descp">
 													<h3>Senior UI / UX designer</h3>
 													<ul class="job-dt">
-														<li><a href="my-profile-feed.jsp#" title="">Par Time</a></li>
+														<li><a href="my-profile-feed.html#" title="">Par Time</a></li>
 														<li><span>$10 / hr</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.jsp#" title="">view more</a></p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.html#" title="">view more</a></p>
 													<ul class="skill-tags">
-														<li><a href="my-profile-feed.jsp#" title="">HTML</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">PHP</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">CSS</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Javascript</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Wordpress</a></li>
+														<li><a href="my-profile-feed.html#" title="">HTML</a></li>
+														<li><a href="my-profile-feed.html#" title="">PHP</a></li>
+														<li><a href="my-profile-feed.html#" title="">CSS</a></li>
+														<li><a href="my-profile-feed.html#" title="">Javascript</a></li>
+														<li><a href="my-profile-feed.html#" title="">Wordpress</a></li> 	
 													</ul>
 												</div>
 												<div class="job-status-bar">
 													<ul class="like-com">
 														<li>
-															<a href="my-profile-feed.jsp#"><i class="fas fa-heart"></i> Like</a>
+															<a href="my-profile-feed.html#"><i class="fas fa-heart"></i> Like</a>
 															<img src="images/liked-img.png" alt="">
 															<span>25</span>
 														</li> 
-														<li><a href="my-profile-feed.jsp#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
+														<li><a href="my-profile-feed.html#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
 													</ul>
-													<a href="my-profile-feed.jsp#"><i class="fas fa-eye"></i>Views 50</a>
+													<a href="my-profile-feed.html#"><i class="fas fa-eye"></i>Views 50</a>
 												</div>
 											</div><!--post-bar end-->
 											<div class="post-bar">
@@ -1098,13 +1119,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -1114,9 +1135,9 @@
 														<li><img src="images/icon9.png" alt=""><span>India</span></li>
 													</ul>
 													<ul class="bk-links">
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title="" class="bid_now">Bid Now</a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
+														<li><a href="my-profile-feed.html#" title="" class="bid_now">Bid Now</a></li>
 													</ul>
 												</div>
 												<div class="job_descp">
@@ -1124,25 +1145,25 @@
 													<ul class="job-dt">
 														<li><span>$300 - $350</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.jsp#" title="">view more</a></p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.html#" title="">view more</a></p>
 													<ul class="skill-tags">
-														<li><a href="my-profile-feed.jsp#" title="">HTML</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">PHP</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">CSS</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Javascript</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Wordpress</a></li>
+														<li><a href="my-profile-feed.html#" title="">HTML</a></li>
+														<li><a href="my-profile-feed.html#" title="">PHP</a></li>
+														<li><a href="my-profile-feed.html#" title="">CSS</a></li>
+														<li><a href="my-profile-feed.html#" title="">Javascript</a></li>
+														<li><a href="my-profile-feed.html#" title="">Wordpress</a></li> 	
 													</ul>
 												</div>
 												<div class="job-status-bar">
 													<ul class="like-com">
 														<li>
-															<a href="my-profile-feed.jsp#"><i class="fas fa-heart"></i> Like</a>
+															<a href="my-profile-feed.html#"><i class="fas fa-heart"></i> Like</a>
 															<img src="images/liked-img.png" alt="">
 															<span>25</span>
 														</li> 
-														<li><a href="my-profile-feed.jsp#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
+														<li><a href="my-profile-feed.html#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
 													</ul>
-													<a href="my-profile-feed.jsp#"><i class="fas fa-eye"></i>Views 50</a>
+													<a href="my-profile-feed.html#"><i class="fas fa-eye"></i>Views 50</a>
 												</div>
 											</div><!--post-bar end-->
 											<div class="process-comm">
@@ -1158,13 +1179,13 @@
 									<div class="product-feed-tab" id="my-bids">
 										<ul class="nav nav-tabs bid-tab" id="myTab" role="tablist">
                                            <li class="nav-item">
-                                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="my-profile-feed.jsp#home" role="tab" aria-controls="home" aria-selected="true">Manage Bids</a>
+                                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="my-profile-feed.html#home" role="tab" aria-controls="home" aria-selected="true">Manage Bids</a>
                                            </li>
                                            <li class="nav-item">
-                                             <a class="nav-link" id="bidders-tab" data-toggle="tab" href="my-profile-feed.jsp#bidders" role="tab" aria-controls="contact" aria-selected="false">Manage Bidders</a>
+                                             <a class="nav-link" id="bidders-tab" data-toggle="tab" href="my-profile-feed.html#bidders" role="tab" aria-controls="contact" aria-selected="false">Manage Bidders</a>
                                            </li>
                                            <li class="nav-item">
-                                             <a class="nav-link" id="profile-tab" data-toggle="tab" href="my-profile-feed.jsp#profile" role="tab" aria-controls="profile" aria-selected="false">My Active Bids</a>
+                                             <a class="nav-link" id="profile-tab" data-toggle="tab" href="my-profile-feed.html#profile" role="tab" aria-controls="profile" aria-selected="false">My Active Bids</a>
                                            </li>
                                          </ul>
                                          <div class="tab-content" id="myTabContent">
@@ -1190,8 +1211,8 @@
 														<p>$500 - $600</p>
 													</li>
 													<ul class="bk-links bklink">
-													<li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-													<li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
+													<li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+													<li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
 												</ul>
 											</ul>
 												<br>
@@ -1199,10 +1220,10 @@
 													<button type="button" class="btn btn-primary">
 														<span class="badge badge-light">3</span>Candidates 
 													</button>
-													<a href="my-profile-feed.jsp#">
+													<a href="my-profile-feed.html#">
 														<i class="far fa-edit"></i>
 													</a>
-													<a href="my-profile-feed.jsp#">
+													<a href="my-profile-feed.html#">
 														<i class="far fa-trash-alt"></i>
 													</a>
                                               </div>
@@ -1229,8 +1250,8 @@
 														<p>$500 - $600</p>
 													</li>
 													<ul class="bk-links bklink">
-													<li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-													<li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
+													<li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+													<li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
 												</ul>
 											</ul>
 												<br>
@@ -1238,10 +1259,10 @@
 														<button type="button" class="btn btn-primary">
 															<span class="badge badge-light">3</span>Candidates 
 														</button>
-														<a href="my-profile-feed.jsp#">
+														<a href="my-profile-feed.html#">
 															<i class="far fa-edit"></i>
 														</a>
-														<a href="my-profile-feed.jsp#">
+														<a href="my-profile-feed.html#">
 															<i class="far fa-trash-alt"></i>
 														</a>
 													</div>
@@ -1268,8 +1289,8 @@
 														<p>$500 - $600</p>
 													</li>
 													<ul class="bk-links bklink">
-													<li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-													<li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
+													<li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+													<li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
 												</ul>
 											</ul>
 												<br>
@@ -1277,10 +1298,10 @@
 														<button type="button" class="btn btn-primary">
 															<span class="badge badge-light">3</span>Candidates 
 														</button>
-														<a href="my-profile-feed.jsp#">
+														<a href="my-profile-feed.html#">
 															<i class="far fa-edit"></i>
 														</a>
-														<a href="my-profile-feed.jsp#">
+														<a href="my-profile-feed.html#">
 															<i class="far fa-trash-alt"></i>
 														</a>
 													</div>
@@ -1306,10 +1327,10 @@
 														<p>8 Days</p>
 													</li>
 													<div class="devepbtn activebtn">
-														<a href="my-profile-feed.jsp#">
+														<a href="my-profile-feed.html#">
 															<i class="far fa-edit"></i>
 														</a>
-														<a href="my-profile-feed.jsp#">
+														<a href="my-profile-feed.html#">
 															<i class="far fa-trash-alt"></i>
 														</a>
 													</div>
@@ -1333,10 +1354,10 @@
 														<p>15 Days</p>
 													</li>
 													<div class="devepbtn activebtn">
-														<a href="my-profile-feed.jsp#">
+														<a href="my-profile-feed.html#">
 															<i class="far fa-edit"></i>
 														</a>
-														<a href="my-profile-feed.jsp#">
+														<a href="my-profile-feed.html#">
 															<i class="far fa-trash-alt"></i>
 														</a>
 													</div>
@@ -1360,10 +1381,10 @@
 														<p>15 Days</p>
 													</li>
 													<div class="devepbtn activebtn">
-														<a href="my-profile-feed.jsp#">
+														<a href="my-profile-feed.html#">
 															<i class="far fa-edit"></i>
 														</a>
-														<a href="my-profile-feed.jsp#">
+														<a href="my-profile-feed.html#">
 															<i class="far fa-trash-alt"></i>
 														</a>
 													</div>
@@ -1381,13 +1402,13 @@
 													</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -1409,9 +1430,9 @@
 														<p>Open</p>
 													</li>
 													<div class="devepbtn">
-														<a class="clrbtn" href="my-profile-feed.jsp#">Applied</a>
-														<a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
-														<a href="my-profile-feed.jsp#">
+														<a class="clrbtn" href="my-profile-feed.html#">Applied</a>
+														<a class="clrbtn" href="my-profile-feed.html#">Message</a>
+														<a href="my-profile-feed.html#">
 															<i class="far fa-trash-alt"></i>
 														</a>
 													</div>
@@ -1427,13 +1448,13 @@
 													</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -1455,9 +1476,9 @@
 														<p>Open</p>
 													</li>
 													<div class="devepbtn">
-														<a class="clrbtn" href="my-profile-feed.jsp#">Applied</a>
-														<a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
-														<a href="my-profile-feed.jsp#">
+														<a class="clrbtn" href="my-profile-feed.html#">Applied</a>
+														<a class="clrbtn" href="my-profile-feed.html#">Message</a>
+														<a href="my-profile-feed.html#">
 															<i class="far fa-trash-alt"></i>
 														</a>
 													</div>
@@ -1473,13 +1494,13 @@
 													</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -1501,9 +1522,9 @@
 														<p>Open</p>
 													</li>
 													<div class="devepbtn">
-														<a class="clrbtn" href="my-profile-feed.jsp#">Applied</a>
-														<a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
-														<a href="my-profile-feed.jsp#">
+														<a class="clrbtn" href="my-profile-feed.html#">Applied</a>
+														<a class="clrbtn" href="my-profile-feed.html#">Message</a>
+														<a href="my-profile-feed.html#">
 															<i class="far fa-trash-alt"></i>
 														</a>
 													</div>
@@ -1526,13 +1547,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Accept</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Accept</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 													<div class="job_descp noborder">
@@ -1543,7 +1564,7 @@
 												         <li><i class="fa fa-star"></i></li>
 												         <li><i class="fa fa-star"></i></li>
 												         <li><i class="fa fa-star-half-o"></i></li>
-												         <a href="my-profile-feed.jsp#" title="">5.0 of 5 Reviews</a>
+												         <a href="my-profile-feed.html#" title="">5.0 of 5 Reviews</a>
 											             </ul>
 										                </div>
 										                <ul class="savedjob-info biddersinfo">
@@ -1557,10 +1578,10 @@
 										                	</li>
 										                </ul>
 										                    <div class="devepbtn appliedinfo bidsbtn">
-														    <a class="clrbtn" href="my-profile-feed.jsp#">Accept</a>
-														    <a class="clrbtn" href="my-profile-feed.jsp#">View Profile</a>
-														    <a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
-														    <a href="my-profile-feed.jsp#">
+														    <a class="clrbtn" href="my-profile-feed.html#">Accept</a>
+														    <a class="clrbtn" href="my-profile-feed.html#">View Profile</a>
+														    <a class="clrbtn" href="my-profile-feed.html#">Message</a>
+														    <a href="my-profile-feed.html#">
 														    	<i class="far fa-trash-alt"></i>
 														    </a>    
 													</div>
@@ -1582,13 +1603,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Accept</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Accept</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 													<div class="job_descp noborder">
@@ -1599,7 +1620,7 @@
 												         <li><i class="fa fa-star"></i></li>
 												         <li><i class="fa fa-star"></i></li>
 												         <li><i class="fa fa-star-half-o"></i></li>
-												         <a href="my-profile-feed.jsp#" title="">5.0 of 5 Reviews</a>
+												         <a href="my-profile-feed.html#" title="">5.0 of 5 Reviews</a>
 											             </ul>
 										                </div>
 										                <ul class="savedjob-info biddersinfo">
@@ -1613,10 +1634,10 @@
 										                	</li>
 										                </ul>
 										                    <div class="devepbtn appliedinfo bidsbtn">
-														    <a class="clrbtn" href="my-profile-feed.jsp#">Accept</a>
-														    <a class="clrbtn" href="my-profile-feed.jsp#">View Profile</a>
-														    <a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
-														    <a href="my-profile-feed.jsp#">
+														    <a class="clrbtn" href="my-profile-feed.html#">Accept</a>
+														    <a class="clrbtn" href="my-profile-feed.html#">View Profile</a>
+														    <a class="clrbtn" href="my-profile-feed.html#">Message</a>
+														    <a href="my-profile-feed.html#">
 														    	<i class="far fa-trash-alt"></i>
 														    </a>    
 													</div>
@@ -1638,13 +1659,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Accept</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Accept</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 													<div class="job_descp noborder">
@@ -1655,7 +1676,7 @@
 												         <li><i class="fa fa-star"></i></li>
 												         <li><i class="fa fa-star"></i></li>
 												         <li><i class="fa fa-star-half-o"></i></li>
-												         <a href="my-profile-feed.jsp#" title="">5.0 of 5 Reviews</a>
+												         <a href="my-profile-feed.html#" title="">5.0 of 5 Reviews</a>
 											             </ul>
 										                </div>
 										                <ul class="savedjob-info biddersinfo">
@@ -1669,10 +1690,10 @@
 										                	</li>
 										                </ul>
 										                    <div class="devepbtn appliedinfo bidsbtn">
-														    <a class="clrbtn" href="my-profile-feed.jsp#">Accept</a>
-														    <a class="clrbtn" href="my-profile-feed.jsp#">View Profile</a>
-														    <a class="clrbtn" href="my-profile-feed.jsp#">Message</a>
-														    <a href="my-profile-feed.jsp#">
+														    <a class="clrbtn" href="my-profile-feed.html#">Accept</a>
+														    <a class="clrbtn" href="my-profile-feed.html#">View Profile</a>
+														    <a class="clrbtn" href="my-profile-feed.html#">Message</a>
+														    <a href="my-profile-feed.html#">
 														    	<i class="far fa-trash-alt"></i>
 														    </a>    
 													</div>
@@ -1685,40 +1706,40 @@
 
 									<div class="product-feed-tab" id="info-dd">
 										<div class="user-profile-ov">
-											<h3><a href="my-profile-feed.jsp#" title="" class="overview-open">Overview</a> <a href="my-profile-feed.jsp#" title="" class="overview-open"><i class="fa fa-pencil"></i></a></h3>
+											<h3><a href="my-profile-feed.html#" title="" class="overview-open">Overview</a> <a href="my-profile-feed.html#" title="" class="overview-open"><i class="fa fa-pencil"></i></a></h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. Nunc eu augue nec arcu efficitur faucibus. Aliquam accumsan ac magna convallis bibendum. Quisque laoreet augue eget augue fermentum scelerisque. Vivamus dignissim mollis est dictum blandit. Nam porta auctor neque sed congue. Nullam rutrum eget ex at maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vestibulum lorem.</p>
 										</div><!--user-profile-ov end-->
 										<div class="user-profile-ov st2">
-											<h3><a href="my-profile-feed.jsp#" title="" class="exp-bx-open">Experience </a><a href="my-profile-feed.jsp#" title="" class="exp-bx-open"><i class="fa fa-pencil"></i></a> <a href="my-profile-feed.jsp#" title="" class="exp-bx-open"><i class="fa fa-plus-square"></i></a></h3>
-											<h4>Web designer <a href="my-profile-feed.jsp#" title=""><i class="fa fa-pencil"></i></a></h4>
+											<h3><a href="my-profile-feed.html#" title="" class="exp-bx-open">Experience </a><a href="my-profile-feed.html#" title="" class="exp-bx-open"><i class="fa fa-pencil"></i></a> <a href="my-profile-feed.html#" title="" class="exp-bx-open"><i class="fa fa-plus-square"></i></a></h3>
+											<h4>Web designer <a href="my-profile-feed.html#" title=""><i class="fa fa-pencil"></i></a></h4>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. </p>
-											<h4>UI / UX Designer <a href="my-profile-feed.jsp#" title=""><i class="fa fa-pencil"></i></a></h4>
+											<h4>UI / UX Designer <a href="my-profile-feed.html#" title=""><i class="fa fa-pencil"></i></a></h4>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id.</p>
-											<h4>PHP developer <a href="my-profile-feed.jsp#" title=""><i class="fa fa-pencil"></i></a></h4>
+											<h4>PHP developer <a href="my-profile-feed.html#" title=""><i class="fa fa-pencil"></i></a></h4>
 											<p class="no-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. </p>
 										</div><!--user-profile-ov end-->
 										<div class="user-profile-ov">
-											<h3><a href="my-profile-feed.jsp#" title="" class="ed-box-open">Education</a> <a href="my-profile-feed.jsp#" title="" class="ed-box-open"><i class="fa fa-pencil"></i></a> <a href="my-profile-feed.jsp#" title=""><i class="fa fa-plus-square"></i></a></h3>
+											<h3><a href="my-profile-feed.html#" title="" class="ed-box-open">Education</a> <a href="my-profile-feed.html#" title="" class="ed-box-open"><i class="fa fa-pencil"></i></a> <a href="my-profile-feed.html#" title=""><i class="fa fa-plus-square"></i></a></h3>
 											<h4>Master of Computer Science</h4>
 											<span>2015 - 2018</span>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. </p>
 										</div><!--user-profile-ov end-->
 										<div class="user-profile-ov">
-											<h3><a href="my-profile-feed.jsp#" title="" class="lct-box-open">Location</a> <a href="my-profile-feed.jsp#" title="" class="lct-box-open"><i class="fa fa-pencil"></i></a> <a href="my-profile-feed.jsp#" title=""><i class="fa fa-plus-square"></i></a></h3>
+											<h3><a href="my-profile-feed.html#" title="" class="lct-box-open">Location</a> <a href="my-profile-feed.html#" title="" class="lct-box-open"><i class="fa fa-pencil"></i></a> <a href="my-profile-feed.html#" title=""><i class="fa fa-plus-square"></i></a></h3>
 											<h4>India</h4>
 											<p>151/4 BT Chownk, Delhi </p>
 										</div><!--user-profile-ov end-->
 										<div class="user-profile-ov">
-											<h3><a href="my-profile-feed.jsp#" title="" class="skills-open">Skills</a> <a href="my-profile-feed.jsp#" title="" class="skills-open"><i class="fa fa-pencil"></i></a> <a href="my-profile-feed.jsp#"><i class="fa fa-plus-square"></i></a></h3>
+											<h3><a href="my-profile-feed.html#" title="" class="skills-open">Skills</a> <a href="my-profile-feed.html#" title="" class="skills-open"><i class="fa fa-pencil"></i></a> <a href="my-profile-feed.html#"><i class="fa fa-plus-square"></i></a></h3>
 											<ul>
-												<li><a href="my-profile-feed.jsp#" title="">HTML</a></li>
-												<li><a href="my-profile-feed.jsp#" title="">PHP</a></li>
-												<li><a href="my-profile-feed.jsp#" title="">CSS</a></li>
-												<li><a href="my-profile-feed.jsp#" title="">Javascript</a></li>
-												<li><a href="my-profile-feed.jsp#" title="">Wordpress</a></li>
-												<li><a href="my-profile-feed.jsp#" title="">Photoshop</a></li>
-												<li><a href="my-profile-feed.jsp#" title="">Illustrator</a></li>
-												<li><a href="my-profile-feed.jsp#" title="">Corel Draw</a></li>
+												<li><a href="my-profile-feed.html#" title="">HTML</a></li>
+												<li><a href="my-profile-feed.html#" title="">PHP</a></li>
+												<li><a href="my-profile-feed.html#" title="">CSS</a></li>
+												<li><a href="my-profile-feed.html#" title="">Javascript</a></li>
+												<li><a href="my-profile-feed.html#" title="">Wordpress</a></li>
+												<li><a href="my-profile-feed.html#" title="">Photoshop</a></li>
+												<li><a href="my-profile-feed.html#" title="">Illustrator</a></li>
+												<li><a href="my-profile-feed.html#" title="">Corel Draw</a></li>
 											</ul>
 										</div><!--user-profile-ov end-->
 									</div><!--product-feed-tab end-->
@@ -1756,7 +1777,7 @@
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star-half-o"></i></li>
 											</ul>
-											<a href="my-profile-feed.jsp#" title="">5.0 of 5 Reviews</a>
+											<a href="my-profile-feed.html#" title="">5.0 of 5 Reviews</a>
 										</div>
 										<div class="reviewtext">
 											<p>Lorem ipsum dolor sit amet, adipiscing elit. Nulla luctus mi et porttitor ultrices</p>
@@ -1780,7 +1801,7 @@
 													<div class="usy-dt">
 														<img src="images/resources/bg-img4.png" alt="">														
 														<input class="reply" type="text" placeholder="Reply">
-														<a class="replybtn" href="my-profile-feed.jsp#">Send</a>
+														<a class="replybtn" href="my-profile-feed.html#">Send</a>
 											   
 													</div>
 												</div>
@@ -1802,13 +1823,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -1822,7 +1843,7 @@
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star-half-o"></i></li>
 											</ul>
-											<a href="my-profile-feed.jsp#" title="">5.0 of 5 Reviews</a><br><br>
+											<a href="my-profile-feed.html#" title="">5.0 of 5 Reviews</a><br><br>
 											<p>Awesome Work, Thanks John!</p>
 											<hr>
 										</div>
@@ -1831,7 +1852,7 @@
 														<img src="images/resources/bg-img4.png" alt="">
 														
 															<input class="reply" type="text" placeholder="Reply">
-															<a class="replybtn" href="my-profile-feed.jsp#">Send</a>
+															<a class="replybtn" href="my-profile-feed.html#">Send</a>
 											   
 												</div>
 												</div>
@@ -1851,13 +1872,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -1867,9 +1888,9 @@
 														<li><img src="images/icon9.png" alt=""><span>India</span></li>
 													</ul>
 													<ul class="bk-links">
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title="" class="bid_now">Bid Now</a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
+														<li><a href="my-profile-feed.html#" title="" class="bid_now">Bid Now</a></li>
 													</ul>
 												</div>
 												<div class="job_descp">
@@ -1877,26 +1898,26 @@
 													<ul class="job-dt">
 														<li><span>$300 - $350</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.jsp#" title="">view more</a></p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.html#" title="">view more</a></p>
 													<ul class="skill-tags">
-														<li><a href="my-profile-feed.jsp#" title="">HTML</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">PHP</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">CSS</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Javascript</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Wordpress</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Photoshop</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Illustrator</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Corel Draw</a></li>
+														<li><a href="my-profile-feed.html#" title="">HTML</a></li>
+														<li><a href="my-profile-feed.html#" title="">PHP</a></li>
+														<li><a href="my-profile-feed.html#" title="">CSS</a></li>
+														<li><a href="my-profile-feed.html#" title="">Javascript</a></li>
+														<li><a href="my-profile-feed.html#" title="">Wordpress</a></li> 	
+														<li><a href="my-profile-feed.html#" title="">Photoshop</a></li> 	
+														<li><a href="my-profile-feed.html#" title="">Illustrator</a></li> 	
+														<li><a href="my-profile-feed.html#" title="">Corel Draw</a></li> 	
 													</ul>
 												</div>
 												<div class="job-status-bar">
 													<ul class="like-com">
 														<li>
-															<a href="my-profile-feed.jsp#"><i class="la la-heart"></i> Like</a>
+															<a href="my-profile-feed.html#"><i class="la la-heart"></i> Like</a>
 															<img src="images/liked-img.png" alt="">
 															<span>25</span>
 														</li> 
-														<li><a href="my-profile-feed.jsp#" title="" class="com"><img src="images/com.png" alt=""> Comment 15</a></li>
+														<li><a href="my-profile-feed.html#" title="" class="com"><img src="images/com.png" alt=""> Comment 15</a></li>
 													</ul>
 													<a><i class="la la-eye"></i>Views 50</a>
 												</div>
@@ -1911,13 +1932,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -1927,9 +1948,9 @@
 														<li><img src="images/icon9.png" alt=""><span>India</span></li>
 													</ul>
 													<ul class="bk-links">
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title="" class="bid_now">Bid Now</a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
+														<li><a href="my-profile-feed.html#" title="" class="bid_now">Bid Now</a></li>
 													</ul>
 												</div>
 												<div class="job_descp">
@@ -1937,26 +1958,26 @@
 													<ul class="job-dt">
 														<li><span>$300 - $350</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.jsp#" title="">view more</a></p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.html#" title="">view more</a></p>
 													<ul class="skill-tags">
-														<li><a href="my-profile-feed.jsp#" title="">HTML</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">PHP</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">CSS</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Javascript</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Wordpress</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Photoshop</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Illustrator</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Corel Draw</a></li>
+														<li><a href="my-profile-feed.html#" title="">HTML</a></li>
+														<li><a href="my-profile-feed.html#" title="">PHP</a></li>
+														<li><a href="my-profile-feed.html#" title="">CSS</a></li>
+														<li><a href="my-profile-feed.html#" title="">Javascript</a></li>
+														<li><a href="my-profile-feed.html#" title="">Wordpress</a></li> 	
+														<li><a href="my-profile-feed.html#" title="">Photoshop</a></li> 	
+														<li><a href="my-profile-feed.html#" title="">Illustrator</a></li> 	
+														<li><a href="my-profile-feed.html#" title="">Corel Draw</a></li> 	
 													</ul>
 												</div>
 												<div class="job-status-bar">
 													<ul class="like-com">
 														<li>
-															<a href="my-profile-feed.jsp#"><i class="la la-heart"></i> Like</a>
+															<a href="my-profile-feed.html#"><i class="la la-heart"></i> Like</a>
 															<img src="images/liked-img.png" alt="">
 															<span>25</span>
 														</li> 
-														<li><a href="my-profile-feed.jsp#" title="" class="com"><img src="images/com.png" alt=""> Comment 15</a></li>
+														<li><a href="my-profile-feed.html#" title="" class="com"><img src="images/com.png" alt=""> Comment 15</a></li>
 													</ul>
 													<a><i class="la la-eye"></i>Views 50</a>
 												</div>
@@ -1971,13 +1992,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -1987,9 +2008,9 @@
 														<li><img src="images/icon9.png" alt=""><span>India</span></li>
 													</ul>
 													<ul class="bk-links">
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title="" class="bid_now">Bid Now</a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
+														<li><a href="my-profile-feed.html#" title="" class="bid_now">Bid Now</a></li>
 													</ul>
 												</div>
 												<div class="job_descp">
@@ -1997,26 +2018,26 @@
 													<ul class="job-dt">
 														<li><span>$300 - $350</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.jsp#" title="">view more</a></p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.html#" title="">view more</a></p>
 													<ul class="skill-tags">
-														<li><a href="my-profile-feed.jsp#" title="">HTML</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">PHP</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">CSS</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Javascript</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Wordpress</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Photoshop</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Illustrator</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Corel Draw</a></li>
+														<li><a href="my-profile-feed.html#" title="">HTML</a></li>
+														<li><a href="my-profile-feed.html#" title="">PHP</a></li>
+														<li><a href="my-profile-feed.html#" title="">CSS</a></li>
+														<li><a href="my-profile-feed.html#" title="">Javascript</a></li>
+														<li><a href="my-profile-feed.html#" title="">Wordpress</a></li> 	
+														<li><a href="my-profile-feed.html#" title="">Photoshop</a></li> 	
+														<li><a href="my-profile-feed.html#" title="">Illustrator</a></li> 	
+														<li><a href="my-profile-feed.html#" title="">Corel Draw</a></li> 	
 													</ul>
 												</div>
 												<div class="job-status-bar">
 													<ul class="like-com">
 														<li>
-															<a href="my-profile-feed.jsp#"><i class="la la-heart"></i> Like</a>
+															<a href="my-profile-feed.html#"><i class="la la-heart"></i> Like</a>
 															<img src="images/liked-img.png" alt="">
 															<span>25</span>
 														</li> 
-														<li><a href="my-profile-feed.jsp#" title="" class="com"><img src="images/com.png" alt=""> Comment 15</a></li>
+														<li><a href="my-profile-feed.html#" title="" class="com"><img src="images/com.png" alt=""> Comment 15</a></li>
 													</ul>
 													<a><i class="la la-eye"></i>Views 50</a>
 												</div>
@@ -2031,13 +2052,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="my-profile-feed.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="my-profile-feed.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="my-profile-feed.jsp#" title="">Edit Post</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unsaved</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Unbid</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Close</a></li>
-															<li><a href="my-profile-feed.jsp#" title="">Hide</a></li>
+															<li><a href="my-profile-feed.html#" title="">Edit Post</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unsaved</a></li>
+															<li><a href="my-profile-feed.html#" title="">Unbid</a></li>
+															<li><a href="my-profile-feed.html#" title="">Close</a></li>
+															<li><a href="my-profile-feed.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -2047,9 +2068,9 @@
 														<li><img src="images/icon9.png" alt=""><span>India</span></li>
 													</ul>
 													<ul class="bk-links">
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title=""><i class="la la-envelope"></i></a></li>
-														<li><a href="my-profile-feed.jsp#" title="" class="bid_now">Bid Now</a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-bookmark"></i></a></li>
+														<li><a href="my-profile-feed.html#" title=""><i class="la la-envelope"></i></a></li>
+														<li><a href="my-profile-feed.html#" title="" class="bid_now">Bid Now</a></li>
 													</ul>
 												</div>
 												<div class="job_descp">
@@ -2057,32 +2078,32 @@
 													<ul class="job-dt">
 														<li><span>$300 - $350</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.jsp#" title="">view more</a></p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="my-profile-feed.html#" title="">view more</a></p>
 													<ul class="skill-tags">
-														<li><a href="my-profile-feed.jsp#" title="">HTML</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">PHP</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">CSS</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Javascript</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Wordpress</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Photoshop</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Illustrator</a></li>
-														<li><a href="my-profile-feed.jsp#" title="">Corel Draw</a></li>
+														<li><a href="my-profile-feed.html#" title="">HTML</a></li>
+														<li><a href="my-profile-feed.html#" title="">PHP</a></li>
+														<li><a href="my-profile-feed.html#" title="">CSS</a></li>
+														<li><a href="my-profile-feed.html#" title="">Javascript</a></li>
+														<li><a href="my-profile-feed.html#" title="">Wordpress</a></li> 	
+														<li><a href="my-profile-feed.html#" title="">Photoshop</a></li> 	
+														<li><a href="my-profile-feed.html#" title="">Illustrator</a></li> 	
+														<li><a href="my-profile-feed.html#" title="">Corel Draw</a></li> 	
 													</ul>
 												</div>
 												<div class="job-status-bar">
 													<ul class="like-com">
 														<li>
-															<a href="my-profile-feed.jsp#"><i class="la la-heart"></i> Like</a>
+															<a href="my-profile-feed.html#"><i class="la la-heart"></i> Like</a>
 															<img src="images/liked-img.png" alt="">
 															<span>25</span>
 														</li> 
-														<li><a href="my-profile-feed.jsp#" title="" class="com"><img src="images/com.png" alt=""> Comment 15</a></li>
+														<li><a href="my-profile-feed.html#" title="" class="com"><img src="images/com.png" alt=""> Comment 15</a></li>
 													</ul>
 													<a><i class="la la-eye"></i>Views 50</a>
 												</div>
 											</div><!--post-bar end-->
 											<div class="process-comm">
-												<a href="my-profile-feed.jsp#" title=""><img src="images/process-icon.png" alt=""></a>
+												<a href="my-profile-feed.html#" title=""><img src="images/process-icon.png" alt=""></a>
 											</div><!--process-comm end-->
 										</div><!--posts-section end-->
 									</div><!--product-feed-tab end-->
@@ -2090,68 +2111,68 @@
 										<div class="portfolio-gallery-sec">
 											<h3>Portfolio</h3>
 											<div class="portfolio-btn">
-												<a href="my-profile-feed.jsp#" title=""><i class="fas fa-plus-square"></i> Add Portfolio</a>
+												<a href="my-profile-feed.html#" title=""><i class="fas fa-plus-square"></i> Add Portfolio</a>
 											</div>
 											<div class="gallery_pf">
 												<div class="row">
 													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img1.jpg" alt="">
-															<a href="my-profile-feed.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="my-profile-feed.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img2.jpg" alt="">
-															<a href="my-profile-feed.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="my-profile-feed.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img3.jpg" alt="">
-															<a href="my-profile-feed.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="my-profile-feed.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img4.jpg" alt="">
-															<a href="my-profile-feed.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="my-profile-feed.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img5.jpg" alt="">
-															<a href="my-profile-feed.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="my-profile-feed.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img6.jpg" alt="">
-															<a href="my-profile-feed.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="my-profile-feed.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img7.jpg" alt="">
-															<a href="my-profile-feed.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="my-profile-feed.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img8.jpg" alt="">
-															<a href="my-profile-feed.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="my-profile-feed.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img9.jpg" alt="">
-															<a href="my-profile-feed.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="my-profile-feed.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img10.jpg" alt="">
-															<a href="my-profile-feed.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="my-profile-feed.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 												</div>
@@ -2163,11 +2184,11 @@
 											<ul>
 												<li>
 													<h3>Add Billing Method</h3>
-													<a href="my-profile-feed.jsp#" title=""><i class="fa fa-plus-circle"></i></a>
+													<a href="my-profile-feed.html#" title=""><i class="fa fa-plus-circle"></i></a>
 												</li>
 												<li>
 													<h3>See Activity</h3>
-													<a href="my-profile-feed.jsp#" title="">View All</a>
+													<a href="my-profile-feed.html#" title="">View All</a>
 												</li>
 												<li>
 													<h3>Total Money</h3>
@@ -2177,7 +2198,7 @@
 											<div class="lt-sec">
 												<img src="images/lt-icon.png" alt="">
 												<h4>All your transactions are saved here</h4>
-												<a href="my-profile-feed.jsp#" title="">Click Here</a>
+												<a href="my-profile-feed.html#" title="">Click Here</a>
 											</div>
 										</div><!--billing-method end-->
 										<div class="add-billing-method">
@@ -2259,7 +2280,7 @@
 							<div class="col-lg-3">
 								<div class="right-sidebar">
 									<div class="message-btn">
-										<a href="profile-account-setting.jsp" title=""><i class="fas fa-cog"></i> Setting</a>
+										<a href="profile-account-setting.html" title=""><i class="fas fa-cog"></i> Setting</a>
 									</div>
 									<div class="widget widget-portfolio">
 										<div class="wd-heady">
@@ -2268,18 +2289,18 @@
 										</div>
 										<div class="pf-gallery">
 											<ul>
-												<li><a href="my-profile-feed.jsp#" title=""><img src="images/resources/pf-gallery1.png" alt=""></a></li>
-												<li><a href="my-profile-feed.jsp#" title=""><img src="images/resources/pf-gallery2.png" alt=""></a></li>
-												<li><a href="my-profile-feed.jsp#" title=""><img src="images/resources/pf-gallery3.png" alt=""></a></li>
-												<li><a href="my-profile-feed.jsp#" title=""><img src="images/resources/pf-gallery4.png" alt=""></a></li>
-												<li><a href="my-profile-feed.jsp#" title=""><img src="images/resources/pf-gallery5.png" alt=""></a></li>
-												<li><a href="my-profile-feed.jsp#" title=""><img src="images/resources/pf-gallery6.png" alt=""></a></li>
-												<li><a href="my-profile-feed.jsp#" title=""><img src="images/resources/pf-gallery7.png" alt=""></a></li>
-												<li><a href="my-profile-feed.jsp#" title=""><img src="images/resources/pf-gallery8.png" alt=""></a></li>
-												<li><a href="my-profile-feed.jsp#" title=""><img src="images/resources/pf-gallery9.png" alt=""></a></li>
-												<li><a href="my-profile-feed.jsp#" title=""><img src="images/resources/pf-gallery10.png" alt=""></a></li>
-												<li><a href="my-profile-feed.jsp#" title=""><img src="images/resources/pf-gallery11.png" alt=""></a></li>
-												<li><a href="my-profile-feed.jsp#" title=""><img src="images/resources/pf-gallery12.png" alt=""></a></li>
+												<li><a href="my-profile-feed.html#" title=""><img src="images/resources/pf-gallery1.png" alt=""></a></li>
+												<li><a href="my-profile-feed.html#" title=""><img src="images/resources/pf-gallery2.png" alt=""></a></li>
+												<li><a href="my-profile-feed.html#" title=""><img src="images/resources/pf-gallery3.png" alt=""></a></li>
+												<li><a href="my-profile-feed.html#" title=""><img src="images/resources/pf-gallery4.png" alt=""></a></li>
+												<li><a href="my-profile-feed.html#" title=""><img src="images/resources/pf-gallery5.png" alt=""></a></li>
+												<li><a href="my-profile-feed.html#" title=""><img src="images/resources/pf-gallery6.png" alt=""></a></li>
+												<li><a href="my-profile-feed.html#" title=""><img src="images/resources/pf-gallery7.png" alt=""></a></li>
+												<li><a href="my-profile-feed.html#" title=""><img src="images/resources/pf-gallery8.png" alt=""></a></li>
+												<li><a href="my-profile-feed.html#" title=""><img src="images/resources/pf-gallery9.png" alt=""></a></li>
+												<li><a href="my-profile-feed.html#" title=""><img src="images/resources/pf-gallery10.png" alt=""></a></li>
+												<li><a href="my-profile-feed.html#" title=""><img src="images/resources/pf-gallery11.png" alt=""></a></li>
+												<li><a href="my-profile-feed.html#" title=""><img src="images/resources/pf-gallery12.png" alt=""></a></li>
 											</ul>
 										</div><!--pf-gallery end-->
 									</div><!--widget-portfolio end-->
@@ -2295,15 +2316,15 @@
 			<div class="footy-sec mn no-margin">
 				<div class="container">
 					<ul>
-						<li><a href="help-center.jsp" title="">Help Center</a></li>
-						<li><a href="about.jsp" title="">About</a></li>
-						<li><a href="my-profile-feed.jsp#" title="">Privacy Policy</a></li>
-						<li><a href="my-profile-feed.jsp#" title="">Community Guidelines</a></li>
-						<li><a href="my-profile-feed.jsp#" title="">Cookies Policy</a></li>
-						<li><a href="my-profile-feed.jsp#" title="">Career</a></li>
-						<li><a href="forum.jsp" title="">Forum</a></li>
-						<li><a href="my-profile-feed.jsp#" title="">Language</a></li>
-						<li><a href="my-profile-feed.jsp#" title="">Copyright Policy</a></li>
+						<li><a href="help-center.html" title="">Help Center</a></li>
+						<li><a href="about.html" title="">About</a></li>
+						<li><a href="my-profile-feed.html#" title="">Privacy Policy</a></li>
+						<li><a href="my-profile-feed.html#" title="">Community Guidelines</a></li>
+						<li><a href="my-profile-feed.html#" title="">Cookies Policy</a></li>
+						<li><a href="my-profile-feed.html#" title="">Career</a></li>
+						<li><a href="forum.html" title="">Forum</a></li>
+						<li><a href="my-profile-feed.html#" title="">Language</a></li>
+						<li><a href="my-profile-feed.html#" title="">Copyright Policy</a></li>
 					</ul>
 					<p><img src="images/copy-icon2.png" alt="">Copyright 2019</p>
 					<img class="fl-rgt" src="images/logo2.png" alt="">
@@ -2320,7 +2341,7 @@
 					<button type="submit" class="save">Save</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="my-profile-feed.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="my-profile-feed.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -2335,7 +2356,7 @@
 					<button type="submit" class="save-add">Save & Add More</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="my-profile-feed.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="my-profile-feed.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -2366,7 +2387,7 @@
 					<button type="submit" class="save-add">Save & Add More</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="my-profile-feed.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="my-profile-feed.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -2397,7 +2418,7 @@
 					<button type="submit" class="save">Save</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="my-profile-feed.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="my-profile-feed.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -2405,9 +2426,9 @@
 			<div class="overview-edit">
 				<h3>Skills</h3>
 				<ul>
-					<li><a href="my-profile-feed.jsp#" title="" class="skl-name">HTML</a><a href="my-profile-feed.jsp#" title="" class="close-skl"><i class="la la-close"></i></a></li>
-					<li><a href="my-profile-feed.jsp#" title="" class="skl-name">php</a><a href="my-profile-feed.jsp#" title="" class="close-skl"><i class="la la-close"></i></a></li>
-					<li><a href="my-profile-feed.jsp#" title="" class="skl-name">css</a><a href="my-profile-feed.jsp#" title="" class="close-skl"><i class="la la-close"></i></a></li>
+					<li><a href="my-profile-feed.html#" title="" class="skl-name">HTML</a><a href="my-profile-feed.html#" title="" class="close-skl"><i class="la la-close"></i></a></li>
+					<li><a href="my-profile-feed.html#" title="" class="skl-name">php</a><a href="my-profile-feed.html#" title="" class="close-skl"><i class="la la-close"></i></a></li>
+					<li><a href="my-profile-feed.html#" title="" class="skl-name">css</a><a href="my-profile-feed.html#" title="" class="close-skl"><i class="la la-close"></i></a></li>
 				</ul>
 				<form>
 					<input type="text" name="skills" placeholder="Skills">
@@ -2415,7 +2436,7 @@
 					<button type="submit" class="save-add">Save & Add More</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="my-profile-feed.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="my-profile-feed.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -2435,12 +2456,19 @@
 					<button type="submit" class="save">Save</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="my-profile-feed.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="my-profile-feed.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
 	</div><!--theme-layout end-->
 
-<%@ include file="scripts.jsp"%>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/flatpickr.min.js"></script>
+<script type="text/javascript" src="lib/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

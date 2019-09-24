@@ -20,7 +20,7 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getSession().invalidate();
+        req.getSession().removeAttribute("user");
         resp.sendRedirect("sign-in.jsp");
     }
 
@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
         } catch (NoSuchAlgorithmException e) {
             session.removeAttribute("user");
             session.setAttribute("error", "An error occurred during the request.");
-            session.invalidate();
+//            session.invalidate();
             resp.sendRedirect(((HttpServletRequest) req).getContextPath() + "/pages/sign-in.jsp");
             return;
         }

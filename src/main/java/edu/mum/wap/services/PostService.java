@@ -2,7 +2,6 @@ package edu.mum.wap.services;
 
 import edu.mum.wap.daos.impl.PostDao;
 import edu.mum.wap.models.Post;
-
 import java.util.List;
 
 public class PostService {
@@ -27,5 +26,9 @@ public class PostService {
 
     public Post findPost(Long postId) {
         return postDao.findOne(postId);
+    }
+
+    public List<Post> getMyPosts(long userId) {
+        return postDao.getMyPosts(userId);
     }
 }

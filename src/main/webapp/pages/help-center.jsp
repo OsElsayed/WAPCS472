@@ -1,4 +1,26 @@
-<%@ include file="header.jsp"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WorkWise Html Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.range.css">
+<link rel="stylesheet" type="text/css" href="css/line-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/line-awesome-font-awesome.min.css">
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+
 <body>
 
 	<div class="wrapper">		
@@ -7,7 +29,7 @@
 			<div class="container">
 				<div class="header-data">
 					<div class="logo">
-						<a href="index.jsp" title=""><img src="images/logo.png" alt=""></a>
+						<a href="index.html" title=""><img src="images/logo.png" alt=""></a>
 					</div><!--logo end-->
 					<div class="search-bar">
 						<form>
@@ -18,52 +40,52 @@
 					<nav>
 						<ul>
 							<li>
-								<a href="index.jsp" title="">
+								<a href="index.html" title="">
 									<span><img src="images/icon1.png" alt=""></span>
 									Home
 								</a>
 							</li>
 							<li>
-								<a href="companies.jsp" title="">
+								<a href="companies.html" title="">
 									<span><img src="images/icon2.png" alt=""></span>
 									Companies
 								</a>
 								<ul>
-									<li><a href="companies.jsp" title="">Companies</a></li>
-									<li><a href="company-profile.jsp" title="">Company Profile</a></li>
+									<li><a href="companies.html" title="">Companies</a></li>
+									<li><a href="company-profile.html" title="">Company Profile</a></li>
 								</ul>
 							</li>
 							<li>
-								<a href="projects.jsp" title="">
+								<a href="projects.html" title="">
 									<span><img src="images/icon3.png" alt=""></span>
 									Projects
 								</a>
 							</li>
 							<li>
-								<a href="profiles.jsp" title="">
+								<a href="profiles.html" title="">
 									<span><img src="images/icon4.png" alt=""></span>
 									Profiles
 								</a>
 								<ul>
-									<li><a href="user-profile.jsp" title="">User Profile</a></li>
-									<li><a href="my-profile-feed.jsp" title="">my-profile-feed</a></li>
+									<li><a href="user-profile.html" title="">User Profile</a></li>
+									<li><a href="my-profile-feed.html" title="">my-profile-feed</a></li>
 								</ul>
 							</li>
 							<li>
-								<a href="jobs.jsp" title="">
+								<a href="jobs.html" title="">
 									<span><img src="images/icon5.png" alt=""></span>
 									Jobs
 								</a>
 							</li>
 							<li>
-								<a href="help-center.jsp#" title="" class="not-box-openm">
+								<a href="help-center.html#" title="" class="not-box-openm">
 									<span><img src="images/icon6.png" alt=""></span>
 									Messages
 								</a>
 								<div class="notification-box msg" id="message">
 									<div class="nt-title">
 										<h4>Setting</h4>
-										<a href="help-center.jsp#" title="">Clear all</a>
+										<a href="help-center.html#" title="">Clear all</a>
 									</div>
 									<div class="nott-list">
 										<div class="notfication-details">
@@ -71,7 +93,7 @@
 							  					<img src="images/resources/ny-img1.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="messages.jsp" title="">Jassica William</a> </h3>
+							  					<h3><a href="messages.html" title="">Jassica William</a> </h3>
 							  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
@@ -81,7 +103,7 @@
 							  					<img src="images/resources/ny-img2.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="messages.jsp" title="">Jassica William</a></h3>
+							  					<h3><a href="messages.html" title="">Jassica William</a></h3>
 							  					<p>Lorem ipsum dolor sit amet.</p>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
@@ -91,26 +113,26 @@
 							  					<img src="images/resources/ny-img3.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="messages.jsp" title="">Jassica William</a></h3>
+							  					<h3><a href="messages.html" title="">Jassica William</a></h3>
 							  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
 						  				<div class="view-all-nots">
-						  					<a href="messages.jsp" title="">View All Messsages</a>
+						  					<a href="messages.html" title="">View All Messsages</a>
 						  				</div>
 									</div><!--nott-list end-->
 								</div><!--notification-box end-->
 							</li>
 							<li>
-								<a href="help-center.jsp#" title="" class="not-box-open">
+								<a href="help-center.html#" title="" class="not-box-open">
 									<span><img src="images/icon7.png" alt=""></span>
 									Notification
 								</a>
 								<div class="notification-box noti" id="notification">
 									<div class="nt-title">
 										<h4>Setting</h4>
-										<a href="help-center.jsp#" title="">Clear all</a>
+										<a href="help-center.html#" title="">Clear all</a>
 									</div>
 									<div class="nott-list">
 										<div class="notfication-details">
@@ -118,7 +140,7 @@
 							  					<img src="images/resources/ny-img1.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="help-center.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="help-center.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
@@ -127,7 +149,7 @@
 							  					<img src="images/resources/ny-img2.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="help-center.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="help-center.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
@@ -136,7 +158,7 @@
 							  					<img src="images/resources/ny-img3.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="help-center.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="help-center.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
@@ -145,12 +167,12 @@
 							  					<img src="images/resources/ny-img2.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="help-center.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="help-center.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
 						  				<div class="view-all-nots">
-						  					<a href="help-center.jsp#" title="">View All Notification</a>
+						  					<a href="help-center.html#" title="">View All Notification</a>
 						  				</div>
 									</div><!--nott-list end-->
 								</div><!--notification-box end-->
@@ -158,12 +180,12 @@
 						</ul>
 					</nav><!--nav end-->
 					<div class="menu-btn">
-						<a href="help-center.jsp#" title=""><i class="fa fa-bars"></i></a>
+						<a href="help-center.html#" title=""><i class="fa fa-bars"></i></a>
 					</div><!--menu-btn end-->
 					<div class="user-account">
 						<div class="user-info">
 							<img src="images/resources/user.png" alt="">
-							<a href="help-center.jsp#" title="">John</a>
+							<a href="help-center.html#" title="">John</a>
 							<i class="la la-sort-down"></i>
 						</div>
 						<div class="user-account-settingss" id="useraccount">
@@ -197,10 +219,10 @@
 							</div><!--search_form end-->
 							<h3>Setting</h3>
 							<ul class="us-links">
-								<li><a href="profile-account-setting.jsp" title="">Account Setting</a></li>
-								<li><a href="help-center.jsp#" title="">Privacy</a></li>
-								<li><a href="help-center.jsp#" title="">Faqs</a></li>
-								<li><a href="help-center.jsp#" title="">Terms & Conditions</a></li>
+								<li><a href="profile-account-setting.html" title="">Account Setting</a></li>
+								<li><a href="help-center.html#" title="">Privacy</a></li>
+								<li><a href="help-center.html#" title="">Faqs</a></li>
+								<li><a href="help-center.html#" title="">Terms & Conditions</a></li>
 							</ul>
 							<h3 class="tc"><a href="sign-in.jsp" title="">Logout</a></h3>
 
@@ -237,13 +259,13 @@
 										<div class="filter-dd">
 											<div class="filter-ttl filter--tt2">
 												<div class="dropdown">
-                                                   <a href="help-center.jsp#" class="dropdown-toggle" data-toggle="dropdown">Getting Started</a>
+                                                   <a href="help-center.html#" class="dropdown-toggle" data-toggle="dropdown">Getting Started</a>
                                                    <div class="dropdown-menu">
-                                                       <a href="help-center.jsp#" class="dropdown-item top--1 ">Searching of Workwise</a>
-                                                       <a href="help-center.jsp#" class="dropdown-item">Email from Workwise</a>
-                                                       <a href="help-center.jsp#" class="dropdown-item">Managing Your Feed</a>
-                                                       <a href="help-center.jsp#" class="dropdown-item">Post a Job</a>
-                                                       <a href="help-center.jsp#" class="dropdown-item">Post a Project</a>
+                                                       <a href="help-center.html#" class="dropdown-item top--1 ">Searching of Workwise</a>
+                                                       <a href="help-center.html#" class="dropdown-item">Email from Workwise</a>
+                                                       <a href="help-center.html#" class="dropdown-item">Managing Your Feed</a>
+                                                       <a href="help-center.html#" class="dropdown-item">Post a Job</a>
+                                                       <a href="help-center.html#" class="dropdown-item">Post a Project</a>
                                                    </div>
                                                </div>
 											</div>
@@ -251,12 +273,12 @@
 										<div class="filter-dd">
 											<div class="filter-ttl filter--tt2">
 												<div class="dropdown">
-                                                   <a href="help-center.jsp#" class="dropdown-toggle" data-toggle="dropdown">Manage Your Account</a>
+                                                   <a href="help-center.html#" class="dropdown-toggle" data-toggle="dropdown">Manage Your Account</a>
                                                    <div class="dropdown-menu">
-                                                       <a href="help-center.jsp#" class="dropdown-item top--1 ">Account Access</a>
-                                                       <a href="help-center.jsp#" class="dropdown-item">Account Setting</a>
-                                                       <a href="help-center.jsp#" class="dropdown-item">Privacy</a>
-                                                       <a href="help-center.jsp#" class="dropdown-item">Notification</a>
+                                                       <a href="help-center.html#" class="dropdown-item top--1 ">Account Access</a>
+                                                       <a href="help-center.html#" class="dropdown-item">Account Setting</a>
+                                                       <a href="help-center.html#" class="dropdown-item">Privacy</a>
+                                                       <a href="help-center.html#" class="dropdown-item">Notification</a>                                                     
                                                    </div>
                                                </div>
 											</div>
@@ -264,37 +286,37 @@
 										<div class="filter-dd">
 											<div class="filter-ttl filter--tt2">
 												<div class="dropdown">
-                                                   <a href="help-center.jsp#" class="dropdown-toggle" data-toggle="dropdown">Build Your Profile</a>
+                                                   <a href="help-center.html#" class="dropdown-toggle" data-toggle="dropdown">Build Your Profile</a>
                                                    <div class="dropdown-menu">
-                                                       <a href="help-center.jsp#" class="dropdown-item top--1 ">Build User Profile</a>
-                                                       <a href="help-center.jsp#" class="dropdown-item">Build Company Profile</a>
+                                                       <a href="help-center.html#" class="dropdown-item top--1 ">Build User Profile</a>
+                                                       <a href="help-center.html#" class="dropdown-item">Build Company Profile</a>                                                       
                                                    </div>
                                                </div>
 											</div>
 										</div>
 										<div class="filter-dd">
 											<div class="filter-ttl filter--tt2">
-												<a href="help-center.jsp#">Work with Clients</a>
+												<a href="help-center.html#">Work with Clients</a>
 											</div>
 										</div>
 										<div class="filter-dd">
 											<div class="filter-ttl filter--tt2">
-												<a href="help-center.jsp#">Get Paid</a>
+												<a href="help-center.html#">Get Paid</a>
 											</div>
 										</div>
 										<div class="filter-dd">
 											<div class="filter-ttl filter--tt2">
-												<a href="help-center.jsp#">Discovering Peoples</a>
+												<a href="help-center.html#">Discovering Peoples</a>
 											</div>
 										</div>
 										<div class="filter-dd">
 											<div class="filter-ttl filter--tt2">
-												<a href="help-center.jsp#">Billiing & Payments</a>
+												<a href="help-center.html#">Billiing & Payments</a>
 											</div>
 										</div>
 										<div class="filter-dd">
 											<div class="filter-ttl accountnone filter--tt2">
-												<a href="help-center.jsp#">Reset Your Account</a>
+												<a href="help-center.html#">Reset Your Account</a>
 											</div>
 										</div>
 									</div>
@@ -308,7 +330,7 @@
 			                     		<p>View, ask, or answer questions about using LinkedIn. Our moderators and community can help!</p>
 			                     	</div>
 			                     	<div class="col-lg-3 col-md-12">
-			                     		<a href="help-center.jsp#">Visit Help Forum</a>
+			                     		<a href="help-center.html#">Visit Help Forum</a>
 			                     	</div>
 			                     </div>
 								</div> 
@@ -321,14 +343,14 @@
 								  		<div class="actionstext">
 								  	<div class="row">
 								  		<div class="col-md-6 col-sm-12">
-								  			<a href="help-center.jsp#">Change or add email address</a>
-								  			<a href="help-center.jsp#">Reset your password</a>
-								  			<a href="help-center.jsp#">Close your account</a>
+								  			<a href="help-center.html#">Change or add email address</a>
+								  			<a href="help-center.html#">Reset your password</a>
+								  			<a href="help-center.html#">Close your account</a>
 								  		</div>
 								  		<div class="col-md-6 col-sm-12">
-								  			<a href="help-center.jsp#">Manage emails you get from Workwise</a>
-								  			<a href="help-center.jsp#">Get Paid</a>
-								  			<a href="help-center.jsp#">Build Your Profiles</a>
+								  			<a href="help-center.html#">Manage emails you get from Workwise</a>
+								  			<a href="help-center.html#">Get Paid</a>
+								  			<a href="help-center.html#">Build Your Profiles</a>
 								  		</div>
 								  	</div>
 								  	</div>
@@ -341,13 +363,13 @@
 								  		<div class="actionstext">
 								  	<div class="row">
 								  		<div class="col-12">
-								  			<a href="help-center.jsp#">Workwise Homepage - FAQ</a>
+								  			<a href="help-center.html#">Workwise Homepage - FAQ</a>
 								  			<hr>
-								  			<a href="help-center.jsp#">Workwise Public Profile Visibility</a>
+								  			<a href="help-center.html#">Workwise Public Profile Visibility</a>
 								  			<hr>
-								  			<a href="help-center.jsp#">Editing Your Profile</a>
+								  			<a href="help-center.html#">Editing Your Profile</a>
 								  			<hr>
-								  			<a href="help-center.jsp#">Merging or Closing Duplicate Accounts on LinkedIn</a>
+								  			<a href="help-center.html#">Merging or Closing Duplicate Accounts on LinkedIn</a>
 								  			<hr>
 								  		</div>
 								  	</div>
@@ -358,7 +380,7 @@
 								  			<img src="images/resources/formicon.png" alt="image">
 								  			<h3>Help Forum</h3>
 								  			<p>Have questions? LinkedIn knowledge you want<br> to share? Head over to the </p>
-								  			<a href="help-center.jsp#">Workwise Help Forum</a>
+								  			<a href="help-center.html#">Workwise Help Forum</a>
 								  </div>
 							</div>
 						</div>
@@ -411,13 +433,13 @@
 							<div class="col-lg-12">
 								<ul>
 									<li><button class="active" type="submit" value="post">Post</button></li>
-									<li><a href="help-center.jsp#" title="">Cancel</a></li>
+									<li><a href="help-center.html#" title="">Cancel</a></li>
 								</ul>
 							</div>
 						</div>
 					</form>
 				</div><!--post-project-fields end-->
-				<a href="help-center.jsp#" title=""><i class="la la-times-circle-o"></i></a>
+				<a href="help-center.html#" title=""><i class="la la-times-circle-o"></i></a>
 			</div><!--post-project end-->
 		</div><!--post-project-popup end-->
 
@@ -463,13 +485,13 @@
 							<div class="col-lg-12">
 								<ul>
 									<li><button class="active" type="submit" value="post">Post</button></li>
-									<li><a href="help-center.jsp#" title="">Cancel</a></li>
+									<li><a href="help-center.html#" title="">Cancel</a></li>
 								</ul>
 							</div>
 						</div>
 					</form>
 				</div><!--post-project-fields end-->
-				<a href="help-center.jsp#" title=""><i class="la la-times-circle-o"></i></a>
+				<a href="help-center.html#" title=""><i class="la la-times-circle-o"></i></a>
 			</div><!--post-project end-->
 		</div><!--post-project-popup end-->
 
@@ -479,15 +501,15 @@
 			<div class="footy-sec mn no-margin">
 				<div class="container">
 					<ul>
-						<li><a href="help-center.jsp" title="">Help Center</a></li>
-						<li><a href="about.jsp" title="">About</a></li>
-						<li><a href="help-center.jsp#" title="">Privacy Policy</a></li>
-						<li><a href="help-center.jsp#" title="">Community Guidelines</a></li>
-						<li><a href="help-center.jsp#" title="">Cookies Policy</a></li>
-						<li><a href="help-center.jsp#" title="">Career</a></li>
-						<li><a href="forum.jsp" title="">Forum</a></li>
-						<li><a href="help-center.jsp#" title="">Language</a></li>
-						<li><a href="help-center.jsp#" title="">Copyright Policy</a></li>
+						<li><a href="help-center.html" title="">Help Center</a></li>
+						<li><a href="about.html" title="">About</a></li>
+						<li><a href="help-center.html#" title="">Privacy Policy</a></li>
+						<li><a href="help-center.html#" title="">Community Guidelines</a></li>
+						<li><a href="help-center.html#" title="">Cookies Policy</a></li>
+						<li><a href="help-center.html#" title="">Career</a></li>
+						<li><a href="forum.html" title="">Forum</a></li>
+						<li><a href="help-center.html#" title="">Language</a></li>
+						<li><a href="help-center.html#" title="">Copyright Policy</a></li>
 					</ul>
 					<p><img src="images/copy-icon2.png" alt="">Copyright 2019</p>
 					<img class="fl-rgt" src="images/logo2.png" alt="">
@@ -495,6 +517,13 @@
 			</div>
 		</footer><!--footer end-->
 
-<%@ include file="scripts.jsp"%>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.range-min.js"></script>
+<script type="text/javascript" src="lib/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

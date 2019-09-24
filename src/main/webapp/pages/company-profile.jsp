@@ -1,4 +1,24 @@
-<%@ include file="header.jsp"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>WorkWise Html Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/flatpickr.min.css">
+	<link rel="stylesheet" type="text/css" href="css/line-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/line-awesome-font-awesome.min.css">
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
 
 
 <body>
@@ -9,7 +29,7 @@
 			<div class="container">
 				<div class="header-data">
 					<div class="logo">
-						<a href="index.jsp" title=""><img src="images/logo.png" alt=""></a>
+						<a href="index.html" title=""><img src="images/logo.png" alt=""></a>
 					</div><!--logo end-->
 					<div class="search-bar">
 						<form>
@@ -20,52 +40,52 @@
 					<nav>
 						<ul>
 							<li>
-								<a href="index.jsp" title="">
+								<a href="index.html" title="">
 									<span><img src="images/icon1.png" alt=""></span>
 									Home
 								</a>
 							</li>
 							<li>
-								<a href="companies.jsp" title="">
+								<a href="companies.html" title="">
 									<span><img src="images/icon2.png" alt=""></span>
 									Companies
 								</a>
 								<ul>
-									<li><a href="companies.jsp" title="">Companies</a></li>
-									<li><a href="company-profile.jsp" title="">Company Profile</a></li>
+									<li><a href="companies.html" title="">Companies</a></li>
+									<li><a href="company-profile.html" title="">Company Profile</a></li>
 								</ul>
 							</li>
 							<li>
-								<a href="projects.jsp" title="">
+								<a href="projects.html" title="">
 									<span><img src="images/icon3.png" alt=""></span>
 									Projects
 								</a>
 							</li>
 							<li>
-								<a href="profiles.jsp" title="">
+								<a href="profiles.html" title="">
 									<span><img src="images/icon4.png" alt=""></span>
 									Profiles
 								</a>
 								<ul>
-									<li><a href="user-profile.jsp" title="">User Profile</a></li>
-									<li><a href="my-profile-feed.jsp" title="">my-profile-feed</a></li>
+									<li><a href="user-profile.html" title="">User Profile</a></li>
+									<li><a href="my-profile-feed.html" title="">my-profile-feed</a></li>
 								</ul>
 							</li>
 							<li>
-								<a href="jobs.jsp" title="">
+								<a href="jobs.html" title="">
 									<span><img src="images/icon5.png" alt=""></span>
 									Jobs
 								</a>
 							</li>
 							<li>
-								<a href="company-profile.jsp#" title="" class="not-box-openm">
+								<a href="company-profile.html#" title="" class="not-box-openm">
 									<span><img src="images/icon6.png" alt=""></span>
 									Messages
 								</a>
 								<div class="notification-box msg" id="message">
 									<div class="nt-title">
 										<h4>Setting</h4>
-										<a href="company-profile.jsp#" title="">Clear all</a>
+										<a href="company-profile.html#" title="">Clear all</a>
 									</div>
 									<div class="nott-list">
 										<div class="notfication-details">
@@ -73,7 +93,7 @@
 							  					<img src="images/resources/ny-img1.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="messages.jsp" title="">Jassica William</a> </h3>
+							  					<h3><a href="messages.html" title="">Jassica William</a> </h3>
 							  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
@@ -83,7 +103,7 @@
 							  					<img src="images/resources/ny-img2.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="messages.jsp" title="">Jassica William</a></h3>
+							  					<h3><a href="messages.html" title="">Jassica William</a></h3>
 							  					<p>Lorem ipsum dolor sit amet.</p>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
@@ -93,26 +113,26 @@
 							  					<img src="images/resources/ny-img3.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="messages.jsp" title="">Jassica William</a></h3>
+							  					<h3><a href="messages.html" title="">Jassica William</a></h3>
 							  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
 						  				<div class="view-all-nots">
-						  					<a href="messages.jsp" title="">View All Messsages</a>
+						  					<a href="messages.html" title="">View All Messsages</a>
 						  				</div>
 									</div><!--nott-list end-->
 								</div><!--notification-box end-->
 							</li>
 							<li>
-								<a href="company-profile.jsp#" title="" class="not-box-open">
+								<a href="company-profile.html#" title="" class="not-box-open">
 									<span><img src="images/icon7.png" alt=""></span>
 									Notification
 								</a>
 								<div class="notification-box noti" id="notification">
 									<div class="nt-title">
 										<h4>Setting</h4>
-										<a href="company-profile.jsp#" title="">Clear all</a>
+										<a href="company-profile.html#" title="">Clear all</a>
 									</div>
 									<div class="nott-list">
 										<div class="notfication-details">
@@ -120,7 +140,7 @@
 							  					<img src="images/resources/ny-img1.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="company-profile.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="company-profile.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
@@ -129,7 +149,7 @@
 							  					<img src="images/resources/ny-img2.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="company-profile.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="company-profile.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
@@ -138,7 +158,7 @@
 							  					<img src="images/resources/ny-img3.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="company-profile.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="company-profile.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
@@ -147,12 +167,12 @@
 							  					<img src="images/resources/ny-img2.png" alt="">
 							  				</div>
 							  				<div class="notification-info">
-							  					<h3><a href="company-profile.jsp#" title="">Jassica William</a> Comment on your project.</h3>
+							  					<h3><a href="company-profile.html#" title="">Jassica William</a> Comment on your project.</h3>
 							  					<span>2 min ago</span>
 							  				</div><!--notification-info -->
 						  				</div>
 						  				<div class="view-all-nots">
-						  					<a href="company-profile.jsp#" title="">View All Notification</a>
+						  					<a href="company-profile.html#" title="">View All Notification</a>
 						  				</div>
 									</div><!--nott-list end-->
 								</div><!--notification-box end-->
@@ -160,12 +180,12 @@
 						</ul>
 					</nav><!--nav end-->
 					<div class="menu-btn">
-						<a href="company-profile.jsp#" title=""><i class="fa fa-bars"></i></a>
+						<a href="company-profile.html#" title=""><i class="fa fa-bars"></i></a>
 					</div><!--menu-btn end-->
 					<div class="user-account">
 						<div class="user-info">
 							<img src="images/resources/user.png" alt="">
-							<a href="company-profile.jsp#" title="">John</a>
+							<a href="company-profile.html#" title="">John</a>
 							<i class="la la-sort-down"></i>
 						</div>
 						<div class="user-account-settingss">
@@ -199,10 +219,10 @@
 							</div><!--search_form end-->
 							<h3>Setting</h3>
 							<ul class="us-links">
-								<li><a href="profile-account-setting.jsp" title="">Account Setting</a></li>
-								<li><a href="company-profile.jsp#" title="">Privacy</a></li>
-								<li><a href="company-profile.jsp#" title="">Faqs</a></li>
-								<li><a href="company-profile.jsp#" title="">Terms & Conditions</a></li>
+								<li><a href="profile-account-setting.html" title="">Account Setting</a></li>
+								<li><a href="company-profile.html#" title="">Privacy</a></li>
+								<li><a href="company-profile.html#" title="">Faqs</a></li>
+								<li><a href="company-profile.html#" title="">Terms & Conditions</a></li>
 							</ul>
 							<h3 class="tc"><a href="sign-in.jsp" title="">Logout</a></h3>
 						</div><!--user-account-settingss end-->
@@ -230,7 +250,7 @@
 										</div><!--user-pro-img end-->
 										<div class="user_pro_status">
 											<ul class="flw-hr">
-												<li><a href="company-profile.jsp#" title="" class="flww"><i class="la la-plus"></i> Follow</a></li>
+												<li><a href="company-profile.html#" title="" class="flww"><i class="la la-plus"></i> Follow</a></li>
 											</ul>
 											<ul class="flw-status">
 												<li>
@@ -244,14 +264,14 @@
 											</ul>
 										</div><!--user_pro_status end-->
 										<ul class="social_links">
-											<li><a href="company-profile.jsp#" title=""><i class="la la-globe"></i> www.example.com</a></li>
-											<li><a href="company-profile.jsp#" title=""><i class="fa fa-facebook-square"></i> Http://www.facebook.com/john...</a></li>
-											<li><a href="company-profile.jsp#" title=""><i class="fa fa-twitter"></i> Http://www.Twitter.com/john...</a></li>
-											<li><a href="company-profile.jsp#" title=""><i class="fa fa-google-plus-square"></i> Http://www.googleplus.com/john...</a></li>
-											<li><a href="company-profile.jsp#" title=""><i class="fa fa-behance-square"></i> Http://www.behance.com/john...</a></li>
-											<li><a href="company-profile.jsp#" title=""><i class="fa fa-pinterest"></i> Http://www.pinterest.com/john...</a></li>
-											<li><a href="company-profile.jsp#" title=""><i class="fa fa-instagram"></i> Http://www.instagram.com/john...</a></li>
-											<li><a href="company-profile.jsp#" title=""><i class="fa fa-youtube"></i> Http://www.youtube.com/john...</a></li>
+											<li><a href="company-profile.html#" title=""><i class="la la-globe"></i> www.example.com</a></li>
+											<li><a href="company-profile.html#" title=""><i class="fa fa-facebook-square"></i> Http://www.facebook.com/john...</a></li>
+											<li><a href="company-profile.html#" title=""><i class="fa fa-twitter"></i> Http://www.Twitter.com/john...</a></li>
+											<li><a href="company-profile.html#" title=""><i class="fa fa-google-plus-square"></i> Http://www.googleplus.com/john...</a></li>
+											<li><a href="company-profile.html#" title=""><i class="fa fa-behance-square"></i> Http://www.behance.com/john...</a></li>
+											<li><a href="company-profile.html#" title=""><i class="fa fa-pinterest"></i> Http://www.pinterest.com/john...</a></li>
+											<li><a href="company-profile.html#" title=""><i class="fa fa-instagram"></i> Http://www.instagram.com/john...</a></li>
+											<li><a href="company-profile.html#" title=""><i class="fa fa-youtube"></i> Http://www.youtube.com/john...</a></li>
 										</ul>
 									</div><!--user_profile end-->
 									<div class="suggestions full-width">
@@ -309,7 +329,7 @@
 												<span><i class="la la-plus"></i></span>
 											</div>
 											<div class="view-more">
-												<a href="company-profile.jsp#" title="">View More</a>
+												<a href="company-profile.html#" title="">View More</a>
 											</div>
 										</div><!--suggestions-list end-->
 									</div><!--suggestions end-->
@@ -332,19 +352,19 @@
 										<div class="tab-feed">
 											<ul>
 												<li data-tab="feed-dd" class="active">
-													<a href="company-profile.jsp#" title="">
+													<a href="company-profile.html#" title="">
 														<img src="images/ic1.png" alt="">
 														<span>Feed</span>
 													</a>
 												</li>
 												<li data-tab="info-dd">
-													<a href="company-profile.jsp#" title="">
+													<a href="company-profile.html#" title="">
 														<img src="images/ic2.png" alt="">
 														<span>Info</span>
 													</a>
 												</li>
 												<li data-tab="portfolio-dd">
-													<a href="company-profile.jsp#" title="">
+													<a href="company-profile.html#" title="">
 														<img src="images/ic3.png" alt="">
 														<span>Portfolio</span>
 													</a>
@@ -364,13 +384,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="company-profile.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="company-profile.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="company-profile.jsp#" title="">Edit Post</a></li>
-															<li><a href="company-profile.jsp#" title="">Unsaved</a></li>
-															<li><a href="company-profile.jsp#" title="">Unbid</a></li>
-															<li><a href="company-profile.jsp#" title="">Close</a></li>
-															<li><a href="company-profile.jsp#" title="">Hide</a></li>
+															<li><a href="company-profile.html#" title="">Edit Post</a></li>
+															<li><a href="company-profile.html#" title="">Unsaved</a></li>
+															<li><a href="company-profile.html#" title="">Unbid</a></li>
+															<li><a href="company-profile.html#" title="">Close</a></li>
+															<li><a href="company-profile.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -380,35 +400,35 @@
 														<li><img src="images/icon9.png" alt=""><span>India</span></li>
 													</ul>
 													<ul class="bk-links">
-														<li><a href="company-profile.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="company-profile.jsp#" title=""><i class="la la-envelope"></i></a></li>
+														<li><a href="company-profile.html#" title=""><i class="la la-bookmark"></i></a></li>
+														<li><a href="company-profile.html#" title=""><i class="la la-envelope"></i></a></li>
 													</ul>
 												</div>
 												<div class="job_descp">
 													<h3>Senior PHP Developer</h3>
 													<ul class="job-dt">
-														<li><a href="company-profile.jsp#" title="">Full Time</a></li>
+														<li><a href="company-profile.html#" title="">Full Time</a></li>
 														<li><span>$30 / hr</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="company-profile.jsp#" title="">view more</a></p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="company-profile.html#" title="">view more</a></p>
 													<ul class="skill-tags">
-														<li><a href="company-profile.jsp#" title="">HTML</a></li>
-														<li><a href="company-profile.jsp#" title="">PHP</a></li>
-														<li><a href="company-profile.jsp#" title="">CSS</a></li>
-														<li><a href="company-profile.jsp#" title="">Javascript</a></li>
-														<li><a href="company-profile.jsp#" title="">Wordpress</a></li>
+														<li><a href="company-profile.html#" title="">HTML</a></li>
+														<li><a href="company-profile.html#" title="">PHP</a></li>
+														<li><a href="company-profile.html#" title="">CSS</a></li>
+														<li><a href="company-profile.html#" title="">Javascript</a></li>
+														<li><a href="company-profile.html#" title="">Wordpress</a></li> 	
 													</ul>
 												</div>
 												<div class="job-status-bar">
 													<ul class="like-com">
 														<li>
-															<a href="company-profile.jsp#" class="active"><i class="fas fa-heart"></i> Like</a>
+															<a href="company-profile.html#" class="active"><i class="fas fa-heart"></i> Like</a>
 															<img src="images/liked-img.png" alt="">
 															<span>25</span>
 														</li>
-														<li><a href="company-profile.jsp#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
+														<li><a href="company-profile.html#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
 													</ul>
-													<a href="company-profile.jsp#"><i class="fas fa-eye"></i>Views 50</a>
+													<a href="company-profile.html#"><i class="fas fa-eye"></i>Views 50</a>
 												</div>
 											</div><!--post-bar end-->
 											<div class="post-bar">
@@ -421,13 +441,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="company-profile.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="company-profile.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="company-profile.jsp#" title="">Edit Post</a></li>
-															<li><a href="company-profile.jsp#" title="">Unsaved</a></li>
-															<li><a href="company-profile.jsp#" title="">Unbid</a></li>
-															<li><a href="company-profile.jsp#" title="">Close</a></li>
-															<li><a href="company-profile.jsp#" title="">Hide</a></li>
+															<li><a href="company-profile.html#" title="">Edit Post</a></li>
+															<li><a href="company-profile.html#" title="">Unsaved</a></li>
+															<li><a href="company-profile.html#" title="">Unbid</a></li>
+															<li><a href="company-profile.html#" title="">Close</a></li>
+															<li><a href="company-profile.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -437,35 +457,35 @@
 														<li><img src="images/icon9.png" alt=""><span>India</span></li>
 													</ul>
 													<ul class="bk-links">
-														<li><a href="company-profile.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="company-profile.jsp#" title=""><i class="la la-envelope"></i></a></li>
+														<li><a href="company-profile.html#" title=""><i class="la la-bookmark"></i></a></li>
+														<li><a href="company-profile.html#" title=""><i class="la la-envelope"></i></a></li>
 													</ul>
 												</div>
 												<div class="job_descp">
 													<h3>Senior UI / UX designer</h3>
 													<ul class="job-dt">
-														<li><a href="company-profile.jsp#" title="">Full Time</a></li>
+														<li><a href="company-profile.html#" title="">Full Time</a></li>
 														<li><span>$30 / hr</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="company-profile.jsp#" title="">view more</a></p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="company-profile.html#" title="">view more</a></p>
 													<ul class="skill-tags">
-														<li><a href="company-profile.jsp#" title="">HTML</a></li>
-														<li><a href="company-profile.jsp#" title="">PHP</a></li>
-														<li><a href="company-profile.jsp#" title="">CSS</a></li>
-														<li><a href="company-profile.jsp#" title="">Javascript</a></li>
-														<li><a href="company-profile.jsp#" title="">Wordpress</a></li>
+														<li><a href="company-profile.html#" title="">HTML</a></li>
+														<li><a href="company-profile.html#" title="">PHP</a></li>
+														<li><a href="company-profile.html#" title="">CSS</a></li>
+														<li><a href="company-profile.html#" title="">Javascript</a></li>
+														<li><a href="company-profile.html#" title="">Wordpress</a></li> 	
 													</ul>
 												</div>
 												<div class="job-status-bar">
 													<ul class="like-com">
 														<li>
-															<a href="company-profile.jsp#"><i class="fas fa-heart"></i> Like</a>
+															<a href="company-profile.html#"><i class="fas fa-heart"></i> Like</a>
 															<img src="images/liked-img.png" alt="">
 															<span>25</span>
 														</li>
-														<li><a href="company-profile.jsp#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
+														<li><a href="company-profile.html#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
 													</ul>
-													<a href="company-profile.jsp#"><i class="fas fa-eye"></i>Views 50</a>
+													<a href="company-profile.html#"><i class="fas fa-eye"></i>Views 50</a>
 												</div>
 											</div><!--post-bar end-->
 											<div class="post-bar">
@@ -478,13 +498,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="company-profile.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="company-profile.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="company-profile.jsp#" title="">Edit Post</a></li>
-															<li><a href="company-profile.jsp#" title="">Unsaved</a></li>
-															<li><a href="company-profile.jsp#" title="">Unbid</a></li>
-															<li><a href="company-profile.jsp#" title="">Close</a></li>
-															<li><a href="company-profile.jsp#" title="">Hide</a></li>
+															<li><a href="company-profile.html#" title="">Edit Post</a></li>
+															<li><a href="company-profile.html#" title="">Unsaved</a></li>
+															<li><a href="company-profile.html#" title="">Unbid</a></li>
+															<li><a href="company-profile.html#" title="">Close</a></li>
+															<li><a href="company-profile.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -494,35 +514,35 @@
 														<li><img src="images/icon9.png" alt=""><span>India</span></li>
 													</ul>
 													<ul class="bk-links">
-														<li><a href="company-profile.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="company-profile.jsp#" title=""><i class="la la-envelope"></i></a></li>
+														<li><a href="company-profile.html#" title=""><i class="la la-bookmark"></i></a></li>
+														<li><a href="company-profile.html#" title=""><i class="la la-envelope"></i></a></li>
 													</ul>
 												</div>
 												<div class="job_descp">
 													<h3>Senior Wordpress Developer</h3>
 													<ul class="job-dt">
-														<li><a href="company-profile.jsp#" title="">Full Time</a></li>
+														<li><a href="company-profile.html#" title="">Full Time</a></li>
 														<li><span>$30 / hr</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="company-profile.jsp#" title="">view more</a></p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="company-profile.html#" title="">view more</a></p>
 													<ul class="skill-tags">
-														<li><a href="company-profile.jsp#" title="">HTML</a></li>
-														<li><a href="company-profile.jsp#" title="">PHP</a></li>
-														<li><a href="company-profile.jsp#" title="">CSS</a></li>
-														<li><a href="company-profile.jsp#" title="">Javascript</a></li>
-														<li><a href="company-profile.jsp#" title="">Wordpress</a></li>
+														<li><a href="company-profile.html#" title="">HTML</a></li>
+														<li><a href="company-profile.html#" title="">PHP</a></li>
+														<li><a href="company-profile.html#" title="">CSS</a></li>
+														<li><a href="company-profile.html#" title="">Javascript</a></li>
+														<li><a href="company-profile.html#" title="">Wordpress</a></li> 	
 													</ul>
 												</div>
 												<div class="job-status-bar">
 													<ul class="like-com">
 														<li>
-															<a href="company-profile.jsp#"><i class="fas fa-heart"></i> Like</a>
+															<a href="company-profile.html#"><i class="fas fa-heart"></i> Like</a>
 															<img src="images/liked-img.png" alt="">
 															<span>25</span>
 														</li>
-														<li><a href="company-profile.jsp#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
+														<li><a href="company-profile.html#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
 													</ul>
-													<a href="company-profile.jsp#"><i class="fas fa-eye"></i>Views 50</a>
+													<a href="company-profile.html#"><i class="fas fa-eye"></i>Views 50</a>
 												</div>
 											</div><!--post-bar end-->
 											<div class="post-bar">
@@ -535,13 +555,13 @@
 														</div>
 													</div>
 													<div class="ed-opts">
-														<a href="company-profile.jsp#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+														<a href="company-profile.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
 														<ul class="ed-options">
-															<li><a href="company-profile.jsp#" title="">Edit Post</a></li>
-															<li><a href="company-profile.jsp#" title="">Unsaved</a></li>
-															<li><a href="company-profile.jsp#" title="">Unbid</a></li>
-															<li><a href="company-profile.jsp#" title="">Close</a></li>
-															<li><a href="company-profile.jsp#" title="">Hide</a></li>
+															<li><a href="company-profile.html#" title="">Edit Post</a></li>
+															<li><a href="company-profile.html#" title="">Unsaved</a></li>
+															<li><a href="company-profile.html#" title="">Unbid</a></li>
+															<li><a href="company-profile.html#" title="">Close</a></li>
+															<li><a href="company-profile.html#" title="">Hide</a></li>
 														</ul>
 													</div>
 												</div>
@@ -551,35 +571,35 @@
 														<li><img src="images/icon9.png" alt=""><span>India</span></li>
 													</ul>
 													<ul class="bk-links">
-														<li><a href="company-profile.jsp#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="company-profile.jsp#" title=""><i class="la la-envelope"></i></a></li>
+														<li><a href="company-profile.html#" title=""><i class="la la-bookmark"></i></a></li>
+														<li><a href="company-profile.html#" title=""><i class="la la-envelope"></i></a></li>
 													</ul>
 												</div>
 												<div class="job_descp">
 													<h3>Senior UI / UX designer</h3>
 													<ul class="job-dt">
-														<li><a href="company-profile.jsp#" title="">Full Time</a></li>
+														<li><a href="company-profile.html#" title="">Full Time</a></li>
 														<li><span>$30 / hr</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="company-profile.jsp#" title="">view more</a></p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="company-profile.html#" title="">view more</a></p>
 													<ul class="skill-tags">
-														<li><a href="company-profile.jsp#" title="">HTML</a></li>
-														<li><a href="company-profile.jsp#" title="">PHP</a></li>
-														<li><a href="company-profile.jsp#" title="">CSS</a></li>
-														<li><a href="company-profile.jsp#" title="">Javascript</a></li>
-														<li><a href="company-profile.jsp#" title="">Wordpress</a></li>
+														<li><a href="company-profile.html#" title="">HTML</a></li>
+														<li><a href="company-profile.html#" title="">PHP</a></li>
+														<li><a href="company-profile.html#" title="">CSS</a></li>
+														<li><a href="company-profile.html#" title="">Javascript</a></li>
+														<li><a href="company-profile.html#" title="">Wordpress</a></li> 	
 													</ul>
 												</div>
 												<div class="job-status-bar">
 													<ul class="like-com">
 														<li>
-															<a href="company-profile.jsp#"><i class="fas fa-heart"></i> Like</a>
+															<a href="company-profile.html#"><i class="fas fa-heart"></i> Like</a>
 															<img src="images/liked-img.png" alt="">
 															<span>25</span>
 														</li>
-														<li><a href="company-profile.jsp#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
+														<li><a href="company-profile.html#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
 													</ul>
-													<a href="company-profile.jsp#"><i class="fas fa-eye"></i>Views 50</a>
+													<a href="company-profile.html#"><i class="fas fa-eye"></i>Views 50</a>
 												</div>
 											</div><!--post-bar end-->
 											<div class="process-comm">
@@ -593,19 +613,19 @@
 									</div><!--product-feed-tab end-->
 									<div class="product-feed-tab" id="info-dd">
 										<div class="user-profile-ov">
-											<h3><a href="company-profile.jsp#" title="" class="overview-open">Overview</a> <a href="company-profile.jsp#" title="" class="overview-open"><i class="fa fa-pencil"></i></a></h3>
+											<h3><a href="company-profile.html#" title="" class="overview-open">Overview</a> <a href="company-profile.html#" title="" class="overview-open"><i class="fa fa-pencil"></i></a></h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. Nunc eu augue nec arcu efficitur faucibus. Aliquam accumsan ac magna convallis bibendum. Quisque laoreet augue eget augue fermentum scelerisque. Vivamus dignissim mollis est dictum blandit. Nam porta auctor neque sed congue. Nullam rutrum eget ex at maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vestibulum lorem.</p>
 										</div><!--user-profile-ov end-->
 										<div class="user-profile-ov st2">
-											<h3><a href="company-profile.jsp#" title="" class="esp-bx-open">Establish Since </a><a href="company-profile.jsp#" title="" class="esp-bx-open"><i class="fa fa-pencil"></i></a> <a href="company-profile.jsp#" title="" class="esp-bx-open"><i class="fa fa-plus-square"></i></a></h3>
+											<h3><a href="company-profile.html#" title="" class="esp-bx-open">Establish Since </a><a href="company-profile.html#" title="" class="esp-bx-open"><i class="fa fa-pencil"></i></a> <a href="company-profile.html#" title="" class="esp-bx-open"><i class="fa fa-plus-square"></i></a></h3>
 											<span>February 2004</span>
 										</div><!--user-profile-ov end-->
 										<div class="user-profile-ov">
-											<h3><a href="company-profile.jsp#" title="" class="emp-open">Total Employees</a> <a href="company-profile.jsp#" title="" class="emp-open"><i class="fa fa-pencil"></i></a> <a href="company-profile.jsp#" title="" class="emp-open"><i class="fa fa-plus-square"></i></a></h3>
+											<h3><a href="company-profile.html#" title="" class="emp-open">Total Employees</a> <a href="company-profile.html#" title="" class="emp-open"><i class="fa fa-pencil"></i></a> <a href="company-profile.html#" title="" class="emp-open"><i class="fa fa-plus-square"></i></a></h3>
 											<span>17,048</span>
 										</div><!--user-profile-ov end-->
 										<div class="user-profile-ov">
-											<h3><a href="company-profile.jsp#" title="" class="lct-box-open">Location</a> <a href="company-profile.jsp#" title="" class="lct-box-open"><i class="fa fa-pencil"></i></a> <a href="company-profile.jsp#" title="" class="lct-box-open"><i class="fa fa-plus-square"></i></a></h3>
+											<h3><a href="company-profile.html#" title="" class="lct-box-open">Location</a> <a href="company-profile.html#" title="" class="lct-box-open"><i class="fa fa-pencil"></i></a> <a href="company-profile.html#" title="" class="lct-box-open"><i class="fa fa-plus-square"></i></a></h3>
 											<h4>USA</h4>
 											<p> Menlo Park, California, United States</p>
 										</div><!--user-profile-ov end-->
@@ -618,61 +638,61 @@
 													<div class="col-lg-4 col-md-4 col-sm-4 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img1.jpg" alt="">
-															<a href="company-profile.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="company-profile.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-4 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img2.jpg" alt="">
-															<a href="company-profile.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="company-profile.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-4 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img3.jpg" alt="">
-															<a href="company-profile.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="company-profile.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-4 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img4.jpg" alt="">
-															<a href="company-profile.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="company-profile.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-4 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img5.jpg" alt="">
-															<a href="company-profile.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="company-profile.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-4 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img6.jpg" alt="">
-															<a href="company-profile.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="company-profile.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-4 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img7.jpg" alt="">
-															<a href="company-profile.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="company-profile.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-4 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img8.jpg" alt="">
-															<a href="company-profile.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="company-profile.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-4 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img9.jpg" alt="">
-															<a href="company-profile.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="company-profile.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 													<div class="col-lg-4 col-md-4 col-sm-4 col-6">
 														<div class="gallery_pt">
 															<img src="images/resources/pf-img10.jpg" alt="">
-															<a href="company-profile.jsp#" title=""><img src="images/all-out.png" alt=""></a>
+															<a href="company-profile.html#" title=""><img src="images/all-out.png" alt=""></a>
 														</div><!--gallery_pt end-->
 													</div>
 												</div>
@@ -684,7 +704,7 @@
 							<div class="col-lg-3">
 								<div class="right-sidebar">
 									<div class="message-btn">
-										<a href="company-profile.jsp#" title=""><i class="fa fa-envelope"></i> Message</a>
+										<a href="company-profile.html#" title=""><i class="fa fa-envelope"></i> Message</a>
 									</div>
 									<div class="widget widget-portfolio">
 										<div class="wd-heady">
@@ -693,18 +713,18 @@
 										</div>
 										<div class="pf-gallery">
 											<ul>
-												<li><a href="company-profile.jsp#" title=""><img src="images/resources/pf-gallery1.png" alt=""></a></li>
-												<li><a href="company-profile.jsp#" title=""><img src="images/resources/pf-gallery2.png" alt=""></a></li>
-												<li><a href="company-profile.jsp#" title=""><img src="images/resources/pf-gallery3.png" alt=""></a></li>
-												<li><a href="company-profile.jsp#" title=""><img src="images/resources/pf-gallery4.png" alt=""></a></li>
-												<li><a href="company-profile.jsp#" title=""><img src="images/resources/pf-gallery5.png" alt=""></a></li>
-												<li><a href="company-profile.jsp#" title=""><img src="images/resources/pf-gallery6.png" alt=""></a></li>
-												<li><a href="company-profile.jsp#" title=""><img src="images/resources/pf-gallery7.png" alt=""></a></li>
-												<li><a href="company-profile.jsp#" title=""><img src="images/resources/pf-gallery8.png" alt=""></a></li>
-												<li><a href="company-profile.jsp#" title=""><img src="images/resources/pf-gallery9.png" alt=""></a></li>
-												<li><a href="company-profile.jsp#" title=""><img src="images/resources/pf-gallery10.png" alt=""></a></li>
-												<li><a href="company-profile.jsp#" title=""><img src="images/resources/pf-gallery11.png" alt=""></a></li>
-												<li><a href="company-profile.jsp#" title=""><img src="images/resources/pf-gallery12.png" alt=""></a></li>
+												<li><a href="company-profile.html#" title=""><img src="images/resources/pf-gallery1.png" alt=""></a></li>
+												<li><a href="company-profile.html#" title=""><img src="images/resources/pf-gallery2.png" alt=""></a></li>
+												<li><a href="company-profile.html#" title=""><img src="images/resources/pf-gallery3.png" alt=""></a></li>
+												<li><a href="company-profile.html#" title=""><img src="images/resources/pf-gallery4.png" alt=""></a></li>
+												<li><a href="company-profile.html#" title=""><img src="images/resources/pf-gallery5.png" alt=""></a></li>
+												<li><a href="company-profile.html#" title=""><img src="images/resources/pf-gallery6.png" alt=""></a></li>
+												<li><a href="company-profile.html#" title=""><img src="images/resources/pf-gallery7.png" alt=""></a></li>
+												<li><a href="company-profile.html#" title=""><img src="images/resources/pf-gallery8.png" alt=""></a></li>
+												<li><a href="company-profile.html#" title=""><img src="images/resources/pf-gallery9.png" alt=""></a></li>
+												<li><a href="company-profile.html#" title=""><img src="images/resources/pf-gallery10.png" alt=""></a></li>
+												<li><a href="company-profile.html#" title=""><img src="images/resources/pf-gallery11.png" alt=""></a></li>
+												<li><a href="company-profile.html#" title=""><img src="images/resources/pf-gallery12.png" alt=""></a></li>
 											</ul>
 										</div><!--pf-gallery end-->
 									</div><!--widget-portfolio end-->
@@ -721,15 +741,15 @@
 			<div class="footy-sec mn no-margin">
 				<div class="container">
 					<ul>
-						<li><a href="help-center.jsp" title="">Help Center</a></li>
-						<li><a href="about.jsp" title="">About</a></li>
-						<li><a href="company-profile.jsp#" title="">Privacy Policy</a></li>
-						<li><a href="company-profile.jsp#" title="">Community Guidelines</a></li>
-						<li><a href="company-profile.jsp#" title="">Cookies Policy</a></li>
-						<li><a href="company-profile.jsp#" title="">Career</a></li>
-						<li><a href="forum.jsp" title="">Forum</a></li>
-						<li><a href="company-profile.jsp#" title="">Language</a></li>
-						<li><a href="company-profile.jsp#" title="">Copyright Policy</a></li>
+						<li><a href="help-center.html" title="">Help Center</a></li>
+						<li><a href="about.html" title="">About</a></li>
+						<li><a href="company-profile.html#" title="">Privacy Policy</a></li>
+						<li><a href="company-profile.html#" title="">Community Guidelines</a></li>
+						<li><a href="company-profile.html#" title="">Cookies Policy</a></li>
+						<li><a href="company-profile.html#" title="">Career</a></li>
+						<li><a href="forum.html" title="">Forum</a></li>
+						<li><a href="company-profile.html#" title="">Language</a></li>
+						<li><a href="company-profile.html#" title="">Copyright Policy</a></li>
 					</ul>
 					<p><img src="images/copy-icon2.png" alt="">Copyright 2018</p>
 					<img class="fl-rgt" src="images/logo2.png" alt="">
@@ -747,7 +767,7 @@
 					<button type="submit" class="save">Save</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="company-profile.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="company-profile.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -762,7 +782,7 @@
 					<button type="submit" class="save-add">Save & Add More</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="company-profile.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="company-profile.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -793,7 +813,7 @@
 					<button type="submit" class="save-add">Save & Add More</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="company-profile.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="company-profile.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -824,7 +844,7 @@
 					<button type="submit" class="save">Save</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="company-profile.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="company-profile.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -832,9 +852,9 @@
 			<div class="overview-edit">
 				<h3>Skills</h3>
 				<ul>
-					<li><a href="company-profile.jsp#" title="" class="skl-name">HTML</a><a href="company-profile.jsp#" title="" class="close-skl"><i class="la la-close"></i></a></li>
-					<li><a href="company-profile.jsp#" title="" class="skl-name">php</a><a href="company-profile.jsp#" title="" class="close-skl"><i class="la la-close"></i></a></li>
-					<li><a href="company-profile.jsp#" title="" class="skl-name">css</a><a href="company-profile.jsp#" title="" class="close-skl"><i class="la la-close"></i></a></li>
+					<li><a href="company-profile.html#" title="" class="skl-name">HTML</a><a href="company-profile.html#" title="" class="close-skl"><i class="la la-close"></i></a></li>
+					<li><a href="company-profile.html#" title="" class="skl-name">php</a><a href="company-profile.html#" title="" class="close-skl"><i class="la la-close"></i></a></li>
+					<li><a href="company-profile.html#" title="" class="skl-name">css</a><a href="company-profile.html#" title="" class="close-skl"><i class="la la-close"></i></a></li>
 				</ul>
 				<form>
 					<input type="text" name="skills" placeholder="Skills">
@@ -842,7 +862,7 @@
 					<button type="submit" class="save-add">Save & Add More</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="company-profile.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="company-profile.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -861,7 +881,7 @@
 					<button type="submit" class="save">Save</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="company-profile.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="company-profile.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -876,7 +896,7 @@
 					<button type="submit" class="save">Save</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="company-profile.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="company-profile.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -889,7 +909,7 @@
 					<button type="submit" class="save">Save</button>
 					<button type="submit" class="cancel">Cancel</button>
 				</form>
-				<a href="company-profile.jsp#" title="" class="close-box"><i class="la la-close"></i></a>
+				<a href="company-profile.html#" title="" class="close-box"><i class="la la-close"></i></a>
 			</div><!--overview-edit end-->
 		</div><!--overview-box end-->
 
@@ -898,6 +918,12 @@
 	</div><!--theme-layout end-->
 
 
-<%@ include file="scripts.jsp"%>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/flatpickr.min.js"></script>
+<script type="text/javascript" src="lib/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
