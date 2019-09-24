@@ -23,10 +23,6 @@ public class AppFilter implements Filter {
         User user = (User) session.getAttribute("user");
         String path = request.getRequestURI();
 
-        if (session.isNew()){
-            response.sendRedirect( ((HttpServletRequest)servletRequest).getContextPath() + "/pages/sign-in.jsp");
-            return;
-        }
 
         if (path.contains("/js/") || path.contains("/css/") || path.contains("/lib/") || path.contains("/fonts/")
                 || path.contains("/images/") || path.contains("/vendor/") || path.contains("/Register")) {
