@@ -14,7 +14,7 @@ public class Main {
         userService.addUser(user);
         Post post  = new Post();
         post.setDescription("desssssssssssc");
-        post.setUserId(user.getId());
+        post.setUserId(1);
         PostService postService = new PostService();
         postService.addPost(post);
     }
