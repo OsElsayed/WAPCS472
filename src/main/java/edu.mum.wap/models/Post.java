@@ -34,5 +34,10 @@ public class Post {
     @JoinColumn(name = "imageId")
     private Images images;
 
+    @Transient
+    private int visibility;
+
+    @Transient
+    private int activity;
 
 }

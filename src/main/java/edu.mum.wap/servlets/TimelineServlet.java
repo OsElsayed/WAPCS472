@@ -30,7 +30,9 @@ public class TimelineServlet extends HttpServlet {
         Post post = new Post();
         post.setDescription(comment);
         post.setActive(true);
+        post.setActivity(1);
         post.setVisible(true);
+        post.setVisibility(1);
         Date today = Calendar.getInstance().getTime();
         post.setCreationDate(today);
         if(photo != ""){
@@ -51,6 +53,13 @@ public class TimelineServlet extends HttpServlet {
         List<Post> posts = new ArrayList();
         PostService postService = new PostService();
         posts = postService.findAll();
+        for (Post post:
+             posts) {
+            if (post.isVisible())
+                post.setVisibility(1);
+            if (post.isActive())
+                post.setActivity(1);
+        }
         Collections.reverse(posts);
         HttpSession session = req.getSession();
         session.setAttribute("posts",posts);
