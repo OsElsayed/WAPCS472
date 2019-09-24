@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
         } catch (NoSuchAlgorithmException e) {
             session.removeAttribute("user");
             session.setAttribute("error", "An error occurred during the request.");
-            session.invalidate();
+//            session.invalidate();
             resp.sendRedirect(((HttpServletRequest) req).getContextPath() + "/pages/sign-in.jsp");
             return;
         }
