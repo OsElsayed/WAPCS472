@@ -5,6 +5,7 @@ import edu.mum.wap.daos.impl.UserDao;
 import edu.mum.wap.models.Images;
 import edu.mum.wap.models.User;
 import edu.mum.wap.utils.HashingHelper;
+//import edu.mum.wap.utils.HashingHelper;
 
 import java.security.NoSuchAlgorithmException;
 import java.util.Date;
@@ -45,6 +46,11 @@ public class UserService {
 
     public User findUser(Long userId) {
         return userDao.findOne(userId);
+    }
+
+    public User authenticateUser(String username) {
+        User user = userDao.getUserByName(username);
+        return user;
     }
 }
 

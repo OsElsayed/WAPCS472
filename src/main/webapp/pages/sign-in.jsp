@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>WorkWise Html Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
-    <%@ include file="styles.jsp"%>
-</head>
-
-
+<%@include file="header.jsp"%>
 <body class="sign-in">
 
 
@@ -38,7 +27,7 @@
                             <div class="sign_in_sec current" id="tab-1">
 
                                 <h3>Sign in</h3>
-                                <form>
+                                <form method="post" action="login">
                                     <div class="row">
                                         <div class="col-lg-12 no-pdd">
                                             <div class="sn-field">
@@ -151,13 +140,13 @@
         <div class="footy-sec">
             <div class="container">
                 <ul>
-                    <li><a href="help-center.html" title="">Help Center</a></li>
-                    <li><a href="about.html" title="">About</a></li>
+                    <li><a href="help-center.jsp" title="">Help Center</a></li>
+                    <li><a href="about.jsp" title="">About</a></li>
                     <li><a href="sign-in.jsp#" title="">Privacy Policy</a></li>
                     <li><a href="sign-in.jsp#" title="">Community Guidelines</a></li>
                     <li><a href="sign-in.jsp#" title="">Cookies Policy</a></li>
                     <li><a href="sign-in.jsp#" title="">Career</a></li>
-                    <li><a href="forum.html" title="">Forum</a></li>
+                    <li><a href="forum.jsp" title="">Forum</a></li>
                     <li><a href="sign-in.jsp#" title="">Language</a></li>
                     <li><a href="sign-in.jsp#" title="">Copyright Policy</a></li>
                 </ul>

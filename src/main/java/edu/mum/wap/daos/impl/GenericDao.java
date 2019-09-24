@@ -53,5 +53,5 @@ public class GenericDao<T> implements GenericRepository<T> {
     @Override
     public T update(T entity) {
         return entityManager.merge(entity);
-    }
+}
 }
