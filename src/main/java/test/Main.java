@@ -1,9 +1,11 @@
 package test;
 
 import edu.mum.wap.models.Post;
+import edu.mum.wap.models.User;
 import edu.mum.wap.services.PostService;
+import edu.mum.wap.services.UserService;
 
-import java.util.List;
+import java.security.NoSuchAlgorithmException;
 
 public class Main {
 
@@ -16,14 +18,10 @@ public class Main {
 //        } catch (NoSuchAlgorithmException e) {
 //            e.printStackTrace();
 //        }
-//        Post post  = new Post();
-//        post.setDescription("desssssssssssc");
-//        post.setUserId(1);
-//        PostService postService = new PostService();
-//        postService.addPost(post);
-
-        PostService psv = new PostService();
-        List<Post> p =psv.getMyPosts(2);
-        System.out.print(p);
+        Post post  = new Post();
+        post.setDescription("desssssssssssc");
+        post.setUserId(1);
+        PostService postService = new PostService();
+        postService.addPost(post);
     }
 }

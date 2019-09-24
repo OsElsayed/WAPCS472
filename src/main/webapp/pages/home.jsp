@@ -70,9 +70,9 @@
 								</ul>
 							</li>
 							<li>
-								<a href="jobs.html" title="">
+								<a href="jobs.jsp" title="">
 									<span><img src="../images/icon5.png" alt=""></span>
-									Jobs
+									Advertisement
 								</a>
 							</li>
 							<li>
