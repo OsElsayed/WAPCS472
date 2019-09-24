@@ -20,7 +20,13 @@ public class AppFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
-
+        String path = request.getRequestURI();
+        if (path.startsWith("/js/") || path.startsWith("/css/") || path.startsWith("/lib/") || path.startsWith("/fonts/")
+                || path.startsWith("/images/") || path.startsWith("/vendor/")) {
+            chain.doFilter(request, response); // Just continue chain.
+        } else {
+            // Do your business stuff here for all paths other than /specialpath.
+        }
         //if (request.getServletPath().contains("/sign-in")) {
        //     chain.doFilter(request, response);
             //return;
