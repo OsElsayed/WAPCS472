@@ -1,3 +1,4 @@
+<%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,12 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/line-awesome.css">
 	<link rel="stylesheet" type="text/css" href="../css/line-awesome-font-awesome.min.css">
-	<link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<%--	<link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">--%>
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.min.css">
+<%--	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">--%>
 	<link rel="stylesheet" type="text/css" href="../lib/slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="../lib/slick/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
+	<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 </head>
 
 
@@ -25,7 +28,7 @@
 			<div class="container">
 				<div class="header-data">
 					<div class="logo">
-						<a href="index.html" title=""><img src="../images/logo.png" alt=""></a>
+						<a href="home.html" title=""><img src="../images/logo.png" alt=""></a>
 					</div><!--logo end-->
 					<div class="search-bar">
 						<form>
@@ -225,7 +228,7 @@
 					</div>
 				</div><!--header-data end-->
 			</div>
-		</header><!--header end-->	
+		</header><!--header end-->
 
 
 		<section class="cover-sec">
@@ -247,7 +250,6 @@
 										<div class="user_pro_status">
 											<ul class="flw-hr">
 												<li><a href="user-profile.html#" title="" class="flww"><i class="la la-plus"></i> Follow</a></li>
-												<li><a href="user-profile.html#" title="" class="hre">Hire</a></li>
 											</ul>
 											<ul class="flw-status">
 												<li>
@@ -273,58 +275,20 @@
 									</div><!--user_profile end-->
 									<div class="suggestions full-width">
 										<div class="sd-title">
-											<h3>Suggestions</h3>
+											<h3>Followings</h3>
 											<i class="la la-ellipsis-v"></i>
 										</div><!--sd-title end-->
 										<div class="suggestions-list">
-											<div class="suggestion-usd">
+											<c:forEach var="f" items="${followings}">
+												<div class="suggestion-usd">
 												<img src="../images/resources/s1.png" alt="">
 												<div class="sgt-text">
-													<h4>Jessica William</h4>
+													<h4>${f.username}</h4>
 													<span>Graphic Designer</span>
 												</div>
 												<span><i class="la la-plus"></i></span>
 											</div>
-											<div class="suggestion-usd">
-												<img src="../images/resources/s2.png" alt="">
-												<div class="sgt-text">
-													<h4>John Doe</h4>
-													<span>PHP Developer</span>
-												</div>
-												<span><i class="la la-plus"></i></span>
-											</div>
-											<div class="suggestion-usd">
-												<img src="../images/resources/s3.png" alt="">
-												<div class="sgt-text">
-													<h4>Poonam</h4>
-													<span>Wordpress Developer</span>
-												</div>
-												<span><i class="la la-plus"></i></span>
-											</div>
-											<div class="suggestion-usd">
-												<img src="../images/resources/s4.png" alt="">
-												<div class="sgt-text">
-													<h4>Bill Gates</h4>
-													<span>C & C++ Developer</span>
-												</div>
-												<span><i class="la la-plus"></i></span>
-											</div>
-											<div class="suggestion-usd">
-												<img src="../images/resources/s5.png" alt="">
-												<div class="sgt-text">
-													<h4>Jessica William</h4>
-													<span>Graphic Designer</span>
-												</div>
-												<span><i class="la la-plus"></i></span>
-											</div>
-											<div class="suggestion-usd">
-												<img src="../images/resources/s6.png" alt="">
-												<div class="sgt-text">
-													<h4>John Doe</h4>
-													<span>PHP Developer</span>
-												</div>
-												<span><i class="la la-plus"></i></span>
-											</div>
+											</c:forEach>
 											<div class="view-more">
 												<a href="user-profile.html#" title="">View More</a>
 											</div>
@@ -336,16 +300,16 @@
 								<div class="main-ws-sec">
 									<div class="user-tab-sec">
 										<h3>John Doe</h3>
-										<div class="star-descp">
-											<span>Graphic Designer at Self Employed</span>
-											<ul>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star-half-o"></i></li>
-											</ul>
-										</div><!--star-descp end-->
+<%--										<div class="star-descp">--%>
+<%--											<span>Graphic Designer at Self Employed</span>--%>
+<%--											<ul>--%>
+<%--												<li><i class="fa fa-star"></i></li>--%>
+<%--												<li><i class="fa fa-star"></i></li>--%>
+<%--												<li><i class="fa fa-star"></i></li>--%>
+<%--												<li><i class="fa fa-star"></i></li>--%>
+<%--												<li><i class="fa fa-star-half-o"></i></li>--%>
+<%--											</ul>--%>
+<%--										</div><!--star-descp end-->--%>
 										<div class="tab-feed">
 											<ul>
 												<li data-tab="feed-dd" class="active">
@@ -360,18 +324,30 @@
 														<span>Info</span>
 													</a>
 												</li>
-												<li data-tab="portfolio-dd">
-													<a href="user-profile.html#" title="">
-														<img src="../images/ic3.png" alt="">
-														<span>Portfolio</span>
-													</a>
-												</li>
+<%--												<li data-tab="portfolio-dd">--%>
+<%--													<a href="user-profile.html#" title="">--%>
+<%--														<img src="../images/ic3.png" alt="">--%>
+<%--														<span>Portfolio</span>--%>
+<%--													</a>--%>
+<%--												</li>--%>
 											</ul>
 										</div><!-- tab-feed end-->
 									</div><!--user-tab-sec end-->
+									<div class="post-topbar">
+										<div class="user-picy">
+											<img src="../images/resources/user-pic.png" alt="">
+										</div>
+										<div class="post-st">
+											<ul>
+<%--												<li><a class="post_project" href="index.html#" title="">Post a Project</a></li>--%>
+												<li><a class="post-jb active" href="index.html#" title="">Post</a></li>
+											</ul>
+										</div><!--post-st end-->
+									</div><!--post-topbar end-->
 									<div class="product-feed-tab current" id="feed-dd">
 										<div class="posts-section">
-											<div class="post-bar">
+											<c:forEach var="p" items="${posts}">
+												<div class="post-bar">
 												<div class="post_topbar">
 													<div class="usy-dt">
 														<img src="../images/resources/us-pic.png" alt="">
@@ -407,13 +383,13 @@
 														<li><a href="user-profile.html#" title="">Full Time</a></li>
 														<li><span>$30 / hr</span></li>
 													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="user-profile.html#" title="">view more</a></p>
+													<p>${p.description}<a href="user-profile.html#" title="">view more</a></p>
 													<ul class="skill-tags">
 														<li><a href="user-profile.html#" title="">HTML</a></li>
 														<li><a href="user-profile.html#" title="">PHP</a></li>
 														<li><a href="user-profile.html#" title="">CSS</a></li>
 														<li><a href="user-profile.html#" title="">Javascript</a></li>
-														<li><a href="user-profile.html#" title="">Wordpress</a></li> 	
+														<li><a href="user-profile.html#" title="">Wordpress</a></li>
 													</ul>
 												</div>
 												<div class="job-status-bar">
@@ -428,177 +404,7 @@
 													<a href="user-profile.html#"><i class="fas fa-eye"></i>Views 50</a>
 												</div>
 											</div><!--post-bar end-->
-											<div class="post-bar">
-												<div class="post_topbar">
-													<div class="usy-dt">
-														<img src="../images/resources/us-pic.png" alt="">
-														<div class="usy-name">
-															<h3>John Doe</h3>
-															<span><img src="../images/clock.png" alt="">3 min ago</span>
-														</div>
-													</div>
-													<div class="ed-opts">
-														<a href="user-profile.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
-														<ul class="ed-options">
-															<li><a href="user-profile.html#" title="">Edit Post</a></li>
-															<li><a href="user-profile.html#" title="">Unsaved</a></li>
-															<li><a href="user-profile.html#" title="">Unbid</a></li>
-															<li><a href="user-profile.html#" title="">Close</a></li>
-															<li><a href="user-profile.html#" title="">Hide</a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="epi-sec">
-													<ul class="descp">
-														<li><img src="../images/icon8.png" alt=""><span>Front End Developer</span></li>
-														<li><img src="../images/icon9.png" alt=""><span>India</span></li>
-													</ul>
-													<ul class="bk-links">
-														<li><a href="user-profile.html#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="user-profile.html#" title=""><i class="la la-envelope"></i></a></li>
-														<li><a href="user-profile.html#" title="" class="bid_now">Bid Now</a></li>
-													</ul>
-												</div>
-												<div class="job_descp">
-													<h3>Simple Classified Site</h3>
-													<ul class="job-dt">
-														<li><span>$300 - $350</span></li>
-													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="user-profile.html#" title="">view more</a></p>
-													<ul class="skill-tags">
-														<li><a href="user-profile.html#" title="">HTML</a></li>
-														<li><a href="user-profile.html#" title="">PHP</a></li>
-														<li><a href="user-profile.html#" title="">CSS</a></li>
-														<li><a href="user-profile.html#" title="">Javascript</a></li>
-														<li><a href="user-profile.html#" title="">Wordpress</a></li> 	
-													</ul>
-												</div>
-												<div class="job-status-bar">
-													<ul class="like-com">
-														<li>
-															<a href="user-profile.html#"><i class="fas fa-heart"></i> Like</a>
-															<img src="../images/liked-img.png" alt="">
-															<span>25</span>
-														</li>
-														<li><a href="user-profile.html#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
-													</ul>
-													<a href="user-profile.html#"><i class="fas fa-eye"></i>Views 50</a>
-												</div>
-											</div><!--post-bar end-->
-											<div class="post-bar">
-												<div class="post_topbar">
-													<div class="usy-dt">
-														<img src="../images/resources/us-pc2.png" alt="">
-														<div class="usy-name">
-															<h3>John Doe</h3>
-															<span><img src="../images/clock.png" alt="">3 min ago</span>
-														</div>
-													</div>
-													<div class="ed-opts">
-														<a href="user-profile.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
-														<ul class="ed-options">
-															<li><a href="user-profile.html#" title="">Edit Post</a></li>
-															<li><a href="user-profile.html#" title="">Unsaved</a></li>
-															<li><a href="user-profile.html#" title="">Unbid</a></li>
-															<li><a href="user-profile.html#" title="">Close</a></li>
-															<li><a href="user-profile.html#" title="">Hide</a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="epi-sec">
-													<ul class="descp">
-														<li><img src="../images/icon8.png" alt=""><span>Epic Coder</span></li>
-														<li><img src="../images/icon9.png" alt=""><span>India</span></li>
-													</ul>
-													<ul class="bk-links">
-														<li><a href="user-profile.html#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="user-profile.html#" title=""><i class="la la-envelope"></i></a></li>
-													</ul>
-												</div>
-												<div class="job_descp">
-													<h3>Senior UI / UX designer</h3>
-													<ul class="job-dt">
-														<li><a href="user-profile.html#" title="">Par Time</a></li>
-														<li><span>$10 / hr</span></li>
-													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="user-profile.html#" title="">view more</a></p>
-													<ul class="skill-tags">
-														<li><a href="user-profile.html#" title="">HTML</a></li>
-														<li><a href="user-profile.html#" title="">PHP</a></li>
-														<li><a href="user-profile.html#" title="">CSS</a></li>
-														<li><a href="user-profile.html#" title="">Javascript</a></li>
-														<li><a href="user-profile.html#" title="">Wordpress</a></li> 	
-													</ul>
-												</div>
-												<div class="job-status-bar">
-													<ul class="like-com">
-														<li>
-															<a href="user-profile.html#"><i class="fas fa-heart"></i> Like</a>
-															<img src="../images/liked-img.png" alt="">
-															<span>25</span>
-														</li>
-														<li><a href="user-profile.html#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
-													</ul>
-													<a href="user-profile.html#"><i class="fas fa-eye"></i>Views 50</a>
-												</div>
-											</div><!--post-bar end-->
-											<div class="post-bar">
-												<div class="post_topbar">
-													<div class="usy-dt">
-														<img src="../images/resources/us-pic.png" alt="">
-														<div class="usy-name">
-															<h3>John Doe</h3>
-															<span><img src="../images/clock.png" alt="">3 min ago</span>
-														</div>
-													</div>
-													<div class="ed-opts">
-														<a href="user-profile.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
-														<ul class="ed-options">
-															<li><a href="user-profile.html#" title="">Edit Post</a></li>
-															<li><a href="user-profile.html#" title="">Unsaved</a></li>
-															<li><a href="user-profile.html#" title="">Unbid</a></li>
-															<li><a href="user-profile.html#" title="">Close</a></li>
-															<li><a href="user-profile.html#" title="">Hide</a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="epi-sec">
-													<ul class="descp">
-														<li><img src="../images/icon8.png" alt=""><span>Epic Coder</span></li>
-														<li><img src="../images/icon9.png" alt=""><span>India</span></li>
-													</ul>
-													<ul class="bk-links">
-														<li><a href="user-profile.html#" title=""><i class="la la-bookmark"></i></a></li>
-														<li><a href="user-profile.html#" title=""><i class="la la-envelope"></i></a></li>
-														<li><a href="user-profile.html#" title="" class="bid_now">Bid Now</a></li>
-													</ul>
-												</div>
-												<div class="job_descp">
-													<h3>Ios Shopping mobile app</h3>
-													<ul class="job-dt">
-														<li><span>$300 - $350</span></li>
-													</ul>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="user-profile.html#" title="">view more</a></p>
-													<ul class="skill-tags">
-														<li><a href="user-profile.html#" title="">HTML</a></li>
-														<li><a href="user-profile.html#" title="">PHP</a></li>
-														<li><a href="user-profile.html#" title="">CSS</a></li>
-														<li><a href="user-profile.html#" title="">Javascript</a></li>
-														<li><a href="user-profile.html#" title="">Wordpress</a></li> 	
-													</ul>
-												</div>
-												<div class="job-status-bar">
-													<ul class="like-com">
-														<li>
-															<a href="user-profile.html#"><i class="fas fa-heart"></i> Like</a>
-															<img src="../images/liked-img.png" alt="">
-															<span>25</span>
-														</li>
-														<li><a href="user-profile.html#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
-													</ul>
-													<a href="user-profile.html#"><i class="fas fa-eye"></i>Views 50</a>
-												</div>
-											</div><!--post-bar end-->
+											</c:forEach>
 											<div class="process-comm">
 												<div class="spinner">
 													<div class="bounce1"></div>
@@ -607,114 +413,6 @@
 												</div>
 											</div><!--process-comm end-->
 										</div><!--posts-section end-->
-									</div><!--product-feed-tab end-->
-									<div class="product-feed-tab" id="info-dd">
-										<div class="user-profile-ov">
-											<h3>Overview</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. Nunc eu augue nec arcu efficitur faucibus. Aliquam accumsan ac magna convallis bibendum. Quisque laoreet augue eget augue fermentum scelerisque. Vivamus dignissim mollis est dictum blandit. Nam porta auctor neque sed congue. Nullam rutrum eget ex at maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vestibulum lorem.</p>
-										</div><!--user-profile-ov end-->
-										<div class="user-profile-ov st2">
-											<h3>Experience</h3>
-											<h4>Web designer</h4>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. </p>
-											<h4>UI / UX Designer</h4>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id.</p>
-											<h4>PHP developer</h4>
-											<p class="no-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. </p>
-										</div><!--user-profile-ov end-->
-										<div class="user-profile-ov">
-											<h3>Education</h3>
-											<h4>Master of Computer Science</h4>
-											<span>2015 - 2018</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. </p>
-										</div><!--user-profile-ov end-->
-										<div class="user-profile-ov">
-											<h3>Location</h3>
-											<h4>India</h4>
-											<p>151/4 BT Chownk, Delhi </p>
-										</div><!--user-profile-ov end-->
-										<div class="user-profile-ov">
-											<h3>Skills</h3>
-											<ul>
-												<li><a href="user-profile.html#" title="">HTML</a></li>
-												<li><a href="user-profile.html#" title="">PHP</a></li>
-												<li><a href="user-profile.html#" title="">CSS</a></li>
-												<li><a href="user-profile.html#" title="">Javascript</a></li>
-												<li><a href="user-profile.html#" title="">Wordpress</a></li>
-												<li><a href="user-profile.html#" title="">Photoshop</a></li>
-												<li><a href="user-profile.html#" title="">Illustrator</a></li>
-												<li><a href="user-profile.html#" title="">Corel Draw</a></li>
-											</ul>
-										</div><!--user-profile-ov end-->
-									</div><!--product-feed-tab end-->
-									<div class="product-feed-tab" id="portfolio-dd">
-										<div class="portfolio-gallery-sec">
-											<h3>Portfolio</h3>
-											<div class="gallery_pf">
-												<div class="row">
-													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
-														<div class="gallery_pt">
-															<img src="../images/resources/pf-img1.jpg" alt="">
-															<a href="user-profile.html#" title=""><img src="../images/all-out.png" alt=""></a>
-														</div><!--gallery_pt end-->
-													</div>
-													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
-														<div class="gallery_pt">
-															<img src="../images/resources/pf-img2.jpg" alt="">
-															<a href="user-profile.html#" title=""><img src="../images/all-out.png" alt=""></a>
-														</div><!--gallery_pt end-->
-													</div>
-													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
-														<div class="gallery_pt">
-															<img src="../images/resources/pf-img3.jpg" alt="">
-															<a href="user-profile.html#" title=""><img src="../images/all-out.png" alt=""></a>
-														</div><!--gallery_pt end-->
-													</div>
-													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
-														<div class="gallery_pt">
-															<img src="../images/resources/pf-img4.jpg" alt="">
-															<a href="user-profile.html#" title=""><img src="../images/all-out.png" alt=""></a>
-														</div><!--gallery_pt end-->
-													</div>
-													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
-														<div class="gallery_pt">
-															<img src="../images/resources/pf-img5.jpg" alt="">
-															<a href="user-profile.html#" title=""><img src="../images/all-out.png" alt=""></a>
-														</div><!--gallery_pt end-->
-													</div>
-													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
-														<div class="gallery_pt">
-															<img src="../images/resources/pf-img6.jpg" alt="">
-															<a href="user-profile.html#" title=""><img src="../images/all-out.png" alt=""></a>
-														</div><!--gallery_pt end-->
-													</div>
-													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
-														<div class="gallery_pt">
-															<img src="../images/resources/pf-img7.jpg" alt="">
-															<a href="user-profile.html#" title=""><img src="../images/all-out.png" alt=""></a>
-														</div><!--gallery_pt end-->
-													</div>
-													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
-														<div class="gallery_pt">
-															<img src="../images/resources/pf-img8.jpg" alt="">
-															<a href="user-profile.html#" title=""><img src="../images/all-out.png" alt=""></a>
-														</div><!--gallery_pt end-->
-													</div>
-													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
-														<div class="gallery_pt">
-															<img src="../images/resources/pf-img9.jpg" alt="">
-															<a href="user-profile.html#" title=""><img src="../images/all-out.png" alt=""></a>
-														</div><!--gallery_pt end-->
-													</div>
-													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
-														<div class="gallery_pt">
-															<img src="../images/resources/pf-img10.jpg" alt="">
-															<a href="user-profile.html#" title=""><img src="../images/all-out.png" alt=""></a>
-														</div><!--gallery_pt end-->
-													</div>
-												</div>
-											</div><!--gallery_pf end-->
-										</div><!--portfolio-gallery-sec end-->
 									</div><!--product-feed-tab end-->
 								</div><!--main-ws-sec end-->
 							</div>
@@ -749,7 +447,7 @@
 							</div>
 						</div>
 					</div><!-- main-section-data end-->
-				</div> 
+				</div>
 			</div>
 		</main>
 
@@ -800,10 +498,14 @@
 
 
 
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript" src="../js/popper.js"></script>
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../lib/slick/slick.min.js"></script>
-<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/popper.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="../lib/slick/slick.min.js"></script>
+	<script type="text/javascript" src="../js/scrollbar.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+	<script type="text/javascript" src="../js/pages/profile.js"></script>
 </body>
 </html>

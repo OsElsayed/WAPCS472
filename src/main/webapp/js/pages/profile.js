@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    $.post("")
+    $.get("Profile")
         .done(function (data) {
-
+            console.log(data);
         })
         .fail(function (err) {
             console.error(err);
