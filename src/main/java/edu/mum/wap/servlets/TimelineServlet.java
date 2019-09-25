@@ -1,6 +1,5 @@
 package edu.mum.wap.servlets;
 
-import com.google.gson.Gson;
 import edu.mum.wap.models.Images;
 import edu.mum.wap.models.Post;
 import edu.mum.wap.models.User;

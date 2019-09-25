@@ -544,7 +544,7 @@ nav > ul > li > a:hover {
 }
 .user-info {
 	float: left;
-	width: 100%;
+	width: 150px;
 	padding: 13px 10px;
 	position: relative;
 }

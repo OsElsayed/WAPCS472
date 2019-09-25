@@ -39,7 +39,7 @@
             </div><!--menu-btn end-->
             <div class="user-account">
                 <div class="user-info">
-                    <img src="../images/resources/user.png" alt="">
+                    <img src="${user.image.imageUrl}" alt="" style="height: 35px;width: 35px">
                     <a href="#" title="">${user.username}</a>
                     <i class="la la-sort-down"></i>
                 </div>
