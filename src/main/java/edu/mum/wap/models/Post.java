@@ -22,7 +22,7 @@ public class Post {
     @Column
     private boolean isActive;
 
-    @Temporal(TemporalType.DATE)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date creationDate;
 
     @Column

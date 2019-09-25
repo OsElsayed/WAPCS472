@@ -36,7 +36,7 @@ public class UserService {
         Date date = new Date();
         user.setCreationDate(date);
         user.setModifiedDate(date);
-        user.setAdmin(false);
+        user.setAdmin(user.isAdmin());
         Images img = user.getImage();
         if(img != null && !img.getImageUrl().isEmpty()){
             img = imageDao.save(img);
