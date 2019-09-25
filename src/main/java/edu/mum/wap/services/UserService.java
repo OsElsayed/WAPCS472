@@ -31,6 +31,18 @@ public class UserService {
         }
         userDao.save(user);
     }
+    public void addUser(User user, boolean isNew) throws NoSuchAlgorithmException {
+        Date date = new Date();
+        user.setCreationDate(date);
+        user.setModifiedDate(date);
+        user.setAdmin(false);
+        Images img = user.getImage();
+        if(img != null && !img.getImageUrl().isEmpty()){
+            img = imageDao.save(img);
+            user.setImage(img);
+        }
+        userDao.save(user);
+    }
 
     public User updateUser(User user) {
         return userDao.update(user);
@@ -48,8 +60,8 @@ public class UserService {
         return userDao.findOne(userId);
     }
 
-    public User authenticateUser(String username) {
-        User user = userDao.getUserByName(username);
+    public User authenticateUser(String email) {
+        User user = userDao.getUserByEmail(email);
         return user;
     }
 }

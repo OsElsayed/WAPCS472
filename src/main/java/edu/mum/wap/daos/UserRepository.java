@@ -5,4 +5,5 @@ import edu.mum.wap.models.User;
 public interface UserRepository extends GenericRepository<User>{
 
     public User getUserByName(String username);
+    public User getUserByEmail(String email);
 }

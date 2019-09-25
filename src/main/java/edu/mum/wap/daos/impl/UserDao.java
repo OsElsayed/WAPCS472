@@ -17,4 +17,11 @@ public class UserDao extends GenericDao<User> implements UserRepository {
         User user = (User) query.getSingleResult();
         return user;
     }
+    @Override
+    public User getUserByEmail(String email) {
+        Query query = super.entityManager.createQuery("select u from User u where u.email = :email", User.class);
+        query.setParameter("email", email);
+        User user = (User) query.getSingleResult();
+        return user;
+    }
 }

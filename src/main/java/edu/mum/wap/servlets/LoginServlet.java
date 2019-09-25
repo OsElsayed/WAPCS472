@@ -27,9 +27,10 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
-        String username = req.getParameter("username");
+        //String username = req.getParameter("username");
+        String email = req.getParameter("email");
         String password = req.getParameter("password");
-        User userFromDb = userService.authenticateUser(username);
+        User userFromDb = userService.authenticateUser(email);
         try {
             String hashed = HashingHelper.HashPassword(password);
             if (userFromDb == null || !hashed.equals(userFromDb.getPassword())) {
@@ -46,7 +47,7 @@ public class LoginServlet extends HttpServlet {
             resp.sendRedirect(((HttpServletRequest) req).getContextPath() + "/pages/sign-in.jsp");
             return;
         }
-        System.out.println("login success info username: " + username + " & password: " + password);
+        System.out.println("login success info email: " + email + " & password: " + password);
         session.setAttribute("user", userFromDb);
         resp.sendRedirect("home.jsp");
     }

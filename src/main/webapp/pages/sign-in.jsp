@@ -31,7 +31,7 @@
                                     <div class="row">
                                         <div class="col-lg-12 no-pdd">
                                             <div class="sn-field">
-                                                <input type="text" name="username" placeholder="Username">
+                                                <input type="text" name="email" placeholder="Email">
                                                 <i class="la la-user"></i>
                                             </div><!--sn-field end-->
                                         </div>

@@ -29,7 +29,9 @@ public class ProfileServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Post> myPosts =  postSvc.getMyPosts(1);
+        me = (User)(req.getSession().getAttribute("user"));
+        long userId = me.getId();
+        List<Post> myPosts =  postSvc.getMyPosts(userId);
         Collections.reverse(myPosts);
         req.getSession().setAttribute("posts", myPosts);
 
@@ -42,6 +44,7 @@ public class ProfileServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        me = (User)(req.getSession().getAttribute("user"));
         Post p = new Post();
         p.setDescription(req.getParameter("description"));
         if(req.getParameter("photo") !=null)

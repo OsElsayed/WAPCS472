@@ -334,18 +334,19 @@
                                         </ul>
                                     </div><!-- tab-feed end-->
                                 </div><!--user-tab-sec end-->
-                                <div class="post-topbar">
-                                    <div class="user-picy">
-                                        <img src="${user.image.imageUrl}" alt="">
-                                    </div>
-                                    <div class="post-st">
-                                        <ul>
-                                            <%--												<li><a class="post_project" href="index.html#" title="">Post a Project</a></li>--%>
-                                            <li><a class="post-jb active" href="index.html#" title="">Post</a></li>
-                                        </ul>
-                                    </div><!--post-st end-->
-                                </div><!--post-topbar end-->
+
                                 <div class="product-feed-tab current" id="feed-dd">
+                                    <div class="post-topbar">
+                                        <div class="user-picy">
+                                            <img src="${user.image.imageUrl}" alt="">
+                                        </div>
+                                        <div class="post-st">
+                                            <ul>
+                                                <%--												<li><a class="post_project" href="index.html#" title="">Post a Project</a></li>--%>
+                                                <li><a class="post-jb active" href="index.html#" title="">Post</a></li>
+                                            </ul>
+                                        </div><!--post-st end-->
+                                    </div><!--post-topbar end-->
                                     <div class="posts-section">
                                         <c:forEach var="p" items="${posts}">
                                             <div class="post-bar">
@@ -415,6 +416,29 @@
                                         </div><!--process-comm end-->
                                     </div><!--posts-section end-->
                                 </div><!--product-feed-tab end-->
+                                <div class="product-feed-tab current" id="info-dd">
+                                    <div class="post-project-fields">
+                                        <form>
+                                            <div class="col-lg-12">
+                                                <h3>Edit your profile info.</h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <input type="text" id="username" name="username" placeholder="User Name" value="${user.username}">
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <input type="text" id="imageUrl" name="imageUrl" placeholder="Image URL " value="${user.image.imageUrl}">
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <ul>
+                                                        <li><button id="btnSave" type="submit" value="post" >Save</button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div><!--post-project-fields end-->
+                                </div><!--product-info-tab end-->
+
                             </div><!--main-ws-sec end-->
                         </div>
                         <div class="col-lg-3">
@@ -451,7 +475,57 @@
             </div>
         </div>
     </main>
-
+    <div class="post-popup job_post">
+        <div class="post-project">
+            <h3>Post a job</h3>
+            <div class="post-project-fields">
+                <form>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" name="title" placeholder="Title">
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inp-field">
+                                <select>
+                                    <option>Category</option>
+                                    <option>Category 1</option>
+                                    <option>Category 2</option>
+                                    <option>Category 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="text" name="skills" placeholder="Skills">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="price-br">
+                                <input type="text" name="price1" placeholder="Price">
+                                <i class="la la-dollar"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="inp-field">
+                                <select>
+                                    <option>Full Time</option>
+                                    <option>Half time</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea name="description" placeholder="Description"></textarea>
+                        </div>
+                        <div class="col-lg-12">
+                            <ul>
+                                <li><button  type="submit" value="post" >Post</button></li>
+                                <li><a href="index.html#" title="">Cancel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div><!--post-project-fields end-->
+            <a href="index.html#" title=""><i class="la la-times-circle-o"></i></a>
+        </div><!--post-project end-->
+    </div><!--post-project-popup end-->
 
     <footer>
         <div class="footy-sec mn no-margin">
