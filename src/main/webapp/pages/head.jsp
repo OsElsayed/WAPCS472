@@ -1,9 +1,18 @@
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
+    <%
+        response.setHeader("Cache-Control","no-cache");
+        response.setHeader("Cache-Control","no-store");
+        response.setHeader("Pragma","no-cache");
+        response.setDateHeader ("Expires", 0);
+        if (session.getAttribute("user") == null) {
+            response.sendRedirect("pages/sign-in.jsp");
+        }
+    %>
     <c:choose>
         <c:when test="${not empty title}">
             <title>Social WAPCS472 - ${title}</title>
