@@ -194,11 +194,35 @@
                                             <div id="img">
 
                                             </div>
-                                            <li><a class="post-jb active" href="index.html#" title="">Post a Job</a>
+                                            <li><a class="post-jb active" href="index.html#" title="">New Post</a>
                                             </li>
                                         </ul>
                                     </div><!--post-st end-->
                                 </div><!--post-topbar end-->
+                                <div class="top-profiles">
+                                    <div class="pf-hd">
+                                        <h3>People You May Know</h3>
+                                        <i class="la la-ellipsis-v"></i>
+                                    </div>
+                                    <div class="profiles-slider">
+                                        <c:set var="currentUser" value="${user.username}"></c:set>
+                                        <c:forEach var="user" items="${allusers}">
+                                            <c:if test="${user.username != currentUser}">
+                                        <div class="user-profy">
+                                            <img src="${user.image.imageUrl}" style="width: 50px; height: 50px; border-radius: 30px;">
+                                            <h3>${user.username}</h3>
+                                            <ul>
+                                                <li><a href="index.html#" title="" class="followw">Follow</a></li>
+                                                <li><a href="index.html#" title="" class="envlp"><img
+                                                        src="../images/envelop.png" alt=""></a></li>
+                                                <li><a href="index.html#" title="" class="hire">hire</a></li>
+                                            </ul>
+                                            <a href="index.html#" title="">View Profile</a>
+                                        </div><!--user-profy end-->
+                                            </c:if>
+                                        </c:forEach>
+                                    </div><!--profiles-slider end-->
+                                </div>
                                 <div class="posts-section">
                                     <c:forEach var="post" items="${posts}">
                                         <c:if test="${post.visible == true}">
@@ -215,12 +239,12 @@
                                                     <a href="index.html#" title="" class="ed-opts-open"><i
                                                             class="la la-ellipsis-v"></i></a>
                                                     <ul class="ed-options">
-                                                        <li><a href="" class="remove" title="">Edit Post</a></li>
-                                                        <li><a href="" class="remove" title="">Unsaved</a></li>
-                                                        <li><a href="" class="remove" title="">Unbid</a></li>
                                                         <li><a href="" class="remove" title="">Remove</a></li>
                                                         <c:if test="${user.admin eq true}">
                                                         <li><a href="" class="remove" id="${post.id}" title="">Block</a></li>
+                                                        </c:if>
+                                                        <c:if test="${user.admin eq false}">
+                                                            <li><a href="" class="remove" id="${post.id}" title="">Unblock</a></li>
                                                         </c:if>
                                                     </ul>
                                                 </div>
@@ -274,87 +298,26 @@
                                         </div>
                                         </c:if>
                                     </c:forEach><!--post-bar end-->
-                                    <div class="top-profiles">
-                                        <div class="pf-hd">
-                                            <h3>Top Profiles</h3>
-                                            <i class="la la-ellipsis-v"></i>
-                                        </div>
-                                        <div class="profiles-slider">
-                                            <div class="user-profy">
-                                                <img src="../images/resources/user1.png" alt="">
-                                                <h3>John Doe</h3>
-                                                <span>Graphic Designer</span>
-                                                <ul>
-                                                    <li><a href="index.html#" title="" class="followw">Follow</a></li>
-                                                    <li><a href="index.html#" title="" class="envlp"><img
-                                                            src="../images/envelop.png" alt=""></a></li>
-                                                    <li><a href="index.html#" title="" class="hire">hire</a></li>
-                                                </ul>
-                                                <a href="index.html#" title="">View Profile</a>
-                                            </div><!--user-profy end-->
-                                            <div class="user-profy">
-                                                <img src="../images/resources/user2.png" alt="">
-                                                <h3>John Doe</h3>
-                                                <span>Graphic Designer</span>
-                                                <ul>
-                                                    <li><a href="index.html#" title="" class="followw">Follow</a></li>
-                                                    <li><a href="index.html#" title="" class="envlp"><img
-                                                            src="../images/envelop.png" alt=""></a></li>
-                                                    <li><a href="index.html#" title="" class="hire">hire</a></li>
-                                                </ul>
-                                                <a href="index.html#" title="">View Profile</a>
-                                            </div><!--user-profy end-->
-                                            <div class="user-profy">
-                                                <img src="../images/resources/user3.png" alt="">
-                                                <h3>John Doe</h3>
-                                                <span>Graphic Designer</span>
-                                                <ul>
-                                                    <li><a href="index.html#" title="" class="followw">Follow</a></li>
-                                                    <li><a href="index.html#" title="" class="envlp"><img
-                                                            src="../images/envelop.png" alt=""></a></li>
-                                                    <li><a href="index.html#" title="" class="hire">hire</a></li>
-                                                </ul>
-                                                <a href="index.html#" title="">View Profile</a>
-                                            </div><!--user-profy end-->
-                                            <div class="user-profy">
-                                                <img src="../images/resources/user1.png" alt="">
-                                                <h3>John Doe</h3>
-                                                <span>Graphic Designer</span>
-                                                <ul>
-                                                    <li><a href="index.html#" title="" class="followw">Follow</a></li>
-                                                    <li><a href="index.html#" title="" class="envlp"><img
-                                                            src="../images/envelop.png" alt=""></a></li>
-                                                    <li><a href="index.html#" title="" class="hire">hire</a></li>
-                                                </ul>
-                                                <a href="index.html#" title="">View Profile</a>
-                                            </div><!--user-profy end-->
-                                            <div class="user-profy">
-                                                <img src="../images/resources/user2.png" alt="">
-                                                <h3>John Doe</h3>
-                                                <span>Graphic Designer</span>
-                                                <ul>
-                                                    <li><a href="index.html#" title="" class="followw">Follow</a></li>
-                                                    <li><a href="index.html#" title="" class="envlp"><img
-                                                            src="../images/envelop.png" alt=""></a></li>
-                                                    <li><a href="index.html#" title="" class="hire">hire</a></li>
-                                                </ul>
-                                                <a href="index.html#" title="">View Profile</a>
-                                            </div><!--user-profy end-->
-                                            <div class="user-profy">
-                                                <img src="../images/resources/user3.png" alt="">
-                                                <h3>John Doe</h3>
-                                                <span>Graphic Designer</span>
-                                                <ul>
-                                                    <li><a href="index.html#" title="" class="followw">Follow</a></li>
-                                                    <li><a href="index.html#" title="" class="envlp"><img
-                                                            src="../images/envelop.png" alt=""></a></li>
-                                                    <li><a href="index.html#" title="" class="hire">hire</a></li>
-                                                </ul>
-                                                <a href="index.html#" title="">View Profile</a>
-                                            </div><!--user-profy end-->
-                                        </div><!--profiles-slider end-->
-                                    </div><!--top-profiles end-->
-                                    <!--post-bar end-->
+<%--                                    <div class="top-profiles">--%>
+<%--                                        <div class="pf-hd">--%>
+<%--                                            <h3>Top Profiles</h3>--%>
+<%--                                            <i class="la la-ellipsis-v"></i>--%>
+<%--                                        </div>--%>
+<%--                                        <div class="profiles-slider">--%>
+<%--                                            <div class="user-profy">--%>
+<%--                                                <img src="../images/resources/user1.png" alt="">--%>
+<%--                                                <h3>John Doe</h3>--%>
+<%--                                                <span>Graphic Designer</span>--%>
+<%--                                                <ul>--%>
+<%--                                                    <li><a href="index.html#" title="" class="followw">Follow</a></li>--%>
+<%--                                                    <li><a href="index.html#" title="" class="envlp"><img--%>
+<%--                                                            src="../images/envelop.png" alt=""></a></li>--%>
+<%--                                                    <li><a href="index.html#" title="" class="hire">hire</a></li>--%>
+<%--                                                </ul>--%>
+<%--                                                <a href="index.html#" title="">View Profile</a>--%>
+<%--                                            </div><!--user-profy end-->--%>
+<%--                                        </div><!--profiles-slider end-->--%>
+<%--                                    </div>--%>
 
                                     <div class="process-comm">
                                         <div class="spinner">

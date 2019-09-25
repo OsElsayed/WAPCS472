@@ -14,6 +14,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @MultipartConfig
 @WebServlet("/pages/Timeline")
@@ -57,17 +58,21 @@ public class TimelineServlet extends HttpServlet {
         PostService postService = new PostService();
         UserService userService = new UserService();
         posts = postService.findAll();
-
-        for (Post post:posts) {
+        Collections.reverse(posts);
+        List<Post> postlimit = posts.stream().limit(2).collect(Collectors.toList());
+        for (Post post:postlimit) {
             if (post.isVisible())
                 post.setVisibility(1);
             if (post.isActive())
                 post.setActivity(1);
             post.setUser(userService.findUser(post.getUserId()));
         }
-        Collections.reverse(posts);
+
+        List<User> allusers = new ArrayList<>();
+        allusers = userService.findAll();
         HttpSession session = req.getSession();
-        session.setAttribute("posts",posts);
+        session.setAttribute("posts",postlimit);
+        session.setAttribute("allusers",allusers);
         RequestDispatcher rd = req.getRequestDispatcher("home.jsp");
         rd.forward(req,resp);
     }

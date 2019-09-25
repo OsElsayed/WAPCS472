@@ -1,3 +1,4 @@
+<%@ page import="edu.mum.wap.models.User" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@page isELIgnored="false" %>
 <!DOCTYPE html>
@@ -12,6 +13,15 @@
         if (session.getAttribute("user") == null) {
             response.sendRedirect("pages/sign-in.jsp");
         }
+        if (session.getAttribute("user") != null) {
+            if(request.getRequestURI().contains("advertisement") || request.getRequestURI().contains("users")){
+                User user = (User)session.getAttribute("user");
+                if (!user.isAdmin()){
+                    response.sendRedirect("errorPage.jsp");
+                }
+            }
+        }
+
     %>
     <c:choose>
         <c:when test="${not empty title}">
