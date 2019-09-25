@@ -36,6 +36,7 @@ public class RegisterServlet extends HttpServlet {
         String image = req.getParameter("image");
         String password = req.getParameter("password");
         String rePassword = req.getParameter("repeat-password");
+        String loc = req.getParameter("loc");
         Gson gson = new Gson();
         boolean term = Boolean.parseBoolean(req.getParameter("term"));
 //        Gson gson = new Gson();
@@ -53,6 +54,9 @@ public class RegisterServlet extends HttpServlet {
         user.setUsername(name);
         user.setEmail(email);
         user.setPassword(password);
+        if(loc != null && !loc.isEmpty()){
+            user.setGeoLocation(loc);
+        }
         if(image != null && !image.isEmpty()){
             Images img = new Images();
             img.setImageUrl(image);

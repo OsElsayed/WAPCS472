@@ -4,12 +4,21 @@ const reg = (() => {
     const locks = $('.reg-pass');
     const imgPlace = $('#imgPlace');
     const img = $('#img');
+    let loc;
 
     function init() {
+        const geo = form.find('input[type=checkbox]').first();
         subButton.click(() => {
             if (_validate()) {
                 const post = form.serializeArray();
-                post[post.length - 1] = {'name': 'term', 'value': form.find('input[type=checkbox]').is(':checked')};
+
+                if (geo.is(':checked')) {
+                    post[post.length - 2] = {'name': 'loc', 'value': _getLocation(geo)};
+                }
+                post[post.length - 1] = {
+                    'name': 'term',
+                    'value': form.find('input[type=checkbox]').last().is(':checked')
+                };
                 $.post({
                     url: 'Register',
                     data: post,
@@ -17,7 +26,7 @@ const reg = (() => {
                 }).done((data) => {
                     myT.success('User created with success, now try logging in!');
                     $('li[data-tab=tab-1]').click();
-                    form.reset();
+                    form[0].reset();
                 }).fail((data) => {
                     myT.error(data);
                 })
@@ -40,9 +49,23 @@ const reg = (() => {
                 imgPlace.empty();
                 imgPlace.append($('<img>', {src: url, class: 'profile-img'}));
             } else {
-                myT.warning('This is a not valid image Url.')
+                myT.warning('This is a not valid image Url.');
+                return;
             }
         });
+        geo.click(() => {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    loc = position.coords.latitude+ '/' + position.coords.longitude;
+                });
+            } else {
+                myT.warning('Geo location is disabled in your browser!');
+            }
+        });
+    }
+
+    function _getLocation(ele) {
+        return loc;
     }
 
     function _validate() {

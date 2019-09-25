@@ -1,4 +1,4 @@
-<%@include file="header.jsp"%>
+<%@include file="head.jsp"%>
 <body class="sign-in">
 
 
@@ -111,6 +111,18 @@
                                                     <span>
 														<i class="la la-eye reg-pass float-right"></i>
 													</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 no-pdd">
+                                                <div class="checky-sec st2">
+                                                    <div class="fgt-sec">
+                                                        <input type="checkbox" name="loc" id="loc">
+                                                        <label for="loc">
+                                                            <span></span>
+                                                        </label>
+                                                        <small>Yes, I want to share my location.
+                                                                With the Website</small>
+                                                    </div><!--fgt-sec end-->
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 no-pdd">
