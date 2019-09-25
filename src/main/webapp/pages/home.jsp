@@ -189,8 +189,8 @@
                 </div><!--menu-btn end-->
                 <div class="user-account">
                     <div class="user-info">
-                        <img src="../images/resources/user.png" alt="">
-                        <a href="index.html#" title="">John</a>
+                        <img src="${user.image.imageUrl}" alt="" style="height: 35px;width: 35px;">
+                        <a href="index.html#" title="">${user.username}</a>
                         <i class="la la-sort-down"></i>
                     </div>
                     <div class="user-account-settingss" id="users">
@@ -247,12 +247,11 @@
                                     <div class="user-profile">
                                         <div class="username-dt">
                                             <div class="usr-pic">
-                                                <img src="../images/resources/user-pic.png" alt="">
+                                                <img src="${user.image.imageUrl}" alt="">
                                             </div>
                                         </div><!--username-dt end-->
                                         <div class="user-specs">
-                                            <h3>John Doe</h3>
-                                            <span>Graphic Designer at Self Employed</span>
+                                            <h3>${user.username}</h3>
                                         </div>
                                     </div><!--user-profile end-->
                                     <ul class="user-fw-status">
@@ -350,16 +349,12 @@
                         <div class="col-lg-6 col-md-8 no-pd">
                             <div class="main-ws-sec">
                                 <div class="post-topbar">
-                                    <div class="user-picy">
-                                        <img src="../images/resources/user-pic.png" alt="">
-                                    </div>
+                                    <img src="${user.image.imageUrl}" alt="" style="width: 50px;border-radius: 80%;" height="50px" >
                                     <div class="post-st">
                                         <ul>
                                             <div id="img">
 
                                             </div>
-                                            <li><a class="post_project" href="index.html#" title="">Post a Project</a>
-                                            </li>
                                             <li><a class="post-jb active" href="index.html#" title="">Post a Job</a>
                                             </li>
                                         </ul>
@@ -367,13 +362,13 @@
                                 </div><!--post-topbar end-->
                                 <div class="posts-section">
                                     <c:forEach var="post" items="${posts}">
-                                        <c:if test="${post.activity == 1}">
+                                        <c:if test="${post.visible == true}">
                                         <div class="post-bar">
                                             <div class="post_topbar">
                                                 <div class="usy-dt">
-                                                    <img src="../images/resources/us-pic.png" alt="">
+                                                    <img src="${post.user.image.imageUrl}" alt="" style="width: 50px" height="50px">
                                                     <div class="usy-name">
-                                                        <h3>John Doe Id : ${post.id}</h3>
+                                                        <h3>${post.user.username}</h3>
                                                         <span id="timeStart"><img src="../images/clock.png" alt="">${post.creationDate}</span>
                                                     </div>
                                                 </div>
@@ -384,21 +379,18 @@
                                                         <li><a href="" class="remove" title="">Edit Post</a></li>
                                                         <li><a href="" class="remove" title="">Unsaved</a></li>
                                                         <li><a href="" class="remove" title="">Unbid</a></li>
-                                                        <li><a href="" class="remove" title="">Close</a></li>
-                                                        <li><a href="" class="remove" id="${post.id}" title="">Block Post</a></li>
+                                                        <li><a href="" class="remove" title="">Remove</a></li>
+                                                        <c:if test="${user.admin eq true}">
+                                                        <li><a href="" class="remove" id="${post.id}" title="">Block</a></li>
+                                                        </c:if>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="epi-sec">
-                                                <ul class="descp">
-                                                    <li><img src="../../images/icon8.png" alt=""><span>Epic Coder</span>
-                                                    </li>
-                                                    <li><img src="../../images/icon9.png" alt=""><span>India</span></li>
-                                                </ul>
                                                 <ul class="bk-links">
-                                                    <li><a href="index.html#" title=""><i
+                                                    <li><a href="" title=""><i
                                                             class="la la-bookmark"></i></a></li>
-                                                    <li><a href="index.html#" title=""><i
+                                                    <li><a href="" title=""><i
                                                             class="la la-envelope"></i></a></li>
                                                 </ul>
                                             </div>
@@ -505,205 +497,8 @@
                                             </div><!--user-profy end-->
                                         </div><!--profiles-slider end-->
                                     </div><!--top-profiles end-->
-                                    <div class="post-bar">
-                                        <div class="post_topbar">
-                                            <div class="usy-dt">
-                                                <img src="../images/resources/us-pic.png" alt="">
-                                                <div class="usy-name">
-                                                    <h3>John Doe</h3>
-                                                    <span><img src="../images/clock.png" alt="">3 min ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="ed-opts">
-                                                <a href="index.html#" title="" class="ed-opts-open"><i
-                                                        class="la la-ellipsis-v"></i></a>
-                                                <ul class="ed-options">
-                                                    <li><a href="index.html#" title="">Edit Post</a></li>
-                                                    <li><a href="index.html#" title="">Unsaved</a></li>
-                                                    <li><a href="index.html#" title="">Unbid</a></li>
-                                                    <li><a href="index.html#" title="">Close</a></li>
-                                                    <li><a href="index.html#" title="">Hide</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="epi-sec">
-                                            <ul class="descp">
-                                                <li><img src="../images/icon8.png" alt=""><span>Epic Coder</span></li>
-                                                <li><img src="../images/icon9.png" alt=""><span>India</span></li>
-                                            </ul>
-                                            <ul class="bk-links">
-                                                <li><a href="index.html#" title=""><i class="la la-bookmark"></i></a>
-                                                </li>
-                                                <li><a href="index.html#" title=""><i class="la la-envelope"></i></a>
-                                                </li>
-                                                <li><a href="index.html#" title="" class="bid_now">Bid Now</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="job_descp">
-                                            <h3>Senior Wordpress Developer</h3>
-                                            <ul class="job-dt">
-                                                <li><a href="index.html#" title="">Full Time</a></li>
-                                                <li><span>$30 / hr</span></li>
-                                            </ul>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus
-                                                hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit
-                                                amet... <a href="index.html#" title="">view more</a></p>
-                                            <ul class="skill-tags">
-                                                <li><a href="index.html#" title="">HTML</a></li>
-                                                <li><a href="index.html#" title="">PHP</a></li>
-                                                <li><a href="index.html#" title="">CSS</a></li>
-                                                <li><a href="index.html#" title="">Javascript</a></li>
-                                                <li><a href="index.html#" title="">Wordpress</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="job-status-bar">
-                                            <ul class="like-com">
-                                                <li>
-                                                    <a href="index.html#"><i class="fas fa-heart"></i> Like</a>
-                                                    <img src="../images/liked-img.png" alt="">
-                                                    <span>25</span>
-                                                </li>
-                                                <li><a href="index.html#" class="com"><i class="fas fa-comment-alt"></i>
-                                                    Comment 15</a></li>
-                                            </ul>
-                                            <a href="index.html#"><i class="fas fa-eye"></i>Views 50</a>
-                                        </div>
-                                    </div><!--post-bar end-->
-                                    <div class="posty">
-                                        <div class="post-bar no-margin">
-                                            <div class="post_topbar">
-                                                <div class="usy-dt">
-                                                    <img src="../images/resources/us-pc2.png" alt="">
-                                                    <div class="usy-name">
-                                                        <h3>John Doe</h3>
-                                                        <span><img src="../images/clock.png" alt="">3 min ago</span>
-                                                    </div>
-                                                </div>
-                                                <div class="ed-opts">
-                                                    <a href="index.html#" title="" class="ed-opts-open"><i
-                                                            class="la la-ellipsis-v"></i></a>
-                                                    <ul class="ed-options">
-                                                        <li><a href="index.html#" title="">Edit Post</a></li>
-                                                        <li><a href="index.html#" title="">Unsaved</a></li>
-                                                        <li><a href="index.html#" title="">Unbid</a></li>
-                                                        <li><a href="index.html#" title="">Close</a></li>
-                                                        <li><a href="index.html#" title="">Hide</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="epi-sec">
-                                                <ul class="descp">
-                                                    <li><img src="../images/icon8.png" alt=""><span>Epic Coder</span>
-                                                    </li>
-                                                    <li><img src="../images/icon9.png" alt=""><span>India</span></li>
-                                                </ul>
-                                                <ul class="bk-links">
-                                                    <li><a href="index.html#" title=""><i
-                                                            class="la la-bookmark"></i></a></li>
-                                                    <li><a href="index.html#" title=""><i
-                                                            class="la la-envelope"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="job_descp">
-                                                <h3>Senior Wordpress Developer</h3>
-                                                <ul class="job-dt">
-                                                    <li><a href="index.html#" title="">Full Time</a></li>
-                                                    <li><span>$30 / hr</span></li>
-                                                </ul>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                                    luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id
-                                                    magna sit amet... <a href="index.html#" title="">view more</a></p>
-                                                <ul class="skill-tags">
-                                                    <li><a href="index.html#" title="">HTML</a></li>
-                                                    <li><a href="index.html#" title="">PHP</a></li>
-                                                    <li><a href="index.html#" title="">CSS</a></li>
-                                                    <li><a href="index.html#" title="">Javascript</a></li>
-                                                    <li><a href="index.html#" title="">Wordpress</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="job-status-bar">
-                                                <ul class="like-com">
-                                                    <li>
-                                                        <a href="index.html#"><i class="fas fa-heart"></i> Like</a>
-                                                        <img src="../images/liked-img.png" alt="">
-                                                        <span>25</span>
-                                                    </li>
-                                                    <li><a href="index.html#" class="com"><i
-                                                            class="fas fa-comment-alt"></i> Comment 15</a></li>
-                                                </ul>
-                                                <a href="index.html#"><i class="fas fa-eye"></i>Views 50</a>
-                                            </div>
-                                        </div><!--post-bar end-->
-                                        <div class="comment-section">
-                                            <a href="index.html#" class="plus-ic">
-                                                <i class="la la-plus"></i>
-                                            </a>
-                                            <div class="comment-sec">
-                                                <ul>
-                                                    <li>
-                                                        <div class="comment-list">
-                                                            <div class="bg-img">
-                                                                <img src="../images/resources/bg-img1.png" alt="">
-                                                            </div>
-                                                            <div class="comment">
-                                                                <h3>John Doe</h3>
-                                                                <span><img src="../images/clock.png"
-                                                                           alt=""> 3 min ago</span>
-                                                                <p>Lorem ipsum dolor sit amet, </p>
-                                                                <a href="index.html#" title="" class="active"><i
-                                                                        class="fa fa-reply-all"></i>Reply</a>
-                                                            </div>
-                                                        </div><!--comment-list end-->
-                                                        <ul>
-                                                            <li>
-                                                                <div class="comment-list">
-                                                                    <div class="bg-img">
-                                                                        <img src="../images/resources/bg-img2.png"
-                                                                             alt="">
-                                                                    </div>
-                                                                    <div class="comment">
-                                                                        <h3>John Doe</h3>
-                                                                        <span><img src="../images/clock.png" alt=""> 3 min ago</span>
-                                                                        <p>Hi John </p>
-                                                                        <a href="index.html#" title=""><i
-                                                                                class="fa fa-reply-all"></i>Reply</a>
-                                                                    </div>
-                                                                </div><!--comment-list end-->
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <div class="comment-list">
-                                                            <div class="bg-img">
-                                                                <img src="../images/resources/bg-img3.png" alt="">
-                                                            </div>
-                                                            <div class="comment">
-                                                                <h3>John Doe</h3>
-                                                                <span><img src="../images/clock.png"
-                                                                           alt=""> 3 min ago</span>
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                                    elit. Aliquam luctus hendrerit metus, ut ullamcorper
-                                                                    quam finibus at.</p>
-                                                                <a href="index.html#" title=""><i
-                                                                        class="fa fa-reply-all"></i>Reply</a>
-                                                            </div>
-                                                        </div><!--comment-list end-->
-                                                    </li>
-                                                </ul>
-                                            </div><!--comment-sec end-->
-                                            <div class="post-comment">
-                                                <div class="cm_img">
-                                                    <img src="../images/resources/bg-img4.png" alt="">
-                                                </div>
-                                                <div class="comment_box">
-                                                    <form>
-                                                        <input type="text" placeholder="Post a comment">
-                                                        <button type="submit">Send</button>
-                                                    </form>
-                                                </div>
-                                            </div><!--post-comment end-->
-                                        </div><!--comment-section end-->
-                                    </div><!--posty end-->
+                                    <!--post-bar end-->
+
                                     <div class="process-comm">
                                         <div class="spinner">
                                             <div class="bounce1"></div>
@@ -881,58 +676,7 @@
     </main>
 
 
-    <div class="post-popup pst-pj">
-        <div class="post-project">
-            <h3>Post a project</h3>
-            <div class="post-project-fields">
-                <form>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <input type="text" name="title" placeholder="Title">
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="inp-field">
-                                <select>
-                                    <option>Category</option>
-                                    <option>Category 1</option>
-                                    <option>Category 2</option>
-                                    <option>Category 3</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <input type="text" name="skills" placeholder="Skills">
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="price-sec">
-                                <div class="price-br">
-                                    <input type="text" name="price1" placeholder="Price">
-                                    <i class="la la-dollar"></i>
-                                </div>
-                                <span>To</span>
-                                <div class="price-br">
-                                    <input type="text" name="price1" placeholder="Price">
-                                    <i class="la la-dollar"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <textarea name="description" placeholder="Description"></textarea>
-                        </div>
-                        <div class="col-lg-12">
-                            <ul>
-                                <li>
-                                    <button class="active" type="submit" value="post">Post</button>
-                                </li>
-                                <li><a href="index.html#" title="">Cancel</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </form>
-            </div><!--post-project-fields end-->
-            <a href="index.html#" title=""><i class="la la-times-circle-o"></i></a>
-        </div><!--post-project end-->
-    </div><!--post-project-popup end-->
+
 
     <div class="post-popup job_post">
         <div class="post-project">
