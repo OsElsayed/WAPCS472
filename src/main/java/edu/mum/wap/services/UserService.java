@@ -16,7 +16,7 @@ public class UserService {
     private UserDao userDao = new UserDao();
     private ImageDao imageDao = new ImageDao();
 
-    public void addUser(User user) throws NoSuchAlgorithmException {
+    public User addUser(User user) throws NoSuchAlgorithmException {
         Date date = new Date();
         user.setCreationDate(date);
         user.setModifiedDate(date);
@@ -24,16 +24,17 @@ public class UserService {
         String pass = user.getPassword();
         String sha256hex = HashingHelper.HashPassword(pass);
         user.setPassword(sha256hex);
+        user.setActive(true);
         Images img = user.getImage();
         if(img != null && !img.getImageUrl().isEmpty()){
             img = imageDao.save(img);
             user.setImage(img);
         }
-        userDao.save(user);
+        return userDao.save(user);
     }
 
     public User updateUser(User user) {
-        return userDao.update(user);
+        return userDao.save(user);
     }
 
     public void deleteUser(Long userId) {

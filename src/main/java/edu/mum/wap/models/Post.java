@@ -30,9 +30,17 @@ public class Post {
 
     private long userId;
 
+    @Transient
+    private User user;
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "imageId")
     private Images images;
 
+    @Transient
+    private int visibility;
+
+    @Transient
+    private int activity;
 
 }

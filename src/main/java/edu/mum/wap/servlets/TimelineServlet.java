@@ -3,8 +3,10 @@ package edu.mum.wap.servlets;
 import com.google.gson.Gson;
 import edu.mum.wap.models.Images;
 import edu.mum.wap.models.Post;
+import edu.mum.wap.models.User;
 import edu.mum.wap.services.ImageService;
 import edu.mum.wap.services.PostService;
+import edu.mum.wap.services.UserService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -24,13 +26,17 @@ public class TimelineServlet extends HttpServlet {
         List<Post> posts = (List<Post>) session.getAttribute("posts");
         String comment = req.getParameter("comment");
         String photo = req.getParameter("photo");
+        User user = (User)session.getAttribute("user");
 
         //Instantiating Objects
         PostService postService = new PostService();
         Post post = new Post();
         post.setDescription(comment);
         post.setActive(true);
+        post.setActivity(1);
         post.setVisible(true);
+        post.setVisibility(1);
+        post.setUserId(user.getId());
         Date today = Calendar.getInstance().getTime();
         post.setCreationDate(today);
         if(photo != ""){
@@ -50,7 +56,16 @@ public class TimelineServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Post> posts = new ArrayList();
         PostService postService = new PostService();
+        UserService userService = new UserService();
         posts = postService.findAll();
+
+        for (Post post:posts) {
+            if (post.isVisible())
+                post.setVisibility(1);
+            if (post.isActive())
+                post.setActivity(1);
+            post.setUser(userService.findUser(post.getUserId()));
+        }
         Collections.reverse(posts);
         HttpSession session = req.getSession();
         session.setAttribute("posts",posts);

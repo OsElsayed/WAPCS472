@@ -2,22 +2,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>WorkWise Html Template</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<link rel="stylesheet" type="text/css" href="../css/animate.css">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/line-awesome.css">
-	<link rel="stylesheet" type="text/css" href="../css/line-awesome-font-awesome.min.css">
-	<link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.min.css">
-	<link rel="stylesheet" type="text/css" href="../lib/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="../lib/slick/slick-theme.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
+    <meta charset="UTF-8">
+    <title>WorkWise Html Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/line-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../css/line-awesome-font-awesome.min.css">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../lib/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -222,7 +223,7 @@
 								<li><a href="index.html#" title="">Faqs</a></li>
 								<li><a href="index.html#" title="">Terms & Conditions</a></li>
 							</ul>
-							<h3 class="tc"><a href="login" title="">Logout</a></h3>
+							<h3 class="tc"><a href="sign-in.jsp" title="">Logout</a></h3>
 						</div><!--user-account-settingss end-->
 					</div>
 				</div><!--header-data end-->
