@@ -220,12 +220,12 @@
     <section class="companies-info">
         <div class="container">
             <div class="company-title">
-                <h3>All Companies</h3>
+                <h3><i class="la la-user"></i> All Users</h3>
             </div><!--company-title end-->
             <div class="companies-list">
                 <div class="row">
                     <c:forEach items="${users}" var="user">
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-id="${user.id}">
                             <div class="company_profile_info">
                                 <div class="company-up-info">
 									<c:choose>
@@ -239,16 +239,22 @@
                                     <h3>${user.username}</h3>
                                     <h4>${user.email}</h4>
                                     <ul>
-
-                                        <li><a href="profiles.html#" title="" class="follow">Follow</a></li>
-                                        <li><a href="profiles.html#" title="" class="message-us"><i
-                                                class="fa fa-envelope"></i>Disable</a></li>
+                                        <c:choose>
+                                            <c:when test="${user.active}">
+                                                <li><button class="message-us" data-enable="false"><i
+                                                        class="la la-user-times"></i>Disable</button></li>
+                                            </c:when>
+                                            <c:otherwise>
+                                                <li><button class="message-us" data-enable="true"><i
+                                                        class="la la-user"></i>Activate</button></li>
+                                            </c:otherwise>
+                                        </c:choose>
 										<c:choose>
 											<c:when test="${user.admin eq true}">
-												<li><a href="profiles.html#" title="" class="hire-us">Remove Admin</a></li>
+												<li><button class="hire-us" data-admin="false"><i class="la la-minus-circle"></i> Remove Admin</button></li>
 											</c:when>
 											<c:otherwise>
-												<li><a href="profiles.html#" title="" class="hire-us">Make Admin</a></li>
+												<li><button class="hire-us" data-admin="true"><i class="la la-user-secret"></i>Make Admin</button></li>
 											</c:otherwise>
 										</c:choose>
                                     </ul>
@@ -257,28 +263,9 @@
                             </div><!--company_profile_info end-->
                         </div>
                     </c:forEach>
-                    <%--<c:forEach items="${users}" var="user">
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                            <div class="company_profile_info">
-                                <div class="company-up-info">
-                                    <c:if test="${user.image}" >
-                                        <img src="${user.image.imageUrl}" alt="">
-                                    </c:if>
-
-                                    <h3>${user.name}</h3>
-                                    <h4>${user.email}</h4>
-                                    <ul>
-                                        <li><a href="profiles.jsp#" title="" class="follow">Follow</a></li>
-                                        <li><a href="profiles.jsp#" title="" class="hire-us">Disable</a></li>
-                                    </ul>
-                                </div>
-                                <a href="user-profile.jsp" title="" class="view-more-pro">View Profile</a>
-                            </div><!--company_profile_info end-->
-                        </div>
-                    </c:forEach>--%>
                 </div>
             </div><!--companies-list end-->
-            <div class="process-comm">
+            <div class="process-comm loader" style="display: none;">
                 <div class="spinner">
                     <div class="bounce1"></div>
                     <div class="bounce2"></div>
@@ -309,5 +296,11 @@
 
 </div><!--theme-layout end-->
 <%@ include file="scripts.jsp" %>
+<script src="../js/pages/users.js" ></script>
+<script>
+    $(() => {
+        users.init();
+    });
+</script>
 </body>
 </html>

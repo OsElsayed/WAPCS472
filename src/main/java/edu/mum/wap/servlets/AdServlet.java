@@ -25,7 +25,8 @@ public class AdServlet extends HttpServlet {
         String endStr = req.getParameter("end");
         if (advUrl == null || advUrl.isEmpty() || startStr == null || startStr.isEmpty()
                 || endStr == null || endStr.isEmpty()) {
-            session.setAttribute("error", "description:'You need to fill all the required fields in the to register!'");
+            session.setAttribute("error", "You need to fill all the required fields in the to register!");
+            resp.sendRedirect(((HttpServletRequest) req).getContextPath() + "/pages/jobs.jsp");
             return;
         }
         Advertisement advertisement = prepareAdvertisement(advUrl, startStr, endStr);

@@ -346,18 +346,18 @@
                                                 <div class="row">
                                                     <div class="col-lg-12 no-pdd">
                                                         <div class="sn-field">
-                                                            <input type="text" name="advUrl"
+                                                            *<input type="text" name="advUrl"
                                                                    placeholder="Advertisement URL">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12 no-pdd">
                                                         <div class="sn-field">
-                                                            <input type="date" name="start" placeholder="Start Date">
+                                                            *<input type="date" name="start" placeholder="Start Date">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12 no-pdd">
                                                         <div class="sn-field">
-                                                            <input type="date" name="end" placeholder="End Date">
+                                                            *<input type="date" name="end" placeholder="End Date">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12 no-pdd">
