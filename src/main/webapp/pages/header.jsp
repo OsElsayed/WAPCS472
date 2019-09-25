@@ -26,7 +26,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="jobs.jsp" title="">
+                            <a href="advertisement.jsp" title="">
                                 <span><img src="../images/icon5.png" alt=""></span>
                                 Advertisement
                             </a>

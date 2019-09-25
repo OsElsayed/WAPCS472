@@ -12,6 +12,9 @@
         if (session.getAttribute("user") == null) {
             response.sendRedirect("pages/sign-in.jsp");
         }
+        if(request.getRequestURI().contains("adv")){
+
+        }
     %>
     <c:choose>
         <c:when test="${not empty title}">

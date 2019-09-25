@@ -26,13 +26,13 @@
                                 <div class="filter-secs">
                                     <div class="filter-heading">
                                         <h3>Filters</h3>
-                                        <a href="jobs.jsp#" title="">Clear all filters</a>
+                                        <a href="advertisement.jsp#" title="">Clear all filters</a>
                                     </div><!--filter-heading end-->
                                     <div class="paddy">
                                         <div class="filter-dd">
                                             <div class="filter-ttl">
                                                 <h3>Skills</h3>
-                                                <a href="jobs.jsp#" title="">Clear</a>
+                                                <a href="advertisement.jsp#" title="">Clear</a>
                                             </div>
                                             <form>
                                                 <input type="text" name="search-skills" placeholder="Search skills">
@@ -41,7 +41,7 @@
                                         <div class="filter-dd">
                                             <div class="filter-ttl">
                                                 <h3>Availabilty</h3>
-                                                <a href="jobs.jsp#" title="">Clear</a>
+                                                <a href="advertisement.jsp#" title="">Clear</a>
                                             </div>
                                             <ul class="avail-checks">
                                                 <li>
@@ -70,7 +70,7 @@
                                         <div class="filter-dd">
                                             <div class="filter-ttl">
                                                 <h3>Job Type</h3>
-                                                <a href="jobs.jsp#" title="">Clear</a>
+                                                <a href="advertisement.jsp#" title="">Clear</a>
                                             </div>
                                             <form class="job-tp">
                                                 <select>
@@ -85,7 +85,7 @@
                                         <div class="filter-dd">
                                             <div class="filter-ttl">
                                                 <h3>Pay Rate / Hr ($)</h3>
-                                                <a href="jobs.jsp#" title="">Clear</a>
+                                                <a href="advertisement.jsp#" title="">Clear</a>
                                             </div>
                                             <div class="rg-slider">
                                                 <input class="rn-slider slider-input" type="hidden" value="5,50"/>
@@ -98,7 +98,7 @@
                                         <div class="filter-dd">
                                             <div class="filter-ttl">
                                                 <h3>Experience Level</h3>
-                                                <a href="jobs.jsp#" title="">Clear</a>
+                                                <a href="advertisement.jsp#" title="">Clear</a>
                                             </div>
                                             <form class="job-tp">
                                                 <select>
@@ -113,7 +113,7 @@
                                         <div class="filter-dd">
                                             <div class="filter-ttl">
                                                 <h3>Countries</h3>
-                                                <a href="jobs.jsp#" title="">Clear</a>
+                                                <a href="advertisement.jsp#" title="">Clear</a>
                                             </div>
                                             <form class="job-tp">
                                                 <select>
@@ -143,6 +143,12 @@
                                                     </div>
                                                     <div class="col-lg-12 no-pdd">
                                                         <div class="sn-field">
+                                                            *<input type="text" name="description"
+                                                                    placeholder="description">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 no-pdd">
+                                                        <div class="sn-field">
                                                             *<input type="date" name="start" placeholder="Start Date">
                                                         </div>
                                                     </div>
@@ -168,7 +174,7 @@
                                         <span>Pay only for the Hours worked</span>
                                         <div class="sign_link">
                                             <h3><a href="sign-in.jsp" title="">Sign up</a></h3>
-                                            <a href="jobs.jsp#" title="">Learn More</a>
+                                            <a href="advertisement.jsp#" title="">Learn More</a>
                                         </div>
                                     </div><!--widget-about end-->
                                     <div class="widget widget-jobs">
@@ -274,13 +280,13 @@
                 <ul>
                     <li><a href="help-center.jsp" title="">Help Center</a></li>
                     <li><a href="about.jsp" title="">About</a></li>
-                    <li><a href="jobs.jsp#" title="">Privacy Policy</a></li>
-                    <li><a href="jobs.jsp#" title="">Community Guidelines</a></li>
-                    <li><a href="jobs.jsp#" title="">Cookies Policy</a></li>
-                    <li><a href="jobs.jsp#" title="">Career</a></li>
+                    <li><a href="advertisement.jsp#" title="">Privacy Policy</a></li>
+                    <li><a href="advertisement.jsp#" title="">Community Guidelines</a></li>
+                    <li><a href="advertisement.jsp#" title="">Cookies Policy</a></li>
+                    <li><a href="advertisement.jsp#" title="">Career</a></li>
                     <li><a href="forum.jsp" title="">Forum</a></li>
-                    <li><a href="jobs.jsp#" title="">Language</a></li>
-                    <li><a href="jobs.jsp#" title="">Copyright Policy</a></li>
+                    <li><a href="advertisement.jsp#" title="">Language</a></li>
+                    <li><a href="advertisement.jsp#" title="">Copyright Policy</a></li>
                 </ul>
                 <p><img src="../images/copy-icon2.png" alt="">Copyright 2019</p>
                 <img class="fl-rgt" src="../images/logo2.png" alt="">

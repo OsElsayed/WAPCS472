@@ -21,6 +21,9 @@ public class Advertisement {
     @Column
     private String adURL;
 
+    @Column
+    private String description;
+
     @Temporal(TemporalType.DATE)
     private Date showingStartDate;
 
