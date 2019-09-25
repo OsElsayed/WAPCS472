@@ -112,7 +112,7 @@
                                             <span>155</span>
                                         </li>
                                         <li>
-                                            <a href="http://gambolthemes.net/workwise-new/my-profile.html" title="">View
+                                            <a href="../pages/Profile" title="">View
                                                 Profile</a>
                                         </li>
                                     </ul>

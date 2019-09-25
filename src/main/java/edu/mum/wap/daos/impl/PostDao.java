@@ -13,7 +13,7 @@ public class PostDao extends GenericDao<Post> implements PostRepository {
     @Override
     public List<Post> getMyPosts(long userId) {
         return entityManager
-                .createQuery("from Post p where p.userId = " + userId)
+                .createQuery("from Post p where isActive = true and isVisible = true and p.userId = " + userId)
                 .getResultList();
     }
 }
