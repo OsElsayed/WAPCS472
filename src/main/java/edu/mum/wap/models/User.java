@@ -23,6 +23,10 @@ public class User {
     private String email;
     @Column
     private boolean isAdmin;
+    @Column
+    private boolean isActive;
+    @Column
+    private String geoLocation;
     @Temporal(TemporalType.DATE)
     private Date creationDate;
     @Temporal(TemporalType.DATE)
