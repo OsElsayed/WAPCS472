@@ -241,20 +241,20 @@
                                     <ul>
                                         <c:choose>
                                             <c:when test="${user.active}">
-                                                <li><button class="message-us"><i
-                                                        class="la la-user-slash"></i>Disable</button></li>
+                                                <li><button class="message-us" data-enable="false"><i
+                                                        class="la la-user-times"></i>Disable</button></li>
                                             </c:when>
                                             <c:otherwise>
-                                                <li><button class="message-us"><i
+                                                <li><button class="message-us" data-enable="true"><i
                                                         class="la la-user"></i>Activate</button></li>
                                             </c:otherwise>
                                         </c:choose>
 										<c:choose>
 											<c:when test="${user.admin eq true}">
-												<li><button class="hire-us"><i class="la la-user-tie"></i> Remove Admin</button></li>
+												<li><button class="hire-us" data-admin="false"><i class="la la-minus-circle"></i> Remove Admin</button></li>
 											</c:when>
 											<c:otherwise>
-												<li><button class="hire-us"><i class="la la-user-secret"></i>Make Admin</button></li>
+												<li><button class="hire-us" data-admin="true"><i class="la la-user-secret"></i>Make Admin</button></li>
 											</c:otherwise>
 										</c:choose>
                                     </ul>
@@ -297,5 +297,10 @@
 </div><!--theme-layout end-->
 <%@ include file="scripts.jsp" %>
 <script src="../js/pages/users.js" ></script>
+<script>
+    $(() => {
+        users.init();
+    });
+</script>
 </body>
 </html>
