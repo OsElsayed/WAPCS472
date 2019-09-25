@@ -249,7 +249,7 @@
                                                     <!-- Trigger the Modal -->
 <%--                                                    <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">--%>
                                                     <img id="${post.id}" src="${post.images.imageUrl}" alt="${post.description}" onerror="this.src='http://leeford.in/wp-content/uploads/2017/09/image-not-found.jpg';"
-                                                         onclick="showImage(${post.id})" data-id="${post.id}"/>
+                                                          data-id="${post.id}"/>
 
                                                     <!-- The Modal -->
                                                     <div id="myModal" class="modal">
@@ -730,30 +730,8 @@
 <%@ include file="scripts.jsp"%>
 <script type="text/javascript" src="../js/timeline.js"></script>
 <script>
-    var modal = document.getElementById("myModal");
-    const $images = $('img[data-id]');
-    $images.each(function (index, ele) {
-        ele.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = ele.src;
-            captionText.innerHTML = ele.alt;
-        }
-    });
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    }
-    var span = document.getElementsByClassName("close")[0];
 
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
 </script>
 </body>
 </html>
