@@ -176,22 +176,13 @@
                                         </div>
                                     </div><!--suggestions-list end-->
                                 </div><!--suggestions end-->
-                                <div class="tags-sec full-width">
-                                    <ul>
-                                        <li><a href="index.html#" title="">Help Center</a></li>
-                                        <li><a href="index.html#" title="">About</a></li>
-                                        <li><a href="index.html#" title="">Privacy Policy</a></li>
-                                        <li><a href="index.html#" title="">Community Guidelines</a></li>
-                                        <li><a href="index.html#" title="">Cookies Policy</a></li>
-                                        <li><a href="index.html#" title="">Career</a></li>
-                                        <li><a href="index.html#" title="">Language</a></li>
-                                        <li><a href="index.html#" title="">Copyright Policy</a></li>
-                                    </ul>
-                                    <div class="cp-sec">
-                                        <img src="../images/logo2.png" alt="">
-                                        <p><img src="../images/cp.png" alt="">Copyright 2019</p>
-                                    </div>
-                                </div><!--tags-sec end-->
+                                <div class="suggestions full-width">
+                                    <div class="sd-title">
+                                        <h3>Weather</h3>
+                                        <i class="la la-ellipsis-v"></i>
+                                    </div><!--sd-title end-->
+                                    <div id="weather" data-loc="${user.geoLocation}"></div>
+                                </div>
                             </div><!--main-left-sidebar end-->
                         </div>
                         <div class="col-lg-6 col-md-8 no-pd">
@@ -729,9 +720,11 @@
 
 <%@ include file="scripts.jsp"%>
 <script type="text/javascript" src="../js/timeline.js"></script>
+<script type="text/javascript" src="../js/weather.js"></script>
 <script>
-
-
+    $(() => {
+        weather.init();
+    });
 </script>
 </body>
 </html>

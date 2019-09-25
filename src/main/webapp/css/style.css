@@ -6870,3 +6870,15 @@ ul#myTab {
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
+
+.weather-title{
+	font-weight:bold;
+	font-size:1.3em;
+	padding:3px 15px;
+	margin-top:15px;
+	color:#51a5fb;
+}
+.weather-img{
+	max-width: 35px;
+	max-height: 35px;
+}
