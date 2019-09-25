@@ -1,10 +1,11 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <c:choose>
-        <c:when test="%{title}">
+        <c:when test="${not empty title}">
             <title>Social WAPCS472 - ${title}</title>
         </c:when>
         <c:otherwise>
@@ -20,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/line-awesome.css">
     <link rel="stylesheet" type="text/css" href="../css/line-awesome-font-awesome.min.css">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../lib/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="../lib/slick/slick-theme.css">
