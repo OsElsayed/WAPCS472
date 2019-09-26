@@ -36,13 +36,13 @@ public class NotificationServlet extends HttpServlet {
                 } else {
                     if (freshUserFromDb != null && freshUserFromDb.getFollowersList() != null
                             && user.getFollowersList() != null) {
-                        if (freshUserFromDb.getFollowersList().size() > user.getFollowersList().size()) {
+                        //if (freshUserFromDb.getFollowersList().size() > user.getFollowersList().size()) {
                             newFollowers = checkDifferentIds(freshUserFromDb.getFollowersList(), user.getFollowersList());
-                        }
+                        //}
                     }
                 }
                 followers = new Gson().toJson(newFollowers);
-                req.getSession().removeAttribute("notifs");
+                //req.getSession().removeAttribute("notifs");
                 req.getSession().setAttribute("notifs",newFollowers);
                 resp.getWriter().write(followers);
             }
