@@ -2,7 +2,7 @@ const weather = (() => {
     const cont = $('#weather');
     let loc = cont.data('loc');
     let data = {
-        apikey:'p79ezHPI7FySzkfsdhFNOfiSti43bFbc',
+        apikey:'m11eTvtr88WWLU7mJP5vtnpCAL0G5a7x',
         q:loc.replace('/',',')
     };
 
