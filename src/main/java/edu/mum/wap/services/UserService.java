@@ -46,6 +46,10 @@ public class UserService {
     }
 
     public User updateUser(User user) {
+        if(user.getImage().getId() == null || user.getImage().getId() == 0){
+            Images img = imageDao.save(user.getImage());
+            user.setImage(img);
+        }
         return userDao.save(user);
     }
 

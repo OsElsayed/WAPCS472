@@ -256,13 +256,8 @@
                                                         <a href="index.html#" title="" class="ed-opts-open"><i
                                                                 class="la la-ellipsis-v"></i></a>
                                                         <ul class="ed-options">
-                                                            <li><a href="" class="remove" title="">Remove</a></li>
                                                             <c:if test="${user.admin eq true}">
                                                                 <li><a href="" class="remove" id="${post.id}" title="">Block</a>
-                                                                </li>
-                                                            </c:if>
-                                                            <c:if test="${user.admin eq false}">
-                                                                <li><a href="" class="remove" id="${post.id}" title="">Unblock</a>
                                                                 </li>
                                                             </c:if>
                                                         </ul>

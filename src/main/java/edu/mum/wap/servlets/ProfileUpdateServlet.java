@@ -1,5 +1,6 @@
 package edu.mum.wap.servlets;
 
+import edu.mum.wap.models.Images;
 import edu.mum.wap.models.User;
 import edu.mum.wap.services.UserService;
 
@@ -20,13 +21,13 @@ public class ProfileUpdateServlet extends HttpServlet {
         User me = (User)req.getSession().getAttribute("user");
         UserService userSvc = new UserService();
         me.setUsername(userName);
-        me.getImage().setImageUrl(imageUrl);
-        try {
-            userSvc.addUser(me, true);
-        } catch (NoSuchAlgorithmException e) {
-            resp.setStatus(500);
-            System.out.print("{error:'Internal error occurred'}");
+        if(!imageUrl.equals(me.getImage().getImageUrl())){
+            Images images = new Images();
+            images.setImageUrl(imageUrl);
+            me.setImage(images);
         }
+        me = userSvc.updateUser(me);
+        req.getSession().setAttribute("user",me);
         resp.sendRedirect("Profile");
     }
 }
