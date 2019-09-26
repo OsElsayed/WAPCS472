@@ -28,7 +28,7 @@ public class TimelineServlet extends HttpServlet {
         List<Post> posts = (List<Post>) session.getAttribute("posts");
         String comment = req.getParameter("comment");
         String photo = req.getParameter("photo");
-        User user = (User)session.getAttribute("user");
+        User user = (User) session.getAttribute("user");
 
         //Instantiating Objects
         PostService postService = new PostService();
@@ -41,7 +41,7 @@ public class TimelineServlet extends HttpServlet {
         post.setUserId(user.getId());
         Date today = Calendar.getInstance().getTime();
         post.setCreationDate(today);
-        if(photo != ""){
+        if (photo != "") {
             ImageService imageService = new ImageService();
             Images image = new Images();
             image.setImageUrl(photo);
@@ -51,19 +51,36 @@ public class TimelineServlet extends HttpServlet {
         postService.addPost(post);
         posts.add(post);
         Collections.reverse(posts);
-        session.setAttribute("posts",posts);
+        session.setAttribute("posts", posts);
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Integer getdata = 3;
+
         List<Post> posts = new ArrayList();
         PostService postService = new PostService();
         UserService userService = new UserService();
         AdService adService = new AdService();
         posts = postService.findAll();
-        Collections.reverse(posts);
-        List<Post> postlimit = posts.stream().limit(2).collect(Collectors.toList());
-        for (Post post:postlimit) {
+        List<Post> filtered = new ArrayList<>();
+        List<User> allusers = new ArrayList<>();
+        allusers = userService.findAll();
+        HttpSession session = req.getSession();
+        User me = (User) session.getAttribute("user");
+        for (User u : allusers) {
+            me.getFollowersList().forEach(f -> {
+                if (f.getId() == u.getId())
+                    u.setFollowing(true);
+            });
+        }
+        if(!me.isAdmin()) {
+            filtered = posts.stream().filter(p -> me.getFollowersList().contains(p.getUserId())).collect(Collectors.toList());
+        }else{
+            filtered = posts;
+        }
+        filtered = filtered.stream().filter(p -> p.isVisible()).limit(getdata).sorted((p1, p2) -> p2.getCreationDate().compareTo(p1.getCreationDate())).collect(Collectors.toList());
+        for (Post post : filtered) {
             if (post.isVisible())
                 post.setVisibility(1);
             if (post.isActive())
@@ -71,22 +88,14 @@ public class TimelineServlet extends HttpServlet {
             post.setUser(userService.findUser(post.getUserId()));
         }
 
-        HttpSession session = req.getSession();
-        User me = (User)session.getAttribute("user");
 
-        List<User> allusers = new ArrayList<>();
-        allusers = userService.findAll();
-        for (User u : allusers) {
-            me.getFollowersList().forEach(f-> {
-               if(f.getId() == u.getId())
-                u.setFollowing(true);
-            });
-        }
+
+
         List<Advertisement> advertisements = adService.findAll();
-        session.setAttribute("posts",postlimit);
-        session.setAttribute("allusers",allusers);
-        session.setAttribute("advertisements",advertisements);
+        session.setAttribute("posts", filtered);
+        session.setAttribute("allusers", allusers);
+        session.setAttribute("advertisements", advertisements);
         RequestDispatcher rd = req.getRequestDispatcher("home.jsp");
-        rd.forward(req,resp);
+        rd.forward(req, resp);
     }
 }
