@@ -6882,3 +6882,23 @@ ul#myTab {
 	max-width: 35px;
 	max-height: 35px;
 }
+.show-weather{
+	display: inline-block;
+	padding: 0 12px;
+	color: #fff;
+	height: 35px;
+	line-height: 35px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 3px;
+	background-color: #51a5fb;margin: 0;
+	padding: 10px;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	margin: 15px 0px 25px 65px;
+}
