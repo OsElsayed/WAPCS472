@@ -38,4 +38,10 @@ public class User {
     @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     @JoinTable(name = "followersList")
     private List<User> followersList;
+    @Override
+    public boolean equals(Object ob){
+        User u = (User)ob;
+        if(u == null)return false;
+        return u.getId() == this.getId();
+    }
 }
