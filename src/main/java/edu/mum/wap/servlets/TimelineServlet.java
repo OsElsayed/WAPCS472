@@ -75,7 +75,7 @@ public class TimelineServlet extends HttpServlet {
             });
         }
         if(!me.isAdmin()) {
-            filtered = posts.stream().filter(p -> me.getFollowersList().contains(p.getUserId())).collect(Collectors.toList());
+            filtered = posts.stream().filter(p -> me.getFollowersList().contains(p.getUserId())|| me.getId() == p.getUserId()).collect(Collectors.toList());
         }else{
             filtered = posts;
         }
