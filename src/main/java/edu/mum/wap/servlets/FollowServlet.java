@@ -16,6 +16,7 @@ import java.util.List;
 @WebServlet("/pages/Follow")
 public class FollowServlet extends HttpServlet {
     List<User> followings = new ArrayList<>();
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int ind = -1;
@@ -23,23 +24,25 @@ public class FollowServlet extends HttpServlet {
         UserService userService = new UserService();
         User follow = userService.findUser(followId);
         User me = (User) req.getSession().getAttribute("user");
+        me = userService.findUser(me.getId());
         followings = me.getFollowersList();
 
-        for (int i = 0; i < me.getFollowersList().size(); i++) {
-            if ((me.getFollowersList()).get(i).getId() == followId) {
-                ind = i;
+        for (User u : followings) {
+            if (u.getId() == follow.getId()) {
+                me.getFollowersList().remove(u);
+                try {
+                    userService.addUser(me, true);
+                } catch (NoSuchAlgorithmException e) {
+                    e.printStackTrace();
+                }
+                return;
             }
         }
-        if (ind > -1) {
-            me.getFollowersList().remove(ind);
-        } else {
-            followings.add(follow);
-            me.setFollowersList(followings);
-        }
-        try {
-            userService.addUser(me, true);
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
+
+        followings.add(follow);
+        me.setFollowersList(followings);
+
+        userService.updateUser(me);
+
     }
 }

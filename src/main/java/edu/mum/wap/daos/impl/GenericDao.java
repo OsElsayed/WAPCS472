@@ -50,11 +50,13 @@ public class GenericDao<T> implements GenericRepository<T> {
 
     @Override
     public List<T> findAll() {
+        entityManager.getTransaction().begin();
         List<T> list = entityManager.createQuery("from " + daoClass.getName())
                 .getResultList();
         for(T t : list){
             entityManager.refresh(t);
         }
+        entityManager.getTransaction().commit();
         return list;
     }
 

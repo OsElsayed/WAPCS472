@@ -35,8 +35,12 @@ public class User {
     private boolean isFollowing;
     @OneToOne
     private Images image;
-    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     @JoinTable(name = "followersList")
+//    @JoinTable(name = "followersList",
+//            joinColumns = {@JoinColumn(name = "userId")},
+//            uniqueConstraints = {@UniqueConstraint(columnNames = "userId"),@UniqueConstraint(columnNames = "followersId")},
+//            inverseJoinColumns = {@JoinColumn(name = "followersId")})
     private List<User> followersList;
     @Override
     public boolean equals(Object ob){

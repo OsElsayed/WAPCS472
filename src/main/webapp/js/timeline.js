@@ -2,10 +2,10 @@ $(function () {
     let number = 1;
     const loader = $('#loader');
     let allow = true;
-    $(document).on('click', '.idFollow', function () {
-        let $followId = $(this).attr('id');
-        let name = $(this).attr('name');
-        let self = $(this);
+    $(document).on('click', '.idFollow', function (e) {
+        let $followId = $(e.target).attr('id');
+        let name = $(e.target).attr('name');
+        let self = $(e.target);
         $.ajax({
             url : 'Follow',
             type : 'post',
@@ -30,7 +30,7 @@ $(function () {
         $.get('notification', {
             dataType: "JSON",
         }).done(shiva);
-    }, 5000);
+    }, 10000);
 
     function shiva(data) {
         let count;
