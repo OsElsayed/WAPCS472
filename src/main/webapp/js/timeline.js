@@ -1,5 +1,29 @@
 $(function () {
 
+    $(document).on('click','.idFollow',function (){
+        let $followId = $(this).attr('id');
+        let name = $(this).attr('name');
+        let self = $(this);
+        $.ajax({
+            url : 'Follow',
+            type : 'post',
+            data : {
+                followId : $followId
+            },
+            success: function () {
+                console.log(self.text());
+               if(self.text() === "Follow"){
+                   self.text('Unfollow');
+                   myT.success("You are now following " + name );
+               }else{
+                   self.text('Follow');
+                   myT.warning("You unfollowed " + name );
+               }
+
+            }
+        })
+    });
+
     $(window).on("scroll", function() {
         let scrollHeight = $(document).height();
         let scrollPosition = $(window).height() + $(window).scrollTop();
@@ -42,7 +66,7 @@ $(function () {
             },
             success :  () => {
                 myT.success("Post Blocked Successfully");
-              window.location.reload();
+                setTimeout(function(){ window.location.reload(); }, 2000);
             },
             error : (error) => {
                 myT.error(error);

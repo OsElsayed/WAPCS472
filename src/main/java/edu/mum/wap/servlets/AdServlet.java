@@ -20,7 +20,8 @@ public class AdServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Advertisement> all = adService.findAll();
+        List<Advertisement> advertisements = adService.findAll();
+        resp.sendRedirect("Timeline");
     }
 
     @Override
@@ -38,7 +39,7 @@ public class AdServlet extends HttpServlet {
         }
         Advertisement advertisement = prepareAdvertisement(advUrl, startStr, endStr,description);
         adService.addAdvertisement(advertisement);
-        resp.sendRedirect("home.jsp");
+        resp.sendRedirect("Timeline");
     }
 
     private Advertisement prepareAdvertisement(String advUrl, String startStr, String endStr, String description) {
