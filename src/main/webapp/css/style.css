@@ -6902,3 +6902,22 @@ ul#myTab {
 	box-sizing: border-box;
 	margin: 15px 0px 25px 65px;
 }
+
+.modal img{
+	margin-left: 45px;
+	max-width: 600px;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.modal div#caption{
+	background-color: white;
+	color: black;
+	display: inline-block;
+	margin-left: 25px;
+	max-width: 500px;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
