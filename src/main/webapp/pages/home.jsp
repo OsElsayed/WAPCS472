@@ -87,434 +87,431 @@
 </style>
 <body>
 
-    <div class="wrapper">
-        <%@ include file="header.jsp" %>
+<div class="wrapper">
+    <%@ include file="header.jsp" %>
 
-        <main>
-            <div class="main-section">
-                <div class="container">
-                    <div class="main-section-data">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-4 pd-left-none no-pd">
-                                <div class="main-left-sidebar no-margin">
-                                    <div class="user-data full-width">
-                                        <div class="user-profile">
-                                            <div class="username-dt">
-                                                <div class="usr-pic">
-                                                    <img src="${user.image.imageUrl}" alt=""
-                                                         style="width: 150px;height: 100px">
-                                                </div>
-                                            </div><!--username-dt end-->
-                                            <div class="user-specs">
-                                                <h3>${user.username}</h3>
+    <main>
+        <div class="main-section">
+            <div class="container">
+                <div class="main-section-data">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 pd-left-none no-pd">
+                            <div class="main-left-sidebar no-margin">
+                                <div class="user-data full-width">
+                                    <div class="user-profile">
+                                        <div class="username-dt">
+                                            <div class="usr-pic">
+                                                <img src="${user.image.imageUrl}" alt=""
+                                                     style="width: 150px;height: 100px">
                                             </div>
-                                        </div><!--user-profile end-->
-                                        <ul class="user-fw-status">
-                                            <li>
-                                                <h4>Following</h4>
-                                                <span>34</span>
-                                            </li>
-                                            <li>
-                                                <h4>Followers</h4>
-                                                <span>155</span>
-                                            </li>
-                                            <li>
-                                                <a href="../pages/Profile" title="">View
-                                                    Profile</a>
+                                        </div><!--username-dt end-->
+                                        <div class="user-specs">
+                                            <h3>${user.username}</h3>
+                                        </div>
+                                    </div><!--user-profile end-->
+                                    <ul class="user-fw-status">
+                                        <li>
+                                            <h4>Following</h4>
+                                            <span>34</span>
+                                        </li>
+                                        <li>
+                                            <h4>Followers</h4>
+                                            <span>155</span>
+                                        </li>
+                                        <li>
+                                            <a href="../pages/Profile" title="">View
+                                                Profile</a>
+                                        </li>
+                                    </ul>
+                                </div><!--user-data end-->
+                                <div class="suggestions full-width">
+                                    <div class="sd-title">
+                                        <h3>Weather</h3>
+                                        <i class="la la-ellipsis-v"></i>
+                                    </div><!--sd-title end-->
+                                    <div id="weather" data-loc="${user.geoLocation}"></div>
+                                </div>
+                                <div class="suggestions full-width">
+                                    <div class="sd-title">
+                                        <h3>Suggestions</h3>
+                                        <i class="la la-ellipsis-v"></i>
+                                    </div><!--sd-title end-->
+                                    <div class="suggestions-list">
+                                        <div class="suggestion-usd">
+                                            <img src="../images/resources/s1.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>Jessica William</h4>
+                                                <span>Graphic Designer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="../images/resources/s2.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>John Doe</h4>
+                                                <span>PHP Developer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="../images/resources/s3.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>Poonam</h4>
+                                                <span>Wordpress Developer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="../images/resources/s4.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>Bill Gates</h4>
+                                                <span>C & C++ Developer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="../images/resources/s5.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>Jessica William</h4>
+                                                <span>Graphic Designer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="../images/resources/s6.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>John Doe</h4>
+                                                <span>PHP Developer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="view-more">
+                                            <a href="index.html#" title="">View More</a>
+                                        </div>
+                                    </div><!--suggestions-list end-->
+                                </div><!--suggestions end-->
+
+                            </div><!--main-left-sidebar end-->
+                        </div>
+                        <div class="col-lg-6 col-md-8 no-pd">
+                            <div class="main-ws-sec">
+                                <div class="post-topbar">
+                                    <img src="${user.image.imageUrl}" alt="" style="width: 50px;border-radius: 80%;"
+                                         height="50px">
+                                    <div class="post-st">
+                                        <ul>
+                                            <div id="img">
+
+                                            </div>
+                                            <li><a class="post-jb active" href="index.html#" title="">New Post</a>
                                             </li>
                                         </ul>
-                                    </div><!--user-data end-->
-                                    <div class="suggestions full-width">
-                                        <div class="sd-title">
-                                            <h3>Weather</h3>
-                                            <i class="la la-ellipsis-v"></i>
-                                        </div><!--sd-title end-->
-                                        <div id="weather" data-loc="${user.geoLocation}"></div>
+                                    </div><!--post-st end-->
+                                </div><!--post-topbar end-->
+                                <div class="top-profiles">
+                                    <div class="pf-hd">
+                                        <h3>People You May Know</h3>
+                                        <i class="la la-ellipsis-v"></i>
                                     </div>
-                                    <div class="suggestions full-width">
-                                        <div class="sd-title">
-                                            <h3>Suggestions</h3>
-                                            <i class="la la-ellipsis-v"></i>
-                                        </div><!--sd-title end-->
-                                        <div class="suggestions-list">
-                                            <div class="suggestion-usd">
-                                                <img src="../images/resources/s1.png" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>Jessica William</h4>
-                                                    <span>Graphic Designer</span>
-                                                </div>
-                                                <span><i class="la la-plus"></i></span>
-                                            </div>
-                                            <div class="suggestion-usd">
-                                                <img src="../images/resources/s2.png" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>John Doe</h4>
-                                                    <span>PHP Developer</span>
-                                                </div>
-                                                <span><i class="la la-plus"></i></span>
-                                            </div>
-                                            <div class="suggestion-usd">
-                                                <img src="../images/resources/s3.png" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>Poonam</h4>
-                                                    <span>Wordpress Developer</span>
-                                                </div>
-                                                <span><i class="la la-plus"></i></span>
-                                            </div>
-                                            <div class="suggestion-usd">
-                                                <img src="../images/resources/s4.png" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>Bill Gates</h4>
-                                                    <span>C & C++ Developer</span>
-                                                </div>
-                                                <span><i class="la la-plus"></i></span>
-                                            </div>
-                                            <div class="suggestion-usd">
-                                                <img src="../images/resources/s5.png" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>Jessica William</h4>
-                                                    <span>Graphic Designer</span>
-                                                </div>
-                                                <span><i class="la la-plus"></i></span>
-                                            </div>
-                                            <div class="suggestion-usd">
-                                                <img src="../images/resources/s6.png" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>John Doe</h4>
-                                                    <span>PHP Developer</span>
-                                                </div>
-                                                <span><i class="la la-plus"></i></span>
-                                            </div>
-                                            <div class="view-more">
-                                                <a href="index.html#" title="">View More</a>
-                                            </div>
-                                        </div><!--suggestions-list end-->
-                                    </div><!--suggestions end-->
-
-                                </div><!--main-left-sidebar end-->
-                            </div>
-                            <div class="col-lg-6 col-md-8 no-pd">
-                                <div class="main-ws-sec">
-                                    <div class="post-topbar">
-                                        <img src="${user.image.imageUrl}" alt="" style="width: 50px;border-radius: 80%;"
-                                             height="50px">
-                                        <div class="post-st">
-                                            <ul>
-                                                <div id="img">
-
-                                                </div>
-                                                <li><a class="post-jb active" href="index.html#" title="">New Post</a>
-                                                </li>
-                                            </ul>
-                                        </div><!--post-st end-->
-                                    </div><!--post-topbar end-->
-                                    <div class="top-profiles">
-                                        <div class="pf-hd">
-                                            <h3>People You May Know</h3>
-                                            <i class="la la-ellipsis-v"></i>
-                                        </div>
-                                        <div class="profiles-slider">
-                                            <c:set var="currentUser" value="${user.username}"></c:set>
-                                            <c:forEach var="u" items="${allusers}">
-                                                <c:if test="${u.username != currentUser}">
-                                                    <div class="user-profy">
-                                                        <img src="${u.image.imageUrl}"
-                                                             style="width: 50px; height: 50px; border-radius: 30px;">
-                                                        <h3>${u.username}</h3>
-                                                        <c:if test="${!u.following}">
-                                                            <ul style="color: #1e7e34;">
-                                                                <li><a class="follow idFollow" id="${u.id}"
-                                                                       name="${u.username}">Follow</a></li>
-                                                            </ul>
-                                                        </c:if>
-                                                        <c:if test="${u.following}">
-                                                            <ul style="color: #e44d3a;">
-                                                                <li><a class="follow idFollow" id="${u.id}"
-                                                                       name="${u.username}">Unfollow</a></li>
-                                                            </ul>
-                                                        </c:if>
-                                                        <a href="index.html#" title="">View Profile</a>
-                                                    </div>
-                                                    <!--user-profy end-->
-                                                </c:if>
-                                            </c:forEach>
-                                        </div><!--profiles-slider end-->
-                                    </div>
-                                    <div class="posts-section">
-                                        <c:forEach var="post" items="${posts}">
-                                            <c:if test="${post.visible == true}">
-                                                <div class="post-bar">
-                                                    <div class="post_topbar">
-                                                        <div class="usy-dt">
-                                                            <img src="${post.user.image.imageUrl}" alt=""
-                                                                 style="width: 50px" height="50px">
-                                                            <div class="usy-name">
-                                                                <h3>${post.user.username}</h3>
-                                                                <span id="timeStart"><img src="../images/clock.png"
-                                                                                          alt="">${post.creationDate}</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="ed-opts">
-                                                            <a href="index.html#" title="" class="ed-opts-open"><i
-                                                                    class="la la-ellipsis-v"></i></a>
-                                                            <ul class="ed-options">
-                                                                <li><a href="" class="remove" title="">Remove</a></li>
-                                                                <c:if test="${user.admin eq true}">
-                                                                    <li><a href="" class="remove" id="${post.id}"
-                                                                           title="">Block</a>
-                                                                    </li>
-                                                                </c:if>
-                                                                <c:if test="${user.admin eq false}">
-                                                                    <li><a href="" class="remove" id="${post.id}"
-                                                                           title="">Unblock</a>
-                                                                    </li>
-                                                                </c:if>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="epi-sec">
-                                                        <ul class="bk-links">
-                                                            <li><a href="" title=""><i
-                                                                    class="la la-bookmark"></i></a></li>
-                                                            <li><a href="" title=""><i
-                                                                    class="la la-envelope"></i></a></li>
+                                    <div class="profiles-slider">
+                                        <c:set var="currentUser" value="${user.username}"></c:set>
+                                        <c:forEach var="u" items="${allusers}">
+                                            <c:if test="${u.username != currentUser}">
+                                                <div class="user-profy">
+                                                    <img src="${u.image.imageUrl}"
+                                                         style="width: 50px; height: 50px; border-radius: 30px;">
+                                                    <h3>${u.username}</h3>
+                                                    <c:if test="${!u.following}">
+                                                        <ul style="color: #1e7e34;">
+                                                            <li><a class="follow idFollow" id="${u.id}" name="${u.username}">Follow</a></li>
                                                         </ul>
-                                                    </div>
-                                                    <div class="job_descp">
-                                                        <p>${post.description}</p>
-                                                        <c:if test="${post.images != null}">
-                                                            <!-- Start modal here-->
-                                                            <!-- Trigger the Modal -->
-                                                            <%--                                                    <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">--%>
-                                                            <img id="${post.id}" src="${post.images.imageUrl}"
-                                                                 alt="${post.description}"
-                                                                 onerror="this.src='http://leeford.in/wp-content/uploads/2017/09/image-not-found.jpg';"
-                                                                 data-id="${post.id}"/>
-
-                                                            <!-- The Modal -->
-                                                            <div id="myModal" class="modal">
-
-                                                                <!-- The Close Button -->
-                                                                <span class="close">&times;</span>
-
-                                                                <!-- Modal Content (The Image) -->
-                                                                <img id="img01" src="${post.images.imageUrl}"
-                                                                     alt="Image not found"
-                                                                     onerror="this.src='http://leeford.in/wp-content/uploads/2017/09/image-not-found.jpg';"/>
-
-                                                                <!-- Modal Caption (Image Text) -->
-                                                                <div id="caption"></div>
-                                                            </div>
-
-                                                        </c:if>
-                                                        <ul class="skill-tags">
+                                                    </c:if>
+                                                    <c:if test="${u.following}">
+                                                        <ul style="color: #e44d3a;">
+                                                            <li ><a class="follow idFollow" id="${u.id}" name="${u.username}">Unfollow</a></li>
                                                         </ul>
-                                                    </div>
-                                                    <div class="job-status-bar">
-                                                        <ul class="like-com">
-                                                            <li>
-                                                                <a href="index.html#"><i class="fas fa-heart"></i> Like</a>
-                                                                <img src="../images/liked-img.png" alt="">
-                                                                <span>25</span>
-                                                            </li>
-                                                            <li><a href="index.html#" class="com"><i
-                                                                    class="fas fa-comment-alt"></i> Comment 15</a></li>
-                                                        </ul>
-                                                        <a href="index.html#"><i class="fas fa-eye"></i>Views 50</a>
-                                                    </div>
+                                                    </c:if>
+                                                    <a href="index.html#" title="">View Profile</a>
                                                 </div>
+                                                <!--user-profy end-->
                                             </c:if>
-                                        </c:forEach><!--post-bar end-->
-                                        <%--                                    <div class="top-profiles">--%>
-                                        <%--                                        <div class="pf-hd">--%>
-                                        <%--                                            <h3>Top Profiles</h3>--%>
-                                        <%--                                            <i class="la la-ellipsis-v"></i>--%>
-                                        <%--                                        </div>--%>
-                                        <%--                                        <div class="profiles-slider">--%>
-                                        <%--                                            <div class="user-profy">--%>
-                                        <%--                                                <img src="../images/resources/user1.png" alt="">--%>
-                                        <%--                                                <h3>John Doe</h3>--%>
-                                        <%--                                                <span>Graphic Designer</span>--%>
-                                        <%--                                                <ul>--%>
-                                        <%--                                                    <li><a href="index.html#" title="" class="followw">Follow</a></li>--%>
-                                        <%--                                                    <li><a href="index.html#" title="" class="envlp"><img--%>
-                                        <%--                                                            src="../images/envelop.png" alt=""></a></li>--%>
-                                        <%--                                                    <li><a href="index.html#" title="" class="hire">hire</a></li>--%>
-                                        <%--                                                </ul>--%>
-                                        <%--                                                <a href="index.html#" title="">View Profile</a>--%>
-                                        <%--                                            </div><!--user-profy end-->--%>
-                                        <%--                                        </div><!--profiles-slider end-->--%>
-                                        <%--                                    </div>--%>
-
-                                        <div class="process-comm">
-                                            <div class="spinner">
-                                                <div class="bounce1"></div>
-                                                <div class="bounce2"></div>
-                                                <div class="bounce3"></div>
-                                            </div>
-                                        </div><!--process-comm end-->
-                                    </div><!--posts-section end-->
-                                </div><!--main-ws-sec end-->
-                            </div>
-                            <div class="col-lg-3 pd-right-none no-pd">
-                                <div class="right-sidebar">
-                                    <div class="widget widget-about">
-                                        <img src="../images/wd-logo.png" alt="">
-                                        <h3>Track Time on Workwise</h3>
-                                        <span>Pay only for the Hours worked</span>
-                                        <div class="sign_link">
-                                            <h3><a href="sign-in.html" title="">Sign up</a></h3>
-                                            <a href="index.html#" title="">Learn More</a>
-                                        </div>
-                                    </div><!--widget-about end-->
-                                    <div class="widget widget-jobs">
-                                        <div class="sd-title">
-                                            <h3>Advertisements</h3>
-                                            <i class="la la-ellipsis-v"></i>
-                                        </div>
-                                        <div class="jobs-list">
-                                            <c:forEach var="advertisement" items="${advertisements}">
-                                                <div class="job-info">
-                                                    <div class="job-details">
-                                                        <a href="https://${advertisement.adURL}"
-                                                           style="color:#e44d3a;">${advertisement.adURL}</a>
-                                                        <p>${advertisement.description}</p>
+                                        </c:forEach>
+                                    </div><!--profiles-slider end-->
+                                </div>
+                                <div class="posts-section">
+                                    <c:forEach var="post" items="${posts}">
+                                        <c:if test="${post.visible == true}">
+                                            <div class="post-bar">
+                                                <div class="post_topbar">
+                                                    <div class="usy-dt">
+                                                        <img src="${post.user.image.imageUrl}" alt=""
+                                                             style="width: 50px" height="50px">
+                                                        <div class="usy-name">
+                                                            <h3>${post.user.username}</h3>
+                                                            <span id="timeStart"><img src="../images/clock.png"
+                                                                                      alt="">${post.creationDate}</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ed-opts">
+                                                        <a href="index.html#" title="" class="ed-opts-open"><i
+                                                                class="la la-ellipsis-v"></i></a>
+                                                        <ul class="ed-options">
+                                                            <li><a href="" class="remove" title="">Remove</a></li>
+                                                            <c:if test="${user.admin eq true}">
+                                                                <li><a href="" class="remove" id="${post.id}" title="">Block</a>
+                                                                </li>
+                                                            </c:if>
+                                                            <c:if test="${user.admin eq false}">
+                                                                <li><a href="" class="remove" id="${post.id}" title="">Unblock</a>
+                                                                </li>
+                                                            </c:if>
+                                                        </ul>
                                                     </div>
                                                 </div>
-                                                <!--job-info end-->
-                                            </c:forEach>
-                                        </div><!--jobs-list end-->
-                                    </div><!--widget-jobs end-->
-                                    <div class="widget widget-jobs">
-                                        <div class="sd-title">
-                                            <h3>Most Viewed This Week</h3>
-                                            <i class="la la-ellipsis-v"></i>
-                                        </div>
-                                        <div class="jobs-list">
-                                            <div class="job-info">
-                                                <div class="job-details">
-                                                    <h3>Senior Product Designer</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                                                <div class="epi-sec">
+                                                    <ul class="bk-links">
+                                                        <li><a href="" title=""><i
+                                                                class="la la-bookmark"></i></a></li>
+                                                        <li><a href="" title=""><i
+                                                                class="la la-envelope"></i></a></li>
+                                                    </ul>
                                                 </div>
-                                                <div class="hr-rate">
-                                                    <span>$25/hr</span>
+                                                <div class="job_descp">
+                                                    <p>${post.description}</p>
+                                                    <c:if test="${post.images != null}">
+                                                        <!-- Start modal here-->
+                                                        <!-- Trigger the Modal -->
+                                                        <%--                                                    <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">--%>
+                                                        <img id="${post.id}" src="${post.images.imageUrl}"
+                                                             alt="${post.description}"
+                                                             onerror="this.src='http://leeford.in/wp-content/uploads/2017/09/image-not-found.jpg';"
+                                                             data-id="${post.id}"/>
+
+                                                        <!-- The Modal -->
+                                                        <div id="myModal" class="modal">
+
+                                                            <!-- The Close Button -->
+                                                            <span class="close">&times;</span>
+
+                                                            <!-- Modal Content (The Image) -->
+                                                            <img id="img01" src="${post.images.imageUrl}"
+                                                                 alt="Image not found"
+                                                                 onerror="this.src='http://leeford.in/wp-content/uploads/2017/09/image-not-found.jpg';"/>
+
+                                                            <!-- Modal Caption (Image Text) -->
+                                                            <div id="caption"></div>
+                                                        </div>
+
+                                                    </c:if>
+                                                    <ul class="skill-tags">
+                                                    </ul>
                                                 </div>
-                                            </div><!--job-info end-->
-                                            <div class="job-info">
-                                                <div class="job-details">
-                                                    <h3>Senior UI / UX Designer</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                                                <div class="job-status-bar">
+                                                    <ul class="like-com">
+                                                        <li>
+                                                            <a href="index.html#"><i class="fas fa-heart"></i> Like</a>
+                                                            <img src="../images/liked-img.png" alt="">
+                                                            <span>25</span>
+                                                        </li>
+                                                        <li><a href="index.html#" class="com"><i
+                                                                class="fas fa-comment-alt"></i> Comment 15</a></li>
+                                                    </ul>
+                                                    <a href="index.html#"><i class="fas fa-eye"></i>Views 50</a>
                                                 </div>
-                                                <div class="hr-rate">
-                                                    <span>$25/hr</span>
-                                                </div>
-                                            </div><!--job-info end-->
-                                            <div class="job-info">
-                                                <div class="job-details">
-                                                    <h3>Junior Seo Designer</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-                                                </div>
-                                                <div class="hr-rate">
-                                                    <span>$25/hr</span>
-                                                </div>
-                                            </div><!--job-info end-->
-                                        </div><!--jobs-list end-->
-                                    </div><!--widget-jobs end-->
-                                    <div class="widget suggestions full-width">
-                                        <div class="sd-title">
-                                            <h3>Most Viewed People</h3>
-                                            <i class="la la-ellipsis-v"></i>
-                                        </div><!--sd-title end-->
-                                        <div class="suggestions-list">
-                                            <div class="suggestion-usd">
-                                                <img src="../images/resources/s1.png" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>Jessica William</h4>
-                                                    <span>Graphic Designer</span>
-                                                </div>
-                                                <span><i class="la la-plus"></i></span>
                                             </div>
-                                            <div class="suggestion-usd">
-                                                <img src="../images/resources/s2.png" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>John Doe</h4>
-                                                    <span>PHP Developer</span>
-                                                </div>
-                                                <span><i class="la la-plus"></i></span>
-                                            </div>
-                                            <div class="suggestion-usd">
-                                                <img src="../images/resources/s3.png" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>Poonam</h4>
-                                                    <span>Wordpress Developer</span>
-                                                </div>
-                                                <span><i class="la la-plus"></i></span>
-                                            </div>
-                                            <div class="suggestion-usd">
-                                                <img src="../images/resources/s4.png" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>Bill Gates</h4>
-                                                    <span>C &amp; C++ Developer</span>
-                                                </div>
-                                                <span><i class="la la-plus"></i></span>
-                                            </div>
-                                            <div class="suggestion-usd">
-                                                <img src="../images/resources/s5.png" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>Jessica William</h4>
-                                                    <span>Graphic Designer</span>
-                                                </div>
-                                                <span><i class="la la-plus"></i></span>
-                                            </div>
-                                            <div class="suggestion-usd">
-                                                <img src="../images/resources/s6.png" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>John Doe</h4>
-                                                    <span>PHP Developer</span>
-                                                </div>
-                                                <span><i class="la la-plus"></i></span>
-                                            </div>
-                                            <div class="view-more">
-                                                <a href="index.html#" title="">View More</a>
-                                            </div>
-                                        </div><!--suggestions-list end-->
+                                        </c:if>
+                                    </c:forEach><!--post-bar end-->
+                                    <%--                                    <div class="top-profiles">--%>
+                                    <%--                                        <div class="pf-hd">--%>
+                                    <%--                                            <h3>Top Profiles</h3>--%>
+                                    <%--                                            <i class="la la-ellipsis-v"></i>--%>
+                                    <%--                                        </div>--%>
+                                    <%--                                        <div class="profiles-slider">--%>
+                                    <%--                                            <div class="user-profy">--%>
+                                    <%--                                                <img src="../images/resources/user1.png" alt="">--%>
+                                    <%--                                                <h3>John Doe</h3>--%>
+                                    <%--                                                <span>Graphic Designer</span>--%>
+                                    <%--                                                <ul>--%>
+                                    <%--                                                    <li><a href="index.html#" title="" class="followw">Follow</a></li>--%>
+                                    <%--                                                    <li><a href="index.html#" title="" class="envlp"><img--%>
+                                    <%--                                                            src="../images/envelop.png" alt=""></a></li>--%>
+                                    <%--                                                    <li><a href="index.html#" title="" class="hire">hire</a></li>--%>
+                                    <%--                                                </ul>--%>
+                                    <%--                                                <a href="index.html#" title="">View Profile</a>--%>
+                                    <%--                                            </div><!--user-profy end-->--%>
+                                    <%--                                        </div><!--profiles-slider end-->--%>
+                                    <%--                                    </div>--%>
+
+
+                                </div><!--posts-section end-->
+                                <div class="process-comm" id="loader" style="display: none;">
+                                    <div class="spinner">
+                                        <div class="bounce1"></div>
+                                        <div class="bounce2"></div>
+                                        <div class="bounce3"></div>
                                     </div>
-                                </div><!--right-sidebar end-->
-                            </div>
+                                </div><!--process-comm end-->
+                            </div><!--main-ws-sec end-->
                         </div>
-                    </div><!-- main-section-data end-->
-                </div>
+                        <div class="col-lg-3 pd-right-none no-pd">
+                            <div class="right-sidebar">
+                                <div class="widget widget-about">
+                                    <img src="../images/wd-logo.png" alt="">
+                                    <h3>Track Time on Workwise</h3>
+                                    <span>Pay only for the Hours worked</span>
+                                    <div class="sign_link">
+                                        <h3><a href="sign-in.html" title="">Sign up</a></h3>
+                                        <a href="index.html#" title="">Learn More</a>
+                                    </div>
+                                </div><!--widget-about end-->
+                                <div class="widget widget-jobs">
+                                    <div class="sd-title">
+                                        <h3>Advertisements</h3>
+                                        <i class="la la-ellipsis-v"></i>
+                                    </div>
+                                    <div class="jobs-list">
+                                        <c:forEach var="advertisement" items="${advertisements}">
+                                            <div class="job-info">
+                                                <div class="job-details">
+                                                    <a href="https://${advertisement.adURL}"
+                                                       style="color:#e44d3a;">${advertisement.adURL}</a>
+                                                    <p>${advertisement.description}</p>
+                                                </div>
+                                            </div>
+                                            <!--job-info end-->
+                                        </c:forEach>
+                                    </div><!--jobs-list end-->
+                                </div><!--widget-jobs end-->
+                                <div class="widget widget-jobs">
+                                    <div class="sd-title">
+                                        <h3>Most Viewed This Week</h3>
+                                        <i class="la la-ellipsis-v"></i>
+                                    </div>
+                                    <div class="jobs-list">
+                                        <div class="job-info">
+                                            <div class="job-details">
+                                                <h3>Senior Product Designer</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                                            </div>
+                                            <div class="hr-rate">
+                                                <span>$25/hr</span>
+                                            </div>
+                                        </div><!--job-info end-->
+                                        <div class="job-info">
+                                            <div class="job-details">
+                                                <h3>Senior UI / UX Designer</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                                            </div>
+                                            <div class="hr-rate">
+                                                <span>$25/hr</span>
+                                            </div>
+                                        </div><!--job-info end-->
+                                        <div class="job-info">
+                                            <div class="job-details">
+                                                <h3>Junior Seo Designer</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                                            </div>
+                                            <div class="hr-rate">
+                                                <span>$25/hr</span>
+                                            </div>
+                                        </div><!--job-info end-->
+                                    </div><!--jobs-list end-->
+                                </div><!--widget-jobs end-->
+                                <div class="widget suggestions full-width">
+                                    <div class="sd-title">
+                                        <h3>Most Viewed People</h3>
+                                        <i class="la la-ellipsis-v"></i>
+                                    </div><!--sd-title end-->
+                                    <div class="suggestions-list">
+                                        <div class="suggestion-usd">
+                                            <img src="../images/resources/s1.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>Jessica William</h4>
+                                                <span>Graphic Designer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="../images/resources/s2.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>John Doe</h4>
+                                                <span>PHP Developer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="../images/resources/s3.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>Poonam</h4>
+                                                <span>Wordpress Developer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="../images/resources/s4.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>Bill Gates</h4>
+                                                <span>C &amp; C++ Developer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="../images/resources/s5.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>Jessica William</h4>
+                                                <span>Graphic Designer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="../images/resources/s6.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>John Doe</h4>
+                                                <span>PHP Developer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="view-more">
+                                            <a href="index.html#" title="">View More</a>
+                                        </div>
+                                    </div><!--suggestions-list end-->
+                                </div>
+                            </div><!--right-sidebar end-->
+                        </div>
+                    </div>
+                </div><!-- main-section-data end-->
             </div>
-        </main>
+        </div>
+    </main>
 
 
-        <div class="post-popup job_post">
-            <div class="post-project">
-                <h3>Post</h3>
-                <div class="post-project-fields">
-                    <form method="post" enctype="multipart/form-data" id="form">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <textarea id="comment" placeholder="Description" name="comment"></textarea>
-                            </div>
-                            <div class="col-lg-12">
-                                <input type="text" id="photo" name="photo">
-                                <%--                            <input type="file" id="photo" name="photo">--%>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <button id="submit_btn" class="active" type="submit" value="post">Post</button>
-                                    </li>
-                                    <li><a href="index.html#" title="">Cancel</a></li>
-                                </ul>
-                            </div>
+    <div class="post-popup job_post">
+        <div class="post-project">
+            <h3>Post</h3>
+            <div class="post-project-fields">
+                <form method="post" enctype="multipart/form-data" id="form">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <textarea id="comment" placeholder="Description" name="comment"></textarea>
                         </div>
-                    </form>
-                </div><!--post-project-fields end-->
-                <a href="index.html#" title=""><i class="la la-times-circle-o"></i></a>
-            </div><!--post-project end-->
-        </div><!--post-project-popup end-->
+                        <div class="col-lg-12">
+                            <input type="text" id="photo" name="photo">
+                            <%--                            <input type="file" id="photo" name="photo">--%>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <button id="submit_btn" class="active" type="submit" value="post">Post</button>
+                                </li>
+                                <li><a href="index.html#" title="">Cancel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div><!--post-project-fields end-->
+            <a href="index.html#" title=""><i class="la la-times-circle-o"></i></a>
+        </div><!--post-project end-->
+    </div><!--post-project-popup end-->
 
 
         <div class="chatbox-list">
