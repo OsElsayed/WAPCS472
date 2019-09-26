@@ -27,5 +27,6 @@ public class ProfileUpdateServlet extends HttpServlet {
             resp.setStatus(500);
             System.out.print("{error:'Internal error occurred'}");
         }
+        resp.sendRedirect("Profile");
     }
 }

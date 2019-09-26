@@ -67,7 +67,7 @@
                                             <div class="suggestion-usd">
                                                 <img src="${f.image.imageUrl}" alt="" height="50px" width="50px">
                                                 <div class="sgt-text" style="padding: 15px 10px; width: auto">
-                                                    <h2 style="font-weight: bold">${f.username}</h2>
+                                                    <h2 style="font-weight: bold"><a href="Profile?id=${f.id}" title="${f.username}"> ${f.username}</a></h2>
                                                 </div>
                                                     <%--                                                <span><i class="la la-plus"></i></span>--%>
                                             </div>
@@ -170,7 +170,7 @@
                                 <c:if test="${me eq true}">
                                     <div class="product-feed-tab " id="info-dd">
                                         <div class="post-project-fields">
-                                            <form>
+                                            <form method="post" action="ProfileUpdate">
                                                 <div class="col-lg-12">
                                                     <h3>Edit your profile info:</h3>
                                                 </div>
