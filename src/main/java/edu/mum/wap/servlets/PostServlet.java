@@ -27,7 +27,7 @@ public class PostServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException
     {
-        Integer getdata = 20;
+        Integer getdata = 3;
         String page = req.getParameter("nu");
         int pageNum = 0;
         if(page != null){
@@ -40,8 +40,24 @@ public class PostServlet extends HttpServlet {
         posts = postService.findAll();
         List<Post> filtered = new ArrayList<>();
 
-        Collections.reverse(filtered);
-        filtered = posts.stream().filter(p -> p.isVisible()).skip(pageNum*getdata).limit(getdata).collect(Collectors.toList());
+        HttpSession session = req.getSession();
+        User me = (User) session.getAttribute("user");
+
+        List<User> allusers = new ArrayList<>();
+        allusers = userService.findAll();
+        for (User u : allusers) {
+            me.getFollowersList().forEach(f -> {
+                if (f.getId() == u.getId())
+                    u.setFollowing(true);
+            });
+        }
+        if(!me.isAdmin()) {
+            filtered = posts.stream().filter(p -> me.getFollowersList().stream().anyMatch(u -> u.getId() == p.getUserId()) || me.getId() == p.getUserId()).collect(Collectors.toList());
+        }else{
+            filtered = posts;
+        }
+        filtered = filtered.stream().filter(p -> p.isVisible()).sorted((p1, p2) -> p2.getCreationDate().compareTo(p1.getCreationDate())).skip(pageNum*getdata).limit(getdata).collect(Collectors.toList());
+
         for (Post post:filtered) {
             if (post.isVisible())
                 post.setVisibility(1);

@@ -79,7 +79,7 @@ public class TimelineServlet extends HttpServlet {
         }else{
             filtered = posts;
         }
-        filtered = filtered.stream().filter(p -> p.isVisible()).limit(getdata).sorted((p1, p2) -> p2.getCreationDate().compareTo(p1.getCreationDate())).collect(Collectors.toList());
+        filtered = filtered.stream().filter(p -> p.isVisible()).sorted((p1, p2) -> p2.getCreationDate().compareTo(p1.getCreationDate())).limit(getdata).collect(Collectors.toList());
         for (Post post : filtered) {
             if (post.isVisible())
                 post.setVisibility(1);
