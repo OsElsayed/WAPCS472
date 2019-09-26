@@ -1,8 +1,10 @@
 package edu.mum.wap.servlets;
 
+import edu.mum.wap.models.Advertisement;
 import edu.mum.wap.models.Images;
 import edu.mum.wap.models.Post;
 import edu.mum.wap.models.User;
+import edu.mum.wap.services.AdService;
 import edu.mum.wap.services.ImageService;
 import edu.mum.wap.services.PostService;
 import edu.mum.wap.services.UserService;
@@ -57,6 +59,7 @@ public class TimelineServlet extends HttpServlet {
         List<Post> posts = new ArrayList();
         PostService postService = new PostService();
         UserService userService = new UserService();
+        AdService adService = new AdService();
         posts = postService.findAll();
         Collections.reverse(posts);
         List<Post> postlimit = posts.stream().limit(2).collect(Collectors.toList());
@@ -68,11 +71,21 @@ public class TimelineServlet extends HttpServlet {
             post.setUser(userService.findUser(post.getUserId()));
         }
 
+        HttpSession session = req.getSession();
+        User me = (User)session.getAttribute("user");
+
         List<User> allusers = new ArrayList<>();
         allusers = userService.findAll();
-        HttpSession session = req.getSession();
+        for (User u : allusers) {
+            me.getFollowersList().forEach(f-> {
+               if(f.getId() == u.getId())
+                u.setFollowing(true);
+            });
+        }
+        List<Advertisement> advertisements = adService.findAll();
         session.setAttribute("posts",postlimit);
         session.setAttribute("allusers",allusers);
+        session.setAttribute("advertisements",advertisements);
         RequestDispatcher rd = req.getRequestDispatcher("home.jsp");
         rd.forward(req,resp);
     }

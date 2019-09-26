@@ -1,4 +1,4 @@
-<%@include file="head.jsp"%>
+<%@include file="head.jsp" %>
 <style>
     #myImg {
         border-radius: 5px;
@@ -6,7 +6,9 @@
         transition: 0.3s;
     }
 
-    #myImg:hover {opacity: 0.7;}
+    #myImg:hover {
+        opacity: 0.7;
+    }
 
     /* The Modal (background) */
     .modal {
@@ -19,8 +21,8 @@
         width: 100%; /* Full width */
         height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
     }
 
     /* Modal Content (Image) */
@@ -50,8 +52,12 @@
     }
 
     @keyframes zoom {
-        from {transform:scale(0)}
-        to {transform:scale(1)}
+        from {
+            transform: scale(0)
+        }
+        to {
+            transform: scale(1)
+        }
     }
 
     /* The Close Button */
@@ -73,7 +79,7 @@
     }
 
     /* 100% Image Width on Smaller Screens */
-    @media only screen and (max-width: 700px){
+    @media only screen and (max-width: 700px) {
         .modal-content {
             width: 100%;
         }
@@ -82,7 +88,7 @@
 <body>
 
 <div class="wrapper">
-   <%@ include file="header.jsp"%>
+    <%@ include file="header.jsp" %>
 
     <main>
         <div class="main-section">
@@ -95,7 +101,8 @@
                                     <div class="user-profile">
                                         <div class="username-dt">
                                             <div class="usr-pic">
-                                                <img src="${user.image.imageUrl}" alt="" style="width: 150px;height: 100px">
+                                                <img src="${user.image.imageUrl}" alt=""
+                                                     style="width: 150px;height: 100px">
                                             </div>
                                         </div><!--username-dt end-->
                                         <div class="user-specs">
@@ -117,6 +124,13 @@
                                         </li>
                                     </ul>
                                 </div><!--user-data end-->
+                                <div class="suggestions full-width">
+                                    <div class="sd-title">
+                                        <h3>Weather</h3>
+                                        <i class="la la-ellipsis-v"></i>
+                                    </div><!--sd-title end-->
+                                    <div id="weather" data-loc="${user.geoLocation}"></div>
+                                </div>
                                 <div class="suggestions full-width">
                                     <div class="sd-title">
                                         <h3>Suggestions</h3>
@@ -176,19 +190,14 @@
                                         </div>
                                     </div><!--suggestions-list end-->
                                 </div><!--suggestions end-->
-                                <div class="suggestions full-width">
-                                    <div class="sd-title">
-                                        <h3>Weather</h3>
-                                        <i class="la la-ellipsis-v"></i>
-                                    </div><!--sd-title end-->
-                                    <div id="weather" data-loc="${user.geoLocation}"></div>
-                                </div>
+
                             </div><!--main-left-sidebar end-->
                         </div>
                         <div class="col-lg-6 col-md-8 no-pd">
                             <div class="main-ws-sec">
                                 <div class="post-topbar">
-                                    <img src="${user.image.imageUrl}" alt="" style="width: 50px;border-radius: 80%;" height="50px" >
+                                    <img src="${user.image.imageUrl}" alt="" style="width: 50px;border-radius: 80%;"
+                                         height="50px">
                                     <div class="post-st">
                                         <ul>
                                             <div id="img">
@@ -206,19 +215,25 @@
                                     </div>
                                     <div class="profiles-slider">
                                         <c:set var="currentUser" value="${user.username}"></c:set>
-                                        <c:forEach var="user" items="${allusers}">
-                                            <c:if test="${user.username != currentUser}">
-                                        <div class="user-profy">
-                                            <img src="${user.image.imageUrl}" style="width: 50px; height: 50px; border-radius: 30px;">
-                                            <h3>${user.username}</h3>
-                                            <ul>
-                                                <li><a href="index.html#" title="" class="followw">Follow</a></li>
-                                                <li><a href="index.html#" title="" class="envlp"><img
-                                                        src="../images/envelop.png" alt=""></a></li>
-                                                <li><a href="index.html#" title="" class="hire">hire</a></li>
-                                            </ul>
-                                            <a href="index.html#" title="">View Profile</a>
-                                        </div><!--user-profy end-->
+                                        <c:forEach var="u" items="${allusers}">
+                                            <c:if test="${u.username != currentUser}">
+                                                <div class="user-profy">
+                                                    <img src="${u.image.imageUrl}"
+                                                         style="width: 50px; height: 50px; border-radius: 30px;">
+                                                    <h3>${u.username}</h3>
+                                                    <c:if test="${!u.following}">
+                                                        <ul style="color: #1e7e34;">
+                                                            <li><a class="follow idFollow" id="${u.id}" name="${u.username}">Follow</a></li>
+                                                        </ul>
+                                                    </c:if>
+                                                    <c:if test="${u.following}">
+                                                        <ul style="color: #e44d3a;">
+                                                            <li ><a class="follow idFollow" id="${u.id}" name="${u.username}">Unfollow</a></li>
+                                                        </ul>
+                                                    </c:if>
+                                                    <a href="index.html#" title="">View Profile</a>
+                                                </div>
+                                                <!--user-profy end-->
                                             </c:if>
                                         </c:forEach>
                                     </div><!--profiles-slider end-->
@@ -226,98 +241,106 @@
                                 <div class="posts-section">
                                     <c:forEach var="post" items="${posts}">
                                         <c:if test="${post.visible == true}">
-                                        <div class="post-bar">
-                                            <div class="post_topbar">
-                                                <div class="usy-dt">
-                                                    <img src="${post.user.image.imageUrl}" alt="" style="width: 50px" height="50px">
-                                                    <div class="usy-name">
-                                                        <h3>${post.user.username}</h3>
-                                                        <span id="timeStart"><img src="../images/clock.png" alt="">${post.creationDate}</span>
+                                            <div class="post-bar">
+                                                <div class="post_topbar">
+                                                    <div class="usy-dt">
+                                                        <img src="${post.user.image.imageUrl}" alt=""
+                                                             style="width: 50px" height="50px">
+                                                        <div class="usy-name">
+                                                            <h3>${post.user.username}</h3>
+                                                            <span id="timeStart"><img src="../images/clock.png"
+                                                                                      alt="">${post.creationDate}</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ed-opts">
+                                                        <a href="index.html#" title="" class="ed-opts-open"><i
+                                                                class="la la-ellipsis-v"></i></a>
+                                                        <ul class="ed-options">
+                                                            <li><a href="" class="remove" title="">Remove</a></li>
+                                                            <c:if test="${user.admin eq true}">
+                                                                <li><a href="" class="remove" id="${post.id}" title="">Block</a>
+                                                                </li>
+                                                            </c:if>
+                                                            <c:if test="${user.admin eq false}">
+                                                                <li><a href="" class="remove" id="${post.id}" title="">Unblock</a>
+                                                                </li>
+                                                            </c:if>
+                                                        </ul>
                                                     </div>
                                                 </div>
-                                                <div class="ed-opts">
-                                                    <a href="index.html#" title="" class="ed-opts-open"><i
-                                                            class="la la-ellipsis-v"></i></a>
-                                                    <ul class="ed-options">
-                                                        <li><a href="" class="remove" title="">Remove</a></li>
-                                                        <c:if test="${user.admin eq true}">
-                                                        <li><a href="" class="remove" id="${post.id}" title="">Block</a></li>
-                                                        </c:if>
-                                                        <c:if test="${user.admin eq false}">
-                                                            <li><a href="" class="remove" id="${post.id}" title="">Unblock</a></li>
-                                                        </c:if>
+                                                <div class="epi-sec">
+                                                    <ul class="bk-links">
+                                                        <li><a href="" title=""><i
+                                                                class="la la-bookmark"></i></a></li>
+                                                        <li><a href="" title=""><i
+                                                                class="la la-envelope"></i></a></li>
                                                     </ul>
                                                 </div>
+                                                <div class="job_descp">
+                                                    <p>${post.description}</p>
+                                                    <c:if test="${post.images != null}">
+                                                        <!-- Start modal here-->
+                                                        <!-- Trigger the Modal -->
+                                                        <%--                                                    <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">--%>
+                                                        <img id="${post.id}" src="${post.images.imageUrl}"
+                                                             alt="${post.description}"
+                                                             onerror="this.src='http://leeford.in/wp-content/uploads/2017/09/image-not-found.jpg';"
+                                                             data-id="${post.id}"/>
+
+                                                        <!-- The Modal -->
+                                                        <div id="myModal" class="modal">
+
+                                                            <!-- The Close Button -->
+                                                            <span class="close">&times;</span>
+
+                                                            <!-- Modal Content (The Image) -->
+                                                            <img id="img01" src="${post.images.imageUrl}"
+                                                                 alt="Image not found"
+                                                                 onerror="this.src='http://leeford.in/wp-content/uploads/2017/09/image-not-found.jpg';"/>
+
+                                                            <!-- Modal Caption (Image Text) -->
+                                                            <div id="caption"></div>
+                                                        </div>
+
+                                                    </c:if>
+                                                    <ul class="skill-tags">
+                                                    </ul>
+                                                </div>
+                                                <div class="job-status-bar">
+                                                    <ul class="like-com">
+                                                        <li>
+                                                            <a href="index.html#"><i class="fas fa-heart"></i> Like</a>
+                                                            <img src="../images/liked-img.png" alt="">
+                                                            <span>25</span>
+                                                        </li>
+                                                        <li><a href="index.html#" class="com"><i
+                                                                class="fas fa-comment-alt"></i> Comment 15</a></li>
+                                                    </ul>
+                                                    <a href="index.html#"><i class="fas fa-eye"></i>Views 50</a>
+                                                </div>
                                             </div>
-                                            <div class="epi-sec">
-                                                <ul class="bk-links">
-                                                    <li><a href="" title=""><i
-                                                            class="la la-bookmark"></i></a></li>
-                                                    <li><a href="" title=""><i
-                                                            class="la la-envelope"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="job_descp">
-                                                <p>${post.description}</p>
-                                                <c:if test="${post.images != null}">
-                                                    <!-- Start modal here-->
-                                                    <!-- Trigger the Modal -->
-<%--                                                    <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">--%>
-                                                    <img id="${post.id}" src="${post.images.imageUrl}" alt="${post.description}" onerror="this.src='http://leeford.in/wp-content/uploads/2017/09/image-not-found.jpg';"
-                                                          data-id="${post.id}"/>
-
-                                                    <!-- The Modal -->
-                                                    <div id="myModal" class="modal">
-
-                                                        <!-- The Close Button -->
-                                                        <span class="close">&times;</span>
-
-                                                        <!-- Modal Content (The Image) -->
-                                                        <img id="img01" src="${post.images.imageUrl}" alt="Image not found" onerror="this.src='http://leeford.in/wp-content/uploads/2017/09/image-not-found.jpg';" />
-
-                                                        <!-- Modal Caption (Image Text) -->
-                                                        <div id="caption"></div>
-                                                    </div>
-
-                                                </c:if>
-                                                <ul class="skill-tags">
-                                                </ul>
-                                            </div>
-                                            <div class="job-status-bar">
-                                                <ul class="like-com">
-                                                    <li>
-                                                        <a href="index.html#"><i class="fas fa-heart"></i> Like</a>
-                                                        <img src="../images/liked-img.png" alt="">
-                                                        <span>25</span>
-                                                    </li>
-                                                    <li><a href="index.html#" class="com"><i
-                                                            class="fas fa-comment-alt"></i> Comment 15</a></li>
-                                                </ul>
-                                                <a href="index.html#"><i class="fas fa-eye"></i>Views 50</a>
-                                            </div>
-                                        </div>
                                         </c:if>
                                     </c:forEach><!--post-bar end-->
-<%--                                    <div class="top-profiles">--%>
-<%--                                        <div class="pf-hd">--%>
-<%--                                            <h3>Top Profiles</h3>--%>
-<%--                                            <i class="la la-ellipsis-v"></i>--%>
-<%--                                        </div>--%>
-<%--                                        <div class="profiles-slider">--%>
-<%--                                            <div class="user-profy">--%>
-<%--                                                <img src="../images/resources/user1.png" alt="">--%>
-<%--                                                <h3>John Doe</h3>--%>
-<%--                                                <span>Graphic Designer</span>--%>
-<%--                                                <ul>--%>
-<%--                                                    <li><a href="index.html#" title="" class="followw">Follow</a></li>--%>
-<%--                                                    <li><a href="index.html#" title="" class="envlp"><img--%>
-<%--                                                            src="../images/envelop.png" alt=""></a></li>--%>
-<%--                                                    <li><a href="index.html#" title="" class="hire">hire</a></li>--%>
-<%--                                                </ul>--%>
-<%--                                                <a href="index.html#" title="">View Profile</a>--%>
-<%--                                            </div><!--user-profy end-->--%>
-<%--                                        </div><!--profiles-slider end-->--%>
-<%--                                    </div>--%>
+                                    <%--                                    <div class="top-profiles">--%>
+                                    <%--                                        <div class="pf-hd">--%>
+                                    <%--                                            <h3>Top Profiles</h3>--%>
+                                    <%--                                            <i class="la la-ellipsis-v"></i>--%>
+                                    <%--                                        </div>--%>
+                                    <%--                                        <div class="profiles-slider">--%>
+                                    <%--                                            <div class="user-profy">--%>
+                                    <%--                                                <img src="../images/resources/user1.png" alt="">--%>
+                                    <%--                                                <h3>John Doe</h3>--%>
+                                    <%--                                                <span>Graphic Designer</span>--%>
+                                    <%--                                                <ul>--%>
+                                    <%--                                                    <li><a href="index.html#" title="" class="followw">Follow</a></li>--%>
+                                    <%--                                                    <li><a href="index.html#" title="" class="envlp"><img--%>
+                                    <%--                                                            src="../images/envelop.png" alt=""></a></li>--%>
+                                    <%--                                                    <li><a href="index.html#" title="" class="hire">hire</a></li>--%>
+                                    <%--                                                </ul>--%>
+                                    <%--                                                <a href="index.html#" title="">View Profile</a>--%>
+                                    <%--                                            </div><!--user-profy end-->--%>
+                                    <%--                                        </div><!--profiles-slider end-->--%>
+                                    <%--                                    </div>--%>
 
                                     <div class="process-comm">
                                         <div class="spinner">
@@ -342,55 +365,20 @@
                                 </div><!--widget-about end-->
                                 <div class="widget widget-jobs">
                                     <div class="sd-title">
-                                        <h3>Top Jobs</h3>
+                                        <h3>Advertisements</h3>
                                         <i class="la la-ellipsis-v"></i>
                                     </div>
                                     <div class="jobs-list">
-                                        <div class="job-info">
-                                            <div class="job-details">
-                                                <h3>Senior Product Designer</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                                        <c:forEach var="advertisement" items="${advertisements}">
+                                            <div class="job-info">
+                                                <div class="job-details">
+                                                    <a href="https://${advertisement.adURL}"
+                                                       style="color:#e44d3a;">${advertisement.adURL}</a>
+                                                    <p>${advertisement.description}</p>
+                                                </div>
                                             </div>
-                                            <div class="hr-rate">
-                                                <span>$25/hr</span>
-                                            </div>
-                                        </div><!--job-info end-->
-                                        <div class="job-info">
-                                            <div class="job-details">
-                                                <h3>Senior UI / UX Designer</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-                                            </div>
-                                            <div class="hr-rate">
-                                                <span>$25/hr</span>
-                                            </div>
-                                        </div><!--job-info end-->
-                                        <div class="job-info">
-                                            <div class="job-details">
-                                                <h3>Junior Seo Designer</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-                                            </div>
-                                            <div class="hr-rate">
-                                                <span>$25/hr</span>
-                                            </div>
-                                        </div><!--job-info end-->
-                                        <div class="job-info">
-                                            <div class="job-details">
-                                                <h3>Senior PHP Designer</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-                                            </div>
-                                            <div class="hr-rate">
-                                                <span>$25/hr</span>
-                                            </div>
-                                        </div><!--job-info end-->
-                                        <div class="job-info">
-                                            <div class="job-details">
-                                                <h3>Senior Developer Designer</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-                                            </div>
-                                            <div class="hr-rate">
-                                                <span>$25/hr</span>
-                                            </div>
-                                        </div><!--job-info end-->
+                                            <!--job-info end-->
+                                        </c:forEach>
                                     </div><!--jobs-list end-->
                                 </div><!--widget-jobs end-->
                                 <div class="widget widget-jobs">
@@ -494,8 +482,6 @@
             </div>
         </div>
     </main>
-
-
 
 
     <div class="post-popup job_post">
@@ -628,7 +614,7 @@
         <div class="chatbox">
             <div class="chat-mg bx">
                 <a href="index.html#" title=""><img src="../images/chat.png" alt=""></a>
-                <span>2</span>
+                <span id="myCount">${user.followersList.size()}</span>
             </div>
             <div class="conversation-box">
                 <div class="con-title">
@@ -681,7 +667,7 @@
 
 </div><!--theme-layout end-->
 
-<%@ include file="scripts.jsp"%>
+<%@ include file="scripts.jsp" %>
 <script type="text/javascript" src="../js/timeline.js"></script>
 <script type="text/javascript" src="../js/weather.js"></script>
 <script>

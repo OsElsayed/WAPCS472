@@ -31,9 +31,11 @@ public class User {
     private Date creationDate;
     @Temporal(TemporalType.DATE)
     private Date modifiedDate;
+    @Transient
+    private boolean isFollowing;
     @OneToOne
     private Images image;
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     @JoinTable(name = "followersList")
     private List<User> followersList;
 }
