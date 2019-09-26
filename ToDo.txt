@@ -14,3 +14,12 @@
 4- filters and authorization
 5- notification module
 //ossama
+
+//Shiva
+1 - Sent Post with image and text as user
+2 - Show all the post(For Admin)
+3 - People you may know in HomePage
+4 - Block unhealthy content
+5 - Follow User
+6 - Edit Profile Information
+//Shiva
