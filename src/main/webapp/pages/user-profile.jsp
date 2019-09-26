@@ -22,40 +22,40 @@
                                         <img height="150px" width="150px" src="${user.image.imageUrl}" alt="">
                                     </div><!--user-pro-img end-->
                                     <div class="user_pro_status">
-                                        <ul class="flw-hr">
-                                            <li><a href="user-profile.html#" title="" class="flww"><i
-                                                    class="la la-plus"></i> Follow</a></li>
-                                        </ul>
+<%--                                        <ul class="flw-hr">--%>
+<%--                                            <li><a href="../pages/Profile" title="" class="flww"><i--%>
+<%--                                                    class="la la-plus"></i> Follow</a></li>--%>
+<%--                                        </ul>--%>
                                         <ul class="flw-status">
                                             <li>
                                                 <span>Following</span>
-                                                <b>34</b>
+                                                <b>${user.followersList.size()}</b>
                                             </li>
-                                            <li>
-                                                <span>Followers</span>
-                                                <b>155</b>
-                                            </li>
+<%--                                            <li>--%>
+<%--                                                <span>Followers</span>--%>
+<%--                                                <b>155</b>--%>
+<%--                                            </li>--%>
                                         </ul>
                                     </div><!--user_pro_status end-->
-                                    <ul class="social_links">
-                                        <li><a href="user-profile.html#" title=""><i class="la la-globe"></i>
-                                            www.example.com</a></li>
-                                        <li><a href="user-profile.html#" title=""><i class="fa fa-facebook-square"></i>
-                                            Http://www.facebook.com/john...</a></li>
-                                        <li><a href="user-profile.html#" title=""><i class="fa fa-twitter"></i>
-                                            Http://www.Twitter.com/john...</a></li>
-                                        <li><a href="user-profile.html#" title=""><i
-                                                class="fa fa-google-plus-square"></i> Http://www.googleplus.com/john...</a>
-                                        </li>
-                                        <li><a href="user-profile.html#" title=""><i class="fa fa-behance-square"></i>
-                                            Http://www.behance.com/john...</a></li>
-                                        <li><a href="user-profile.html#" title=""><i class="fa fa-pinterest"></i>
-                                            Http://www.pinterest.com/john...</a></li>
-                                        <li><a href="user-profile.html#" title=""><i class="fa fa-instagram"></i>
-                                            Http://www.instagram.com/john...</a></li>
-                                        <li><a href="user-profile.html#" title=""><i class="fa fa-youtube"></i>
-                                            Http://www.youtube.com/john...</a></li>
-                                    </ul>
+                                    <%--                                    <ul class="social_links">--%>
+                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="la la-globe"></i>--%>
+                                    <%--                                            www.example.com</a></li>--%>
+                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="fa fa-facebook-square"></i>--%>
+                                    <%--                                            Http://www.facebook.com/john...</a></li>--%>
+                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="fa fa-twitter"></i>--%>
+                                    <%--                                            Http://www.Twitter.com/john...</a></li>--%>
+                                    <%--                                        <li><a href="user-profile.html#" title=""><i--%>
+                                    <%--                                                class="fa fa-google-plus-square"></i> Http://www.googleplus.com/john...</a>--%>
+                                    <%--                                        </li>--%>
+                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="fa fa-behance-square"></i>--%>
+                                    <%--                                            Http://www.behance.com/john...</a></li>--%>
+                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="fa fa-pinterest"></i>--%>
+                                    <%--                                            Http://www.pinterest.com/john...</a></li>--%>
+                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="fa fa-instagram"></i>--%>
+                                    <%--                                            Http://www.instagram.com/john...</a></li>--%>
+                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="fa fa-youtube"></i>--%>
+                                    <%--                                            Http://www.youtube.com/john...</a></li>--%>
+                                    <%--                                    </ul>--%>
                                 </div><!--user_profile end-->
                                 <div class="suggestions full-width">
                                     <div class="sd-title">
@@ -65,7 +65,7 @@
                                     <div class="suggestions-list">
                                         <c:forEach var="f" items="${followings}">
                                             <div class="suggestion-usd">
-                                                <img src="../images/resources/s1.png" alt="">
+                                                <img src="${f.image.imageUrl}" alt="">
                                                 <div class="sgt-text">
                                                     <h4>${f.username}</h4>
                                                 </div>
@@ -120,13 +120,11 @@
                                                         <img src="${user.image.imageUrl}" alt="" height="50px">
                                                         <div class="usy-name">
                                                             <h3>${user.username}</h3>
-                                                            <span id="timeStart"><img src="../images/clock.png"
-                                                                                      alt="">${post.creationDate}</span>
+                                                            <span id="timeStart"><img src="../images/clock.png" alt="">${post.creationDate}</span>
                                                         </div>
                                                     </div>
                                                     <div class="ed-opts">
-                                                        <a href="user-profile.html#" title="" class="ed-opts-open"><i
-                                                                class="la la-ellipsis-v"></i></a>
+                                                        <a href="user-profile.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
                                                         <ul class="ed-options">
                                                             <li><a href="user-profile.html#" title="">Edit Post</a></li>
                                                             <c:if test="${user.admin eq true}">
