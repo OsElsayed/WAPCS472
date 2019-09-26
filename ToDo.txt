@@ -5,3 +5,12 @@
 3 - Login / Ad ( Ossama)
 
 4 - User / Register (Caio)
+
+
+// ossama
+1- DB layer include ( Hibernate configurations, entities, repositories, services)
+2- Sign in / logout (login/logout modules)
+3- advertisements module
+4- filters and authorization
+5- notification module
+//ossama
