@@ -628,7 +628,7 @@
         <div class="chatbox">
             <div class="chat-mg bx">
                 <a href="index.html#" title=""><img src="../images/chat.png" alt=""></a>
-                <span>2</span>
+                <span id="myCount">${user.followersList.size()}</span>
             </div>
             <div class="conversation-box">
                 <div class="con-title">

@@ -1,5 +1,17 @@
 $(function () {
 
+    setInterval(function () {
+        $.get('notification',{
+            dataType: "JSON",
+        }).done(shiva);
+    },5000);
+
+    function shiva(data) {
+        // let count = data.length;
+        // $('#myCount').text(count);
+        console.log("me");
+    }
+
     $(window).on("scroll", function() {
         let scrollHeight = $(document).height();
         let scrollPosition = $(window).height() + $(window).scrollTop();

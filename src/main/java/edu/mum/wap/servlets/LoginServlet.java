@@ -33,17 +33,20 @@ public class LoginServlet extends HttpServlet {
         User userFromDb = userService.authenticateUser(email);
         try {
             String hashed = HashingHelper.HashPassword(password);
-            if (userFromDb == null || !hashed.equals(userFromDb.getPassword())) {
+            if (userFromDb != null && !userFromDb.isActive()) {
+                session.removeAttribute("user");
+                session.setAttribute("error", "User is suspended");
+                resp.sendRedirect(((HttpServletRequest) req).getContextPath() + "/pages/sign-in.jsp");
+                return;
+            } else if (userFromDb == null || !hashed.equals(userFromDb.getPassword())) {
                 session.removeAttribute("user");
                 session.setAttribute("error", "Username and/or password are invalid.");
-//                session.invalidate();
                 resp.sendRedirect(((HttpServletRequest) req).getContextPath() + "/pages/sign-in.jsp");
                 return;
             }
         } catch (NoSuchAlgorithmException e) {
             session.removeAttribute("user");
             session.setAttribute("error", "An error occurred during the request.");
-//            session.invalidate();
             resp.sendRedirect(((HttpServletRequest) req).getContextPath() + "/pages/sign-in.jsp");
             return;
         }

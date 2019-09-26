@@ -2,6 +2,7 @@ package edu.mum.wap.models;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -33,7 +34,7 @@ public class User {
     private Date modifiedDate;
     @OneToOne
     private Images image;
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "followersList")
     private List<User> followersList;
 }
