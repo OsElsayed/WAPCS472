@@ -22,19 +22,19 @@
                                         <img height="150px" width="150px" src="${user.image.imageUrl}" alt="">
                                     </div><!--user-pro-img end-->
                                     <div class="user_pro_status">
-<%--                                        <ul class="flw-hr">--%>
-<%--                                            <li><a href="../pages/Profile" title="" class="flww"><i--%>
-<%--                                                    class="la la-plus"></i> Follow</a></li>--%>
-<%--                                        </ul>--%>
+                                        <%--                                        <ul class="flw-hr">--%>
+                                        <%--                                            <li><a href="../pages/Profile" title="" class="flww"><i--%>
+                                        <%--                                                    class="la la-plus"></i> Follow</a></li>--%>
+                                        <%--                                        </ul>--%>
                                         <ul class="flw-status">
                                             <li>
                                                 <span>Following</span>
                                                 <b>${user.followersList.size()}</b>
                                             </li>
-<%--                                            <li>--%>
-<%--                                                <span>Followers</span>--%>
-<%--                                                <b>155</b>--%>
-<%--                                            </li>--%>
+                                            <%--                                            <li>--%>
+                                            <%--                                                <span>Followers</span>--%>
+                                            <%--                                                <b>155</b>--%>
+                                            <%--                                            </li>--%>
                                         </ul>
                                     </div><!--user_pro_status end-->
                                     <%--                                    <ul class="social_links">--%>
@@ -66,10 +66,10 @@
                                         <c:forEach var="f" items="${followings}">
                                             <div class="suggestion-usd">
                                                 <img src="${f.image.imageUrl}" alt="" height="50px" width="50px">
-                                                <div class="sgt-text" style="padding: 15px 10px; width: auto" >
-                                                    <h2 style="font-weight: bold">${f.username}</h2>
+                                                <div class="sgt-text" style="padding: 15px 10px; width: auto">
+                                                    <h2 style="font-weight: bold"><a href="Profile?id=${f.id}" title="${f.username}"> ${f.username}</a></h2>
                                                 </div>
-<%--                                                <span><i class="la la-plus"></i></span>--%>
+                                                    <%--                                                <span><i class="la la-plus"></i></span>--%>
                                             </div>
                                         </c:forEach>
                                         <%--                                        <div class="view-more">--%>
@@ -91,12 +91,14 @@
                                                     <span>Feed</span>
                                                 </a>
                                             </li>
-                                            <li data-tab="info-dd">
-                                                <a href="#" title="">
-                                                    <img src="../images/ic2.png" alt="">
-                                                    <span>Info</span>
-                                                </a>
-                                            </li>
+                                            <c:if test="${me eq true}">
+                                                <li data-tab="info-dd">
+                                                    <a href="#" title="">
+                                                        <img src="../images/ic2.png" alt="">
+                                                        <span>Info</span>
+                                                    </a>
+                                                </li>
+                                            </c:if>
                                         </ul>
                                     </div><!-- tab-feed end-->
                                 </div><!--user-tab-sec end-->
@@ -120,11 +122,13 @@
                                                         <img src="${user.image.imageUrl}" alt="" height="50px">
                                                         <div class="usy-name">
                                                             <h3>${user.username}</h3>
-                                                            <span id="timeStart"><img src="../images/clock.png" alt="">${post.creationDate}</span>
+                                                            <span id="timeStart"><img src="../images/clock.png"
+                                                                                      alt="">${post.creationDate}</span>
                                                         </div>
                                                     </div>
                                                     <div class="ed-opts">
-                                                        <a href="../pages/Profile" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                                        <a href="../pages/Profile" title="" class="ed-opts-open"><i
+                                                                class="la la-ellipsis-v"></i></a>
                                                         <ul class="ed-options">
                                                             <li><a href="../pages/Profile" title="">Edit Post</a></li>
                                                             <c:if test="${user.admin eq true}">
@@ -163,35 +167,37 @@
                                         </div><!--process-comm end-->
                                     </div><!--posts-section end-->
                                 </div><!--product-feed-tab end-->
-                                <div class="product-feed-tab " id="info-dd">
-                                    <div class="post-project-fields">
-                                        <form>
-                                            <div class="col-lg-12">
-                                                <h3>Edit your profile info:</h3>
-                                            </div>
-                                            <br/>
-                                            <div class="row">
+                                <c:if test="${me eq true}">
+                                    <div class="product-feed-tab " id="info-dd">
+                                        <div class="post-project-fields">
+                                            <form method="post" action="ProfileUpdate">
                                                 <div class="col-lg-12">
-                                                    <input type="text" id="username" name="username"
-                                                           placeholder="User Name" value="${user.username}">
+                                                    <h3>Edit your profile info:</h3>
                                                 </div>
-                                                <div class="col-lg-12">
-                                                    <input type="text" id="imageUrl" name="imageUrl"
-                                                           placeholder="Image URL " value="${user.image.imageUrl}">
+                                                <br/>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <input type="text" id="username" name="username"
+                                                               placeholder="User Name" value="${user.username}">
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <input type="text" id="imageUrl" name="imageUrl"
+                                                               placeholder="Image URL " value="${user.image.imageUrl}">
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <ul>
+                                                            <li>
+                                                                <button id="btnSave" type="submit" value="post">Save
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                                <div class="col-lg-12">
-                                                    <ul>
-                                                        <li>
-                                                            <button id="btnSave" type="submit" value="post">Save
-                                                            </button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div><!--post-project-fields end-->
-                                </div><!--product-info-tab end-->
-
+                                            </form>
+                                        </div><!--post-project-fields end-->
+                                    </div>
+                                    <!--product-info-tab end-->
+                                </c:if>
                             </div><!--main-ws-sec end-->
                         </div>
                         <div class="col-lg-3">
