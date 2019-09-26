@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    $.get("Profile")
-        .done(function (data) {
-            console.log(data);
-        })
-        .fail(function (err) {
-            console.error(err);
-        });
+    // $.get("Profile")
+    //     .done(function (data) {
+    //         //console.log(data);
+    //     })
+    //     .fail(function (err) {
+    //         //console.error(err);
+    //     });
     $('#btnSave').click(function () {
         let $username = $('#username').val();
         let $imageUrl = $('#imageUrl').val();

@@ -23,3 +23,11 @@
 5 - Follow User
 6 - Edit Profile Information
 //Shiva
+
+//Caio
+1- Register in the webSite
+2- Set Location
+3- Weather API
+4- Manage User Page (Control Admin/Disable Users)
+5 - Facebook integration (failed)
+//Caio

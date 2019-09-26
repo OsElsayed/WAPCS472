@@ -247,7 +247,7 @@
                                                         <img src="${post.user.image.imageUrl}" alt=""
                                                              style="width: 50px" height="50px">
                                                         <div class="usy-name">
-                                                            <h3>${post.user.username}</h3>
+                                                            <h3><a href="Profile?id=${post.user.id}" title="${post.user.username}"> ${post.user.username}</a></h3>
                                                             <span id="timeStart"><img src="../images/clock.png"
                                                                                       alt="">${post.creationDate}</span>
                                                         </div>
