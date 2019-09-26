@@ -31,9 +31,13 @@ $(function () {
     },5000);
 
     function shiva(data) {
-        // let count = data.length;
-        // $('#myCount').text(count);
-        console.log("me");
+        let count;
+        if (data == null) {
+            count = 0;
+        } else {
+            count = data.length;
+        }
+        $('#myCount').text(count);
     }
 
     $(window).on("scroll", function() {
