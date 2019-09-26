@@ -38,22 +38,22 @@
                                         </ul>
                                     </div><!--user_pro_status end-->
                                     <%--                                    <ul class="social_links">--%>
-                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="la la-globe"></i>--%>
+                                    <%--                                        <li><a href="../pages/Profile" title=""><i class="la la-globe"></i>--%>
                                     <%--                                            www.example.com</a></li>--%>
-                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="fa fa-facebook-square"></i>--%>
+                                    <%--                                        <li><a href="../pages/Profile" title=""><i class="fa fa-facebook-square"></i>--%>
                                     <%--                                            Http://www.facebook.com/john...</a></li>--%>
-                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="fa fa-twitter"></i>--%>
+                                    <%--                                        <li><a href="../pages/Profile" title=""><i class="fa fa-twitter"></i>--%>
                                     <%--                                            Http://www.Twitter.com/john...</a></li>--%>
-                                    <%--                                        <li><a href="user-profile.html#" title=""><i--%>
+                                    <%--                                        <li><a href="../pages/Profile" title=""><i--%>
                                     <%--                                                class="fa fa-google-plus-square"></i> Http://www.googleplus.com/john...</a>--%>
                                     <%--                                        </li>--%>
-                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="fa fa-behance-square"></i>--%>
+                                    <%--                                        <li><a href="../pages/Profile" title=""><i class="fa fa-behance-square"></i>--%>
                                     <%--                                            Http://www.behance.com/john...</a></li>--%>
-                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="fa fa-pinterest"></i>--%>
+                                    <%--                                        <li><a href="../pages/Profile" title=""><i class="fa fa-pinterest"></i>--%>
                                     <%--                                            Http://www.pinterest.com/john...</a></li>--%>
-                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="fa fa-instagram"></i>--%>
+                                    <%--                                        <li><a href="../pages/Profile" title=""><i class="fa fa-instagram"></i>--%>
                                     <%--                                            Http://www.instagram.com/john...</a></li>--%>
-                                    <%--                                        <li><a href="user-profile.html#" title=""><i class="fa fa-youtube"></i>--%>
+                                    <%--                                        <li><a href="../pages/Profile" title=""><i class="fa fa-youtube"></i>--%>
                                     <%--                                            Http://www.youtube.com/john...</a></li>--%>
                                     <%--                                    </ul>--%>
                                 </div><!--user_profile end-->
@@ -65,15 +65,15 @@
                                     <div class="suggestions-list">
                                         <c:forEach var="f" items="${followings}">
                                             <div class="suggestion-usd">
-                                                <img src="${f.image.imageUrl}" alt="">
-                                                <div class="sgt-text">
-                                                    <h4>${f.username}</h4>
+                                                <img src="${f.image.imageUrl}" alt="" height="50px" width="50px">
+                                                <div class="sgt-text" style="padding: 15px 10px; width: auto" >
+                                                    <h2 style="font-weight: bold">${f.username}</h2>
                                                 </div>
-                                                <span><i class="la la-plus"></i></span>
+<%--                                                <span><i class="la la-plus"></i></span>--%>
                                             </div>
                                         </c:forEach>
                                         <%--                                        <div class="view-more">--%>
-                                        <%--                                            <a href="user-profile.html#" title="">View More</a>--%>
+                                        <%--                                            <a href="../pages/Profile" title="">View More</a>--%>
                                         <%--                                        </div>--%>
                                     </div><!--suggestions-list end-->
                                 </div><!--suggestions end-->
@@ -124,9 +124,9 @@
                                                         </div>
                                                     </div>
                                                     <div class="ed-opts">
-                                                        <a href="user-profile.html#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                                        <a href="../pages/Profile" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
                                                         <ul class="ed-options">
-                                                            <li><a href="user-profile.html#" title="">Edit Post</a></li>
+                                                            <li><a href="../pages/Profile" title="">Edit Post</a></li>
                                                             <c:if test="${user.admin eq true}">
                                                                 <li><a href="" class="remove" id="${post.id}" title="">Block</a>
                                                                 </li>
@@ -141,15 +141,15 @@
                                                 <div class="job-status-bar">
                                                     <ul class="like-com">
                                                         <li>
-                                                            <a href="user-profile.html#"><i class="fas fa-heart"></i>
+                                                            <a href="../pages/Profile"><i class="fas fa-heart"></i>
                                                                 Like</a>
                                                             <img src="../images/liked-img.png" alt="">
                                                             <span>25</span>
                                                         </li>
-                                                        <li><a href="user-profile.html#" class="com"><i
+                                                        <li><a href="../pages/Profile" class="com"><i
                                                                 class="fas fa-comment-alt"></i> Comments 15</a></li>
                                                     </ul>
-                                                    <a href="user-profile.html#"><i class="fas fa-eye"></i>Views 50</a>
+                                                    <a href="../pages/Profile"><i class="fas fa-eye"></i>Views 50</a>
                                                 </div>
                                             </div>
                                             <!--post-bar end-->
@@ -197,7 +197,7 @@
                         <div class="col-lg-3">
                             <div class="right-sidebar">
                                 <div class="message-btn">
-                                    <a href="user-profile.html#" title=""><i class="fa fa-envelope"></i> Message</a>
+                                    <a href="../pages/Profile" title=""><i class="fa fa-envelope"></i> Message</a>
                                 </div>
                                 <div class="widget widget-portfolio">
                                     <div class="wd-heady">
@@ -206,29 +206,29 @@
                                     </div>
                                     <div class="pf-gallery">
                                         <ul>
-                                            <li><a href="user-profile.html#" title=""><img
+                                            <li><a href="../pages/Profile" title=""><img
                                                     src="../images/resources/pf-gallery1.png" alt=""></a></li>
-                                            <li><a href="user-profile.html#" title=""><img
+                                            <li><a href="../pages/Profile" title=""><img
                                                     src="../images/resources/pf-gallery2.png" alt=""></a></li>
-                                            <li><a href="user-profile.html#" title=""><img
+                                            <li><a href="../pages/Profile" title=""><img
                                                     src="../images/resources/pf-gallery3.png" alt=""></a></li>
-                                            <li><a href="user-profile.html#" title=""><img
+                                            <li><a href="../pages/Profile" title=""><img
                                                     src="../images/resources/pf-gallery4.png" alt=""></a></li>
-                                            <li><a href="user-profile.html#" title=""><img
+                                            <li><a href="../pages/Profile" title=""><img
                                                     src="../images/resources/pf-gallery5.png" alt=""></a></li>
-                                            <li><a href="user-profile.html#" title=""><img
+                                            <li><a href="../pages/Profile" title=""><img
                                                     src="../images/resources/pf-gallery6.png" alt=""></a></li>
-                                            <li><a href="user-profile.html#" title=""><img
+                                            <li><a href="../pages/Profile" title=""><img
                                                     src="../images/resources/pf-gallery7.png" alt=""></a></li>
-                                            <li><a href="user-profile.html#" title=""><img
+                                            <li><a href="../pages/Profile" title=""><img
                                                     src="../images/resources/pf-gallery8.png" alt=""></a></li>
-                                            <li><a href="user-profile.html#" title=""><img
+                                            <li><a href="../pages/Profile" title=""><img
                                                     src="../images/resources/pf-gallery9.png" alt=""></a></li>
-                                            <li><a href="user-profile.html#" title=""><img
+                                            <li><a href="../pages/Profile" title=""><img
                                                     src="../images/resources/pf-gallery10.png" alt=""></a></li>
-                                            <li><a href="user-profile.html#" title=""><img
+                                            <li><a href="../pages/Profile" title=""><img
                                                     src="../images/resources/pf-gallery11.png" alt=""></a></li>
-                                            <li><a href="user-profile.html#" title=""><img
+                                            <li><a href="../pages/Profile" title=""><img
                                                     src="../images/resources/pf-gallery12.png" alt=""></a></li>
                                         </ul>
                                     </div><!--pf-gallery end-->
@@ -274,13 +274,13 @@
                 <ul>
                     <li><a href="help-center.html" title="">Help Center</a></li>
                     <li><a href="about.html" title="">About</a></li>
-                    <li><a href="user-profile.html#" title="">Privacy Policy</a></li>
-                    <li><a href="user-profile.html#" title="">Community Guidelines</a></li>
-                    <li><a href="user-profile.html#" title="">Cookies Policy</a></li>
-                    <li><a href="user-profile.html#" title="">Career</a></li>
+                    <li><a href="../pages/Profile" title="">Privacy Policy</a></li>
+                    <li><a href="../pages/Profile" title="">Community Guidelines</a></li>
+                    <li><a href="../pages/Profile" title="">Cookies Policy</a></li>
+                    <li><a href="../pages/Profile" title="">Career</a></li>
                     <li><a href="forum.html" title="">Forum</a></li>
-                    <li><a href="user-profile.html#" title="">Language</a></li>
-                    <li><a href="user-profile.html#" title="">Copyright Policy</a></li>
+                    <li><a href="../pages/Profile" title="">Language</a></li>
+                    <li><a href="../pages/Profile" title="">Copyright Policy</a></li>
                 </ul>
                 <p><img src="../images/copy-icon2.png" alt="">Copyright 2019</p>
                 <img class="fl-rgt" src="../images/logo2.png" alt="">
@@ -304,7 +304,7 @@
                 <button type="submit" class="save">Save</button>
                 <button type="submit" class="cancel">Cancel</button>
             </form>
-            <a href="user-profile.html#" title="" class="close-box"><i class="la la-close"></i></a>
+            <a href="../pages/Profile" title="" class="close-box"><i class="la la-close"></i></a>
         </div><!--overview-edit end-->
     </div><!--overview-box end-->
 
