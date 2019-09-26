@@ -7,20 +7,20 @@ $(function () {
         let name = $(this).attr('name');
         let self = $(this);
         $.ajax({
-            url: 'Follow',
-            type: 'post',
-            data: {
-                followId: $followId
+            url : 'Follow',
+            type : 'post',
+            data : {
+                followId : $followId
             },
             success: function () {
                 console.log(self.text());
-                if (self.text() === "Follow") {
-                    self.text('Unfollow');
-                    myT.success("You are now following " + name);
-                } else {
-                    self.text('Follow');
-                    myT.warning("You unfollowed " + name);
-                }
+               if(self.text() === "Follow"){
+                   self.text('Unfollow');
+                   myT.success("You are now following " + name );
+               }else{
+                   self.text('Follow');
+                   myT.warning("You unfollowed " + name );
+               }
 
             }
         })
@@ -33,9 +33,13 @@ $(function () {
     }, 5000);
 
     function shiva(data) {
-        // let count = data.length;
-        // $('#myCount').text(count);
-        console.log("me");
+        let count;
+        if (data == null) {
+            count = 0;
+        } else {
+            count = data.length;
+        }
+        $('#myCount').text(count);
     }
 
     $(window).on("scroll", function () {
@@ -207,10 +211,11 @@ $(function () {
             modal.style.display = "block";
             modalImg.src = ele.src;
             captionText.innerHTML = ele.alt;
+            let span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
         }
     });
-    let span = document.getElementsByClassName("close")[0];
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
+
 });
