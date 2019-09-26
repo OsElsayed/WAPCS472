@@ -39,10 +39,10 @@ $(document).ready(function () {
                 },
                 success: function () {
                     myT.success("Post Sent Successfully");
-                    window.close();
+                    setTimeout(function(){ window.location.reload(); }, 2000);
                 },
                 error: () => {
-                    alert('Failed');
+                    myT.error('Failed');
                 }
             });
     });

@@ -2,12 +2,12 @@ const weather = (() => {
     const cont = $('#weather');
     let loc = cont.data('loc');
     let data = {
-        apikey:'89mzIjYn7uoHpQ5Sq3IACi1n0e8TqYju',
+        apikey:'p79ezHPI7FySzkfsdhFNOfiSti43bFbc',
         q:loc.replace('/',',')
     };
 
     function init() {
-        if (loc === undefined || loc.left === 0) {
+        if (loc === undefined || loc.length === 0) {
             const showME = $('<button>', {
                 class: 'show-weather',
                 text: 'Show weather',
@@ -23,6 +23,10 @@ const weather = (() => {
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(function (position) {
                 loc = position.coords.latitude + '/' + position.coords.longitude;
+                data = {
+                    apikey: data.apikey,
+                    q:loc.replace('/',',')
+                };
                 cont.empty();
                 _showLocation();
             });
