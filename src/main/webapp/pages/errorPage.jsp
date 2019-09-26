@@ -37,6 +37,11 @@
                                     <a><h2>Not allowed to access this page!!!</h2>
                                         <br/><img src="../images/smley.png" alt=""></a>
                                 </div><!--cm-logo end-->
+                                <div class="typing-msg">
+                                    <ul class="ft-options">
+                                        <li>Home!<a href="home.jsp" title=""><i class="la la-smile-o"></i></a></li>
+                                    </ul>
+                                </div>
                                 <img src="images/cm-main-img.png" alt="">
                             </div><!--cmp-info end-->
                         </div>

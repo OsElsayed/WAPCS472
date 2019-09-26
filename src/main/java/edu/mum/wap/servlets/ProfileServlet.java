@@ -1,4 +1,5 @@
 package edu.mum.wap.servlets;
+
 import edu.mum.wap.models.Images;
 import edu.mum.wap.models.Post;
 import edu.mum.wap.models.User;
@@ -22,43 +23,38 @@ public class ProfileServlet extends HttpServlet {
     PostService postSvc;
     ImageService imageSvc;
 
-    public ProfileServlet (){
+    public ProfileServlet() {
         me = new User();
         postSvc = new PostService();
-        imageSvc  = new ImageService();
+        imageSvc = new ImageService();
     }
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        me = (User)(req.getSession().getAttribute("user"));
+        me = (User) (req.getSession().getAttribute("user"));
         long userId = me.getId();
-        List<Post> myPosts =  postSvc.getMyPosts(userId);
+        List<Post> myPosts = postSvc.getMyPosts(userId);
         Collections.reverse(myPosts);
         req.getSession().setAttribute("posts", myPosts);
 
         List<User> followings = me.getFollowersList();
-        req.getSession().setAttribute("followings",followings);
+        req.getSession().setAttribute("followings", followings);
 
-        req.getRequestDispatcher("user-profile.jsp").forward(req,resp);
-
-        // retrun all posts and loop over them to create div "post-bar" for each post
+        req.getRequestDispatcher("user-profile.jsp").forward(req, resp);
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        me = (User)(req.getSession().getAttribute("user"));
+        me = (User) (req.getSession().getAttribute("user"));
         Post p = new Post();
-        p.setDescription(req.getParameter("description"));
-        if(req.getParameter("photo") !=null)
+        p.setDescription(req.getParameter("comment"));
+        if (req.getParameter("photo") != null)
             p.setImages(addImage(req));
         p.setUserId(me.getId());
         p.setActive(true);
         p.setCreationDate((new Date()));
         p.setVisible(true);
-        //p.setId(0);
 
-        //int result = postSvc.addPost(p);
         postSvc.addPost(p);
-
-        // append new post to the old posts in the top of the page
+        doGet(req, resp);
     }
 
     private Images addImage(HttpServletRequest req) {

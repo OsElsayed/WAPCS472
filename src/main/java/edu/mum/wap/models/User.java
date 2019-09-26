@@ -35,7 +35,7 @@ public class User {
     private boolean isFollowing;
     @OneToOne
     private Images image;
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     @JoinTable(name = "followersList")
     private List<User> followersList;
 }

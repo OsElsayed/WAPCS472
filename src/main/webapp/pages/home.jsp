@@ -119,7 +119,7 @@
                                             <span>155</span>
                                         </li>
                                         <li>
-                                            <a href="http://gambolthemes.net/workwise-new/my-profile.html" title="">View
+                                            <a href="../pages/Profile" title="">View
                                                 Profile</a>
                                         </li>
                                     </ul>
@@ -614,7 +614,7 @@
         <div class="chatbox">
             <div class="chat-mg bx">
                 <a href="index.html#" title=""><img src="../images/chat.png" alt=""></a>
-                <span>2</span>
+                <span id="myCount">${user.followersList.size()}</span>
             </div>
             <div class="conversation-box">
                 <div class="con-title">

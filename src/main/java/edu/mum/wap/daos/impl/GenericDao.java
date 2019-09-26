@@ -41,7 +41,11 @@ public class GenericDao<T> implements GenericRepository<T> {
 
     @Override
     public T findOne(Long id) {
-        return (T) entityManager.find(daoClass, id);
+        entityManager.getTransaction().begin();
+        T t = entityManager.find(daoClass, id);
+        entityManager.refresh(t);
+        entityManager.getTransaction().commit();
+        return t;
     }
 
     @Override
