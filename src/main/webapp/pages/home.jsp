@@ -627,7 +627,7 @@
                             <div class="conv-list active">
                                 <div class="usy-info">
                                     <h3>${user.username}</h3>
-                                    <span>stared following you ..! <img src="../images/ic5.png" alt=""></span>
+                                    <span>you started following him <img src="../images/ic5.png" alt=""></span>
                                 </div>
                                 <div class="ct-time">
                                     <span>1:55 PM</span>
