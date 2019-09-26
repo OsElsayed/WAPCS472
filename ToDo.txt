@@ -4,4 +4,4 @@
 
 3 - Login / Ad ( Ossama)
 
-4 - User / Register (Caio)
+4 - User / Register / Weather API / Facebook(failed) (Caio)
